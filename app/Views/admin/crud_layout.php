@@ -1,44 +1,30 @@
 <?php
-// Load ALL GroceryCRUD CSS files without filtering
-// We'll override conflicting styles with scoped CSS instead
+// Load ALL GroceryCRUD CSS files
 foreach($css_files as $file):
 ?>
 	<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
 <?php endforeach; ?>
 
+<!-- Re-load Font Awesome AFTER GroceryCRUD to ensure it takes precedence -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-/* SCOPED: Only affect GroceryCRUD content inside .content-wrapper */
-/* This way sidebar and header icons are NOT affected */
-
-/* Override GroceryCRUD icons to use AdminLTE's Font Awesome 4.x */
-.content-wrapper .gcrud-icon {
+/* CRITICAL: Ensure ALL icons use Font Awesome */
+i, .fa, [class*="fa-"], [class*="icon-"], [class*="glyphicon-"] {
 	font-family: 'FontAwesome' !important;
 }
 
-/* Action buttons - only in content wrapper */
-.content-wrapper .gcrud-icon.gcrud-edit-icon:before { content: "\f044" !important; } /* fa-edit */
-.content-wrapper .gcrud-icon.gcrud-delete-icon:before { content: "\f014" !important; } /* fa-trash */
-.content-wrapper .gcrud-icon.gcrud-view-icon:before { content: "\f06e" !important; } /* fa-eye */
-.content-wrapper .gcrud-icon.gcrud-clone-icon:before { content: "\f0c5" !important; } /* fa-copy */
-.content-wrapper .gcrud-icon.gcrud-add-icon:before { content: "\f067" !important; } /* fa-plus */
-.content-wrapper .gcrud-icon.gcrud-save-icon:before { content: "\f00c" !important; } /* fa-check */
-.content-wrapper .gcrud-icon.gcrud-cancel-icon:before { content: "\f00d" !important; } /* fa-times */
-.content-wrapper .gcrud-icon.gcrud-back-icon:before { content: "\f060" !important; } /* fa-arrow-left */
-.content-wrapper .gcrud-icon.gcrud-search-icon:before { content: "\f002" !important; } /* fa-search */
-.content-wrapper .gcrud-icon.gcrud-filter-icon:before { content: "\f0b0" !important; } /* fa-filter */
-.content-wrapper .gcrud-icon.gcrud-export-icon:before { content: "\f019" !important; } /* fa-download */
-.content-wrapper .gcrud-icon.gcrud-print-icon:before { content: "\f02f" !important; } /* fa-print */
-.content-wrapper .gcrud-icon.gcrud-upload-icon:before { content: "\f093" !important; } /* fa-upload */
-
-/* Ensure Font Awesome is used for all GroceryCRUD icons */
-.content-wrapper .gcrud-icon:not(.fa):before {
+/* Override any conflicting font-family declarations */
+.main-sidebar i,
+.navbar i,
+.content-wrapper i,
+.sidebar-menu i {
 	font-family: 'FontAwesome' !important;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
 }
-
-/* DO NOT hide any icons globally - let Font Awesome work naturally */
 </style>
-
-<!-- No JavaScript manipulation needed - scoped CSS handles it -->
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">

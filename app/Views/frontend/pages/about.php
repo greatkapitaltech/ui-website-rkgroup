@@ -252,34 +252,7 @@
 </section>
 <?php endif; ?>
 
-<?php if (isset($partners) && !empty($partners)): ?>
-<!-- Partnerships and Brands -->
-<section class="py-5 bg-white">
-  <div class="container">
-    <h2 class="section-title text-center mb-5 text-primary"><?= isset($settings['about_partnerships_title']) ? esc($settings['about_partnerships_title']) : 'PARTNERSHIPS AND BRANDS' ?></h2>
-
-    <div class="row g-4 justify-content-center">
-      <?php foreach ($partners as $partner):
-        $logoUrl = '';
-        if (!empty($partner['logo'])) {
-          $logoUrl = (strpos($partner['logo'], 'http') === 0)
-            ? $partner['logo']
-            : base_url('assets/uploads/partners/' . $partner['logo']);
-        }
-      ?>
-        <div class="col-6 col-md-4 col-lg-3 text-center">
-          <?php if (!empty($logoUrl)): ?>
-            <img src="<?= esc($logoUrl) ?>" alt="<?= esc($partner['name']) ?>" class="img-fluid" style="max-height: 80px; width: auto;">
-          <?php else: ?>
-            <span style="font-size: 1.2rem; font-weight: 600; color: var(--primary);"><?= esc($partner['name']) ?></span>
-          <?php endif; ?>
-        </div>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
-<?php else: ?>
-<!-- Partnerships and Brands - Show Brand Collage -->
+<!-- Partnerships and Brands - Always Show Brand Collage (as per original design) -->
 <section class="py-5 bg-white">
   <div class="container">
     <h2 class="section-title text-center mb-5 text-primary"><?= isset($settings['about_partnerships_title']) ? esc($settings['about_partnerships_title']) : 'PARTNERSHIPS AND BRANDS' ?></h2>
@@ -304,7 +277,6 @@
     </div>
   </div>
 </section>
-<?php endif; ?>
 
 <!-- Careers Section -->
 <section class="py-5" style="background: linear-gradient(135deg, #E6F4F9 0%, #D1E9F6 100%);">
