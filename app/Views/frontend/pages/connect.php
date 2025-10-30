@@ -1,10 +1,12 @@
-<!-- Connect Hero -->
-<section class="py-5 bg-soft">
-  <div class="container text-center">
-    <h1 class="display-4 fw-bold text-primary mb-3"><?= isset($settings['connect_hero_title']) ? esc($settings['connect_hero_title']) : 'Connect With Us' ?></h1>
-    <p class="h5 text-secondary mb-0 fw-normal">
-      <?= isset($settings['connect_hero_subtitle']) ? esc($settings['connect_hero_subtitle']) : 'We\'d love to hear from you. Reach out to us for any inquiries.' ?>
-    </p>
+<!-- Connect Hero Section -->
+<section class="vision-hero position-relative">
+  <div class="vision-hero-bg"></div>
+  <div class="vision-overlay"></div>
+  <div class="container position-relative z-1 h-100 d-flex align-items-center">
+    <div class="text-white">
+      <h1 class="display-3 fw-bold mb-3"><?= isset($settings['connect_hero_title']) ? esc($settings['connect_hero_title']) : 'CONNECT WITH US' ?></h1>
+      <p class="h5 fw-normal"><?= isset($settings['connect_hero_subtitle']) ? esc($settings['connect_hero_subtitle']) : 'We\'d Love To Hear From You. Reach Out To Us For Any Inquiries.' ?></p>
+    </div>
   </div>
 </section>
 

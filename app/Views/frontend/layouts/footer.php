@@ -26,12 +26,6 @@
                 <a class="ic-badge" href="#" aria-label="LinkedIn">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a class="ic-badge" href="#" aria-label="YouTube">
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a class="ic-badge" href="#" aria-label="Twitter">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
               </div>
             </div>
           </div>

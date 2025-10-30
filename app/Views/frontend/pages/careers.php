@@ -1,5 +1,5 @@
 <!-- Careers Hero Section -->
-<section class="vision-hero position-relative" style="min-height: 350px;">
+<section class="vision-hero position-relative">
   <div class="vision-hero-bg"></div>
   <div class="vision-overlay"></div>
   <div class="container position-relative z-1 h-100 d-flex align-items-center">
@@ -25,14 +25,54 @@
 <section class="py-5 bg-white">
   <div class="container">
     <h2 class="section-title text-center mb-5 text-primary"><?= isset($settings['careers_openings_title']) ? esc($settings['careers_openings_title']) : 'CURRENT OPENINGS' ?></h2>
-    <div class="d-flex justify-content-center">
+    <div class="careers-iframe-container">
       <iframe
+        id="careersIframe"
         src="<?= isset($settings['careers_openings_iframe_url']) ? esc($settings['careers_openings_iframe_url']) : 'https://hr.gkdev.in/public/jobs' ?>"
-        width="100%"
-        height="800"
-        frameborder="0"
-        style="border: none; max-width: 1200px; margin: 0 auto; display: block; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        frameborder="0">
       </iframe>
     </div>
   </div>
 </section>
+
+<script>
+// Make iframe responsive and adjust height based on content
+(function() {
+  const iframe = document.getElementById('careersIframe');
+
+  // Set minimum height
+  iframe.style.height = '600px';
+
+  // Try to adjust height based on content (if same origin allows)
+  iframe.addEventListener('load', function() {
+    try {
+      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+      const height = iframeDoc.body.scrollHeight;
+      if (height > 600) {
+        iframe.style.height = height + 'px';
+      }
+    } catch(e) {
+      // Cross-origin restriction - use IntersectionObserver to adjust on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Estimate height based on viewport
+            const viewportHeight = window.innerHeight;
+            iframe.style.height = Math.max(800, viewportHeight * 1.2) + 'px';
+          }
+        });
+      });
+      observer.observe(iframe);
+    }
+  });
+
+  // Handle window resize
+  window.addEventListener('resize', function() {
+    const viewportHeight = window.innerHeight;
+    const currentHeight = parseInt(iframe.style.height);
+    if (currentHeight < 600) {
+      iframe.style.height = '600px';
+    }
+  });
+})();
+</script>

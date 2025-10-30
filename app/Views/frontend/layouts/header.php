@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
     <title><?= isset($title) ? $title . ' - RK Group' : 'RK Group' ?></title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -35,10 +36,13 @@
             <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>
             contact@rkgroup.biz
           </a>
-          <span>
+          <a
+            class="link-light text-decoration-none"
+            href="tel:+918042640241"
+          >
             <i class="fa-solid fa-phone me-2" aria-hidden="true"></i>
             +91 80-4264-0241
-          </span>
+          </a>
         </div>
         <div class="opacity-75">
           <i class="fa-regular fa-clock me-2" aria-hidden="true"></i>

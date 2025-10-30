@@ -126,6 +126,7 @@ class Frontend extends BaseController
         $data = [
             'title' => 'Connect',
             'active_page' => 'connect',
+            'additional_css' => ['assets/css/connect.css'],
             'settings' => $settings
         ];
 
