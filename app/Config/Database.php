@@ -32,12 +32,12 @@ class Database extends Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'localhost',
-		'username' => 'thebedqv_medisoldier',
-		'password' => 'E=,p+UWfvRgP',
-		'database' => 'thebedqv_medisoldier',
-		'DBDriver' => 'MySQLi',
-		'DBPrefix' => '',
+		'hostname' => getenv('database.default.hostname') ?: 'localhost',
+		'username' => getenv('database.default.username') ?: '',
+		'password' => getenv('database.default.password') ?: '',
+		'database' => getenv('database.default.database') ?: '',
+		'DBDriver' => getenv('database.default.DBDriver') ?: 'MySQLi',
+		'DBPrefix' => getenv('database.default.DBPrefix') ?: '',
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
 		'charset'  => 'utf8',
