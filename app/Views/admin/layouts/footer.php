@@ -4,14 +4,10 @@
     <div class="pull-right hidden-xs">Version 1.0</div>
     Copyright &copy; <?=date('Y')?> RK Group. All rights reserved.</footer>
 </div>
-<!-- ./wrapper --> 
+<!-- ./wrapper -->
 
-<!-- v4.0.0-alpha.6 -->
-<script src="<?=base_url('assets/admin_assets/dist/bootstrap/js/bootstrap.min.js')?>"></script>
-
-<!-- template --> 
-<script src="<?=base_url('assets/admin_assets/dist/js/adminkit.js')?>"></script>
-
+<!-- AdminLTE and Bootstrap are already loaded in header from CDN -->
+<!-- No need to load again to avoid conflicts -->
 
 </body>
 </html>

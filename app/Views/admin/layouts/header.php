@@ -95,9 +95,9 @@
             <!-- Header Navbar -->
             <nav class="navbar blue-bg navbar-static-top">
                 <!-- Sidebar toggle button-->
-                <ul class="nav navbar-nav pull-left">
-                    <li><a class="sidebar-toggle" data-toggle="push-menu" href=""></a> </li>
-                </ul>
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
 
