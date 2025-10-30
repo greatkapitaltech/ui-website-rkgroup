@@ -112,6 +112,14 @@
                 </a>
             </li>
 
+            <!-- Visit Our Site -->
+            <li>
+                <a href="<?= base_url('/') ?>" target="_blank">
+                    <i class="fa fa-external-link"></i>
+                    <span>Visit Our Site</span>
+                </a>
+            </li>
+
             <!-- Logout -->
             <li>
                 <a href="<?= base_url('admin/logout') ?>" onclick="return confirm('Are you sure you want to logout?')">
