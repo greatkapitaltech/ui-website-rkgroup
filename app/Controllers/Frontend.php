@@ -45,6 +45,8 @@ class Frontend extends BaseController
         // Load data from database
         $timelineModel = model('TimelineModel');
         $boardMembersModel = model('BoardMembersModel');
+        $companiesModel = model('CompaniesModel');
+        $partnersModel = model('PartnersModel');
         $settingsModel = model('SiteSettingsModel');
 
         // Get site settings
@@ -61,6 +63,8 @@ class Frontend extends BaseController
             'timeline' => $timelineModel->where('is_active', 1)->orderBy('year', 'ASC')->findAll(),
             'board_members' => $boardMembersModel->where('member_type', 'board')->where('is_active', 1)->orderBy('display_order', 'ASC')->findAll(),
             'advisory_members' => $boardMembersModel->where('member_type', 'advisory')->where('is_active', 1)->orderBy('display_order', 'ASC')->findAll(),
+            'companies' => $companiesModel->where('is_active', 1)->orderBy('display_order', 'ASC')->findAll(),
+            'partners' => $partnersModel->where('is_active', 1)->orderBy('display_order', 'ASC')->findAll(),
             'settings' => $settings
         ];
 

@@ -4,8 +4,8 @@
   <div class="vision-overlay"></div>
   <div class="container position-relative z-1 h-100 d-flex align-items-center">
     <div class="text-white">
-      <h1 class="display-3 fw-bold mb-3">OUR VISION</h1>
-      <p class="h5 fw-normal">The Guiding Vision At RK Group Is To Bring Out The Best In Everyone.</p>
+      <h1 class="display-3 fw-bold mb-3"><?= isset($settings['about_vision_title']) ? esc($settings['about_vision_title']) : 'OUR VISION' ?></h1>
+      <p class="h5 fw-normal"><?= isset($settings['about_vision_subtitle']) ? esc($settings['about_vision_subtitle']) : 'The Guiding Vision At RK Group Is To Bring Out The Best In Everyone.' ?></p>
     </div>
   </div>
 </section>
@@ -13,10 +13,10 @@
 <!-- RK Group Intro -->
 <section class="py-5" style="background: #f8f9fa;">
   <div class="container text-center">
-    <h2 class="section-title text-primary mb-3">RK GROUP</h2>
-    <p class="fs-5 text-secondary mb-3">- Excellence Is Our Passion, Enriching Lives Is Our Goal -</p>
+    <h2 class="section-title text-primary mb-3"><?= isset($settings['about_intro_title']) ? esc($settings['about_intro_title']) : 'RK GROUP' ?></h2>
+    <p class="fs-5 text-secondary mb-3"><?= isset($settings['about_intro_tagline']) ? esc($settings['about_intro_tagline']) : '- Excellence Is Our Passion, Enriching Lives Is Our Goal -' ?></p>
     <p class="text-secondary mb-0" style="max-width: 800px; margin: 0 auto;">
-      We are constantly pushing boundaries in everything we do. We are earnest about creating a better life not only for our partners and employees but also for the people around us.
+      <?= isset($settings['about_intro_description']) ? esc($settings['about_intro_description']) : 'We are constantly pushing boundaries in everything we do. We are earnest about creating a better life not only for our partners and employees but also for the people around us.' ?>
     </p>
   </div>
 </section>
@@ -26,8 +26,8 @@
 <section class="vertical-timeline-section">
   <div class="timeline-header text-center py-5 bg-white">
     <div class="container">
-      <h2 class="section-title mb-3 text-primary">JOURNEY OF RK GROUP</h2>
-      <p class="text-secondary mb-0">Decades of Excellence and Growth</p>
+      <h2 class="section-title mb-3 text-primary"><?= isset($settings['about_journey_title']) ? esc($settings['about_journey_title']) : 'JOURNEY OF RK GROUP' ?></h2>
+      <p class="text-secondary mb-0"><?= isset($settings['about_journey_subtitle']) ? esc($settings['about_journey_subtitle']) : 'Decades of Excellence and Growth' ?></p>
     </div>
   </div>
 
@@ -93,9 +93,9 @@
 <!-- Board Members -->
 <section class="py-5 bg-soft">
   <div class="container">
-    <h2 class="section-title text-center mb-3 text-primary">PEOPLE</h2>
+    <h2 class="section-title text-center mb-3 text-primary"><?= isset($settings['about_people_title']) ? esc($settings['about_people_title']) : 'PEOPLE' ?></h2>
     <p class="text-center text-secondary mb-5">
-      A Passion For Excellence, Entrepreneurial Spirit, And High Ethical Standards Define Our Team Of Board Members.
+      <?= isset($settings['about_people_description']) ? esc($settings['about_people_description']) : 'A Passion For Excellence, Entrepreneurial Spirit, And High Ethical Standards Define Our Team Of Board Members.' ?>
     </p>
 
     <div class="position-relative">
@@ -155,7 +155,7 @@
 <!-- Advisory Board -->
 <section class="py-5 bg-white">
   <div class="container">
-    <h2 class="section-title text-center mb-5 text-primary">ADVISORY BOARD</h2>
+    <h2 class="section-title text-center mb-5 text-primary"><?= isset($settings['about_advisory_title']) ? esc($settings['about_advisory_title']) : 'ADVISORY BOARD' ?></h2>
 
     <div class="row g-4 justify-content-center">
       <?php foreach ($advisory_members as $member):
@@ -203,8 +203,8 @@
 <!-- Our Companies Section -->
 <section class="py-5 bg-soft">
   <div class="container">
-    <h2 class="section-title text-center mb-3 text-primary">OUR COMPANIES</h2>
-    <p class="text-center text-secondary mb-5">Powering innovation across diverse industries</p>
+    <h2 class="section-title text-center mb-3 text-primary"><?= isset($settings['about_companies_title']) ? esc($settings['about_companies_title']) : 'OUR COMPANIES' ?></h2>
+    <p class="text-center text-secondary mb-5"><?= isset($settings['about_companies_subtitle']) ? esc($settings['about_companies_subtitle']) : 'Powering innovation across diverse industries' ?></p>
 
     <!-- Scrolling Banner -->
     <div class="companies-scroll-container">
@@ -256,7 +256,7 @@
 <!-- Partnerships and Brands -->
 <section class="py-5 bg-white">
   <div class="container">
-    <h2 class="section-title text-center mb-5 text-primary">PARTNERSHIPS AND BRANDS</h2>
+    <h2 class="section-title text-center mb-5 text-primary"><?= isset($settings['about_partnerships_title']) ? esc($settings['about_partnerships_title']) : 'PARTNERSHIPS AND BRANDS' ?></h2>
 
     <div class="row g-4 justify-content-center">
       <?php foreach ($partners as $partner):
@@ -283,12 +283,12 @@
 <!-- Careers Section -->
 <section class="py-5" style="background: linear-gradient(135deg, #E6F4F9 0%, #D1E9F6 100%);">
   <div class="container text-center">
-    <h2 class="section-title mb-3 text-primary">JOIN OUR TEAM</h2>
+    <h2 class="section-title mb-3 text-primary"><?= isset($settings['about_careers_title']) ? esc($settings['about_careers_title']) : 'JOIN OUR TEAM' ?></h2>
     <p class="text-secondary mb-4" style="max-width: 700px; margin: 0 auto;">
-      Explore exciting career opportunities and join our team—explore a career path for your future with open positions and growth opportunities on our Careers portal.
+      <?= isset($settings['about_careers_description']) ? esc($settings['about_careers_description']) : 'Explore exciting career opportunities and join our team—explore a career path for your future with open positions and growth opportunities on our Careers portal.' ?>
     </p>
     <a href="<?= base_url('careers') ?>" class="btn btn-custom-primary btn-lg">
-      Join Us! &nbsp;<i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+      <?= isset($settings['about_careers_button']) ? esc($settings['about_careers_button']) : 'Join Us!' ?> &nbsp;<i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
     </a>
   </div>
 </section>

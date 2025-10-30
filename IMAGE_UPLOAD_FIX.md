@@ -36,36 +36,47 @@ $crud->callbackReadField('logo', function ($value, $row) {
 });
 ```
 
-### 3. Added Field Type Declaration
-Declared image fields as 'image' type:
+### 3. IMPORTANT: Do NOT use fieldType() with setFieldUpload()
+**DO NOT** declare field type when using `setFieldUpload()`:
 
 ```php
-$crud->fieldType('logo', 'image');
+// WRONG - This breaks file upload:
+$crud->setFieldUpload('logo', FCPATH . 'assets/uploads/companies', base_url('assets/uploads/companies'));
+$crud->fieldType('logo', 'image'); // ❌ This overrides the upload field!
+
+// CORRECT - Only use setFieldUpload:
+$crud->setFieldUpload('logo', FCPATH . 'assets/uploads/companies', base_url('assets/uploads/companies'));
+// ✅ No fieldType needed - GroceryCRUD handles it automatically
 ```
 
 ## Files Updated
 
 **app/Controllers/Admin.php** - Updated 5 CRUD methods:
 
-1. **companies()** - Line 1671-1683
+1. **companies()** - Line 1671-1680
    - Upload path: `FCPATH . 'assets/uploads/companies'`
    - Field: `logo`
+   - Uses `setFieldUpload()` + `callbackReadField()`
 
-2. **partners()** - Line 1733-1746
+2. **partners()** - Line 1730-1740
    - Upload path: `FCPATH . 'assets/uploads/partners'`
    - Field: `logo`
+   - Uses `setFieldUpload()` + `callbackReadField()`
 
-3. **board_members()** - Line 1796-1809
+3. **board_members()** - Line 1790-1800
    - Upload path: `FCPATH . 'assets/uploads/board_members'`
    - Field: `photo`
+   - Uses `setFieldUpload()` + `callbackReadField()`
 
-4. **timeline()** - Line 2037-2050
+4. **timeline()** - Line 2041-2051
    - Upload path: `FCPATH . 'assets/uploads/timeline'`
    - Field: `image_url`
+   - Uses `setFieldUpload()` + `callbackReadField()`
 
-5. **news_items()** - Line 1976-1989
+5. **news_items()** - Line 1967-1977
    - Upload path: `FCPATH . 'assets/uploads/news'`
    - Field: `image`
+   - Uses `setFieldUpload()` + `callbackReadField()`
 
 ## Upload Directories Created
 

@@ -1670,9 +1670,6 @@ class Admin extends BaseController {
         // Enable file upload for logo
         $crud->setFieldUpload('logo', FCPATH . 'assets/uploads/companies', base_url('assets/uploads/companies'));
 
-        // Set logo field as image type
-        $crud->fieldType('logo', 'image');
-
         // Display logo as image in the grid using callbackReadField
         $crud->callbackReadField('logo', function ($value, $row) {
             if (empty($value)) {
@@ -1731,9 +1728,6 @@ class Admin extends BaseController {
 
         // Enable file upload for logo
         $crud->setFieldUpload('logo', FCPATH . 'assets/uploads/partners', base_url('assets/uploads/partners'));
-
-        // Set logo field as image type
-        $crud->fieldType('logo', 'image');
 
         // Display logo as image in the grid using callbackReadField
         $crud->callbackReadField('logo', function ($value, $row) {
@@ -1794,9 +1788,6 @@ class Admin extends BaseController {
 
         // Enable file upload for photo
         $crud->setFieldUpload('photo', FCPATH . 'assets/uploads/board_members', base_url('assets/uploads/board_members'));
-
-        // Set photo field as image type
-        $crud->fieldType('photo', 'image');
 
         // Display photo as image in the grid using callbackReadField
         $crud->callbackReadField('photo', function ($value, $row) {
@@ -1975,9 +1966,6 @@ class Admin extends BaseController {
         // Enable file upload for image
         $crud->setFieldUpload('image', FCPATH . 'assets/uploads/news', base_url('assets/uploads/news'));
 
-        // Set image field as image type
-        $crud->fieldType('image', 'image');
-
         // Display image as thumbnail in the grid using callbackReadField
         $crud->callbackReadField('image', function ($value, $row) {
             if (empty($value)) {
@@ -2051,9 +2039,6 @@ class Admin extends BaseController {
 
         // Enable file upload for timeline images
         $crud->setFieldUpload('image_url', FCPATH . 'assets/uploads/timeline', base_url('assets/uploads/timeline'));
-
-        // Set image_url field as image type
-        $crud->fieldType('image_url', 'image');
 
         // Display image as thumbnail in the grid using callbackReadField
         $crud->callbackReadField('image_url', function ($value, $row) {

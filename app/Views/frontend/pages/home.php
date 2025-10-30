@@ -45,8 +45,8 @@
     <!-- Companies -->
     <section class="py-5 bg-soft position-relative">
       <div class="container">
-        <h2 class="section-title text-center mb-4 text-primary">BUSINESS</h2>
-        <p class="text-center mb-5 mt-5 fs-5">Our Companies</p>
+        <h2 class="section-title text-center mb-4 text-primary"><?= isset($settings['business_title']) ? esc($settings['business_title']) : 'BUSINESS' ?></h2>
+        <p class="text-center mb-5 mt-5 fs-5"><?= isset($settings['business_subtitle']) ? esc($settings['business_subtitle']) : 'Our Companies' ?></p>
 
         <!-- Carousel Container -->
         <div class="position-relative">
@@ -105,7 +105,7 @@
 
       <!-- Partnerships -->
       <div class="container mt-5 pt-5">
-        <h2 class="section-title text-center text-primary mb-5">Partnerships</h2>
+        <h2 class="section-title text-center text-primary mb-5"><?= isset($settings['partnerships_title']) ? esc($settings['partnerships_title']) : 'Partnerships' ?></h2>
 
         <div class="partnerships-grid">
           <?php if (isset($partners) && !empty($partners)): ?>
@@ -143,40 +143,56 @@
       <div class="container">
         <div class="row g-4 align-items-center">
           <div class="col-lg-6">
-            <h2 class="section-title text-primary mb-3">RK Trust</h2>
-            <p class="text-muted mb-4 fst-italic">CSR Philosophy</p>
+            <h2 class="section-title text-primary mb-3"><?= isset($settings['csr_title']) ? esc($settings['csr_title']) : 'RK Trust' ?></h2>
+            <p class="text-muted mb-4 fst-italic"><?= isset($settings['csr_subtitle']) ? esc($settings['csr_subtitle']) : 'CSR Philosophy' ?></p>
             <p class="small text-secondary mb-3">
-              RK Trust is the philanthropic arm of RK Group. Founded by Ramesh Kumar Shah, the trust aims to bring about transformation in areas close to his heart.
+              <?= isset($settings['csr_intro']) ? esc($settings['csr_intro']) : 'RK Trust is the philanthropic arm of RK Group. Founded by Ramesh Kumar Shah, the trust aims to bring about transformation in areas close to his heart.' ?>
             </p>
             <p class="small text-secondary mb-3">
-              Running multiple initiatives under 2 primary verticals, the RK Trust connects and anchors all our efforts to the group's core philosophies of community centered growth.
+              <?= isset($settings['csr_paragraph_1']) ? esc($settings['csr_paragraph_1']) : 'Running multiple initiatives under 2 primary verticals, the RK Trust connects and anchors all our efforts to the group\'s core philosophies of community centered growth.' ?>
             </p>
-            <p class="small text-secondary mb-2"><strong>The primary initiatives under RK Trust are:</strong></p>
+            <p class="small text-secondary mb-2"><strong><?= isset($settings['csr_initiatives_title']) ? esc($settings['csr_initiatives_title']) : 'The primary initiatives under RK Trust are:' ?></strong></p>
             <ul class="small text-secondary mb-3">
-              <li>Kalandari Foundation</li>
-              <li>Kalandari Model Village Pilot</li>
-              <li>Prem Ratan Shah Memorial Senior Secondary School for girls</li>
-              <li>Ujwala Farm</li>
-              <li>The Jain Foundation</li>
-              <li>Awareness about Jain Population</li>
-              <li>Learning Exchange with Jain temples of Pakistan</li>
-              <li>Digital Fasting</li>
+              <?php if (isset($settings['csr_initiative_1'])): ?>
+                <li><?= esc($settings['csr_initiative_1']) ?></li>
+              <?php endif; ?>
+              <?php if (isset($settings['csr_initiative_2'])): ?>
+                <li><?= esc($settings['csr_initiative_2']) ?></li>
+              <?php endif; ?>
+              <?php if (isset($settings['csr_initiative_3'])): ?>
+                <li><?= esc($settings['csr_initiative_3']) ?></li>
+              <?php endif; ?>
+              <?php if (isset($settings['csr_initiative_4'])): ?>
+                <li><?= esc($settings['csr_initiative_4']) ?></li>
+              <?php endif; ?>
+              <?php if (isset($settings['csr_initiative_5'])): ?>
+                <li><?= esc($settings['csr_initiative_5']) ?></li>
+              <?php endif; ?>
+              <?php if (isset($settings['csr_initiative_6'])): ?>
+                <li><?= esc($settings['csr_initiative_6']) ?></li>
+              <?php endif; ?>
+              <?php if (isset($settings['csr_initiative_7'])): ?>
+                <li><?= esc($settings['csr_initiative_7']) ?></li>
+              <?php endif; ?>
+              <?php if (isset($settings['csr_initiative_8'])): ?>
+                <li><?= esc($settings['csr_initiative_8']) ?></li>
+              <?php endif; ?>
             </ul>
             <p class="small text-secondary mb-3">
-              From environmental rehabilitation at the grassroots level in Kalandri, Rajasthan to facilitating financial assistance for cancer patients, raising awareness about Jain temples in Pakistan, the work aims to build sustainable and robust people systems that are vibrant, resilient and regenerative.
+              <?= isset($settings['csr_paragraph_2']) ? esc($settings['csr_paragraph_2']) : 'From environmental rehabilitation at the grassroots level in Kalandri, Rajasthan to facilitating financial assistance for cancer patients, raising awareness about Jain temples in Pakistan, the work aims to build sustainable and robust people systems that are vibrant, resilient and regenerative.' ?>
             </p>
             <p class="small text-secondary mb-4">
-              Creating a revolution in our own way, we constantly strive to make a difference, one life at a time.
+              <?= isset($settings['csr_paragraph_3']) ? esc($settings['csr_paragraph_3']) : 'Creating a revolution in our own way, we constantly strive to make a difference, one life at a time.' ?>
             </p>
-            <a href="https://www.rktrust.in" target="_blank" class="btn btn-custom-primary mt-2">
-              Know More &nbsp;<i
+            <a href="<?= isset($settings['csr_button_url']) ? esc($settings['csr_button_url']) : 'https://www.rktrust.in' ?>" target="_blank" class="btn btn-custom-primary mt-2">
+              <?= isset($settings['csr_button_text']) ? esc($settings['csr_button_text']) : 'Know More' ?> &nbsp;<i
                 class="fa-solid fa-arrow-right me-2"
                 aria-hidden="true"
               ></i>
             </a>
           </div>
           <div class="col-lg-6">
-            <img src="<?= base_url('assets/img/csr.png') ?>" width="100%" alt="RK Trust Initiatives" />
+            <img src="<?= base_url(isset($settings['csr_image']) ? $settings['csr_image'] : 'assets/img/csr.png') ?>" width="100%" alt="RK Trust Initiatives" />
           </div>
         </div>
       </div>
@@ -185,12 +201,10 @@
     <!-- News -->
     <section class="py-5 bg-soft-new">
       <div class="container">
-        <h2 class="section-title text-center mb-4 text-primary">News</h2>
+        <h2 class="section-title text-center mb-4 text-primary"><?= isset($settings['news_title']) ? esc($settings['news_title']) : 'News' ?></h2>
         <div class="w-100 d-flex justify-content-center mb-5">
           <p class="mt-2 text-center" style="max-width: 700px">
-            News keeps you informed with the latest events and stories from
-            around the world. Stay updated on politics, business, technology,
-            and more.
+            <?= isset($settings['news_description']) ? esc($settings['news_description']) : 'News keeps you informed with the latest events and stories from around the world. Stay updated on politics, business, technology, and more.' ?>
           </p>
         </div>
         <div class="row g-4">
