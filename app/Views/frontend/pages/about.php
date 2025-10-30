@@ -1,322 +1,195 @@
-<!-- Vision Hero Section -->
-<section class="vision-hero position-relative" style="height: 400px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center;">
-  <div class="container position-relative z-1 text-white text-center">
-    <h1 class="display-3 fw-bold mb-3">OUR VISION</h1>
-    <p class="h5 fw-normal">The Guiding Vision At RK Group Is To Bring Out The Best In Everyone.</p>
+<!-- Our Vision Hero -->
+<section class="vision-hero position-relative">
+  <div class="vision-hero-bg"></div>
+  <div class="vision-overlay"></div>
+  <div class="container position-relative z-1 h-100 d-flex align-items-center">
+    <div class="text-white">
+      <h1 class="display-3 fw-bold mb-3">OUR VISION</h1>
+      <p class="h5 fw-normal">The Guiding Vision At RK Group Is To Bring Out The Best In Everyone.</p>
+    </div>
   </div>
 </section>
 
-<!-- RK Group Section -->
+<!-- RK Group Intro -->
 <section class="py-5" style="background: #f8f9fa;">
   <div class="container text-center">
     <h2 class="section-title text-primary mb-3">RK GROUP</h2>
     <p class="fs-5 text-secondary mb-3">- Excellence Is Our Passion, Enriching Lives Is Our Goal -</p>
     <p class="text-secondary mb-0" style="max-width: 800px; margin: 0 auto;">
-      We are constantly pushing boundaries in everything we do.
+      We are constantly pushing boundaries in everything we do. We are earnest about creating a better life not only for our partners and employees but also for the people around us.
     </p>
   </div>
 </section>
 
 <?php if (isset($timeline) && !empty($timeline)): ?>
-<!-- Timeline Section -->
-<section class="timeline-section py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="display-5 fw-bold mb-3" style="color: #2C3E50;">JOURNEY OF RK GROUP</h2>
-      <p class="text-secondary">Decades of Excellence and Growth</p>
+<!-- Journey of RK Group - Vertical Timeline -->
+<section class="vertical-timeline-section">
+  <div class="timeline-header text-center py-5 bg-white">
+    <div class="container">
+      <h2 class="section-title mb-3 text-primary">JOURNEY OF RK GROUP</h2>
+      <p class="text-secondary mb-0">Decades of Excellence and Growth</p>
+    </div>
+  </div>
+
+  <div class="position-relative">
+    <!-- Timeline Navigation - Floating -->
+    <div class="timeline-years-nav-floating">
+      <?php
+      $index = 0;
+      foreach ($timeline as $event):
+      ?>
+        <div class="timeline-year-item <?= $index === 0 ? 'active' : '' ?>" data-year="<?= esc($event['year']) ?>"><?= esc($event['year']) ?></div>
+      <?php
+        $index++;
+      endforeach;
+      ?>
     </div>
 
-    <div class="timeline">
-      <?php foreach ($timeline as $index => $event): ?>
-        <div class="timeline-item <?= $event['alignment'] == 'right' ? 'timeline-right' : 'timeline-left' ?>">
-          <div class="timeline-year"><?= esc($event['year']) ?></div>
-          <div class="timeline-card">
-            <?php if (!empty($event['image_url'])): ?>
-              <?php
-                // Check if it's a URL or filename
-                $imageUrl = (strpos($event['image_url'], 'http') === 0)
-                  ? $event['image_url']
-                  : base_url('assets/uploads/timeline/' . $event['image_url']);
-              ?>
-              <img src="<?= esc($imageUrl) ?>" alt="<?= esc($event['title']) ?>" class="timeline-image">
+    <!-- Timeline Content -->
+    <div class="timeline-fullwidth-wrapper">
+      <?php foreach ($timeline as $event):
+        // Determine image URL
+        $imageUrl = '';
+        if (!empty($event['image_url'])) {
+          $imageUrl = (strpos($event['image_url'], 'http') === 0)
+            ? $event['image_url']
+            : base_url('assets/uploads/timeline/' . $event['image_url']);
+        }
+
+        // Determine content alignment
+        $contentClass = ($event['alignment'] == 'right') ? 'content-right' : '';
+        $colClass = ($event['alignment'] == 'right') ? 'justify-content-end' : '';
+      ?>
+        <div class="timeline-fullwidth-item" id="timeline-<?= esc($event['year']) ?>">
+          <div class="timeline-image-wrapper">
+            <?php if (!empty($imageUrl)): ?>
+              <img src="<?= esc($imageUrl) ?>" alt="<?= esc($event['year']) ?> - <?= esc($event['title']) ?>" class="timeline-fullwidth-image">
+            <?php else: ?>
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=900&fit=crop" alt="<?= esc($event['title']) ?>" class="timeline-fullwidth-image">
             <?php endif; ?>
-            <h3 class="timeline-title"><?= esc($event['title']) ?></h3>
-            <p class="timeline-description"><?= esc($event['description']) ?></p>
+            <div class="timeline-overlay"></div>
+          </div>
+          <div class="timeline-content-overlay <?= $contentClass ?>">
+            <div class="container">
+              <div class="row <?= $colClass ?>">
+                <div class="col-lg-6">
+                  <span class="timeline-year-display"><?= esc($event['year']) ?></span>
+                  <h3 class="timeline-title"><?= esc($event['title']) ?></h3>
+                  <p class="timeline-description">
+                    <?= esc($event['description']) ?>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       <?php endforeach; ?>
     </div>
   </div>
 </section>
-
-<style>
-/* Timeline Styles */
-.timeline-section {
-  background: #ffffff;
-}
-
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 0;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
-}
-
-.timeline-item {
-  position: relative;
-  width: 50%;
-  padding: 0 40px;
-  margin-bottom: 50px;
-}
-
-.timeline-left {
-  left: 0;
-  text-align: right;
-}
-
-.timeline-right {
-  left: 50%;
-  text-align: left;
-}
-
-.timeline-year {
-  display: inline-block;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #ffffff;
-  padding: 12px 24px;
-  border-radius: 25px;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-}
-
-.timeline-card {
-  background: #ffffff;
-  border-radius: 15px;
-  padding: 25px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-}
-
-.timeline-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-}
-
-.timeline-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.timeline-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #2C3E50;
-  margin-bottom: 15px;
-}
-
-.timeline-description {
-  font-size: 15px;
-  color: #7f8c8d;
-  line-height: 1.8;
-  margin: 0;
-}
-
-/* Timeline Dots */
-.timeline-left .timeline-year::after {
-  content: '';
-  position: absolute;
-  right: -25px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background: #667eea;
-  border: 4px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
-}
-
-.timeline-right .timeline-year::after {
-  content: '';
-  position: absolute;
-  left: -25px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background: #764ba2;
-  border: 4px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(118, 75, 162, 0.2);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .timeline::before {
-    left: 30px;
-  }
-
-  .timeline-item {
-    width: 100%;
-    left: 0 !important;
-    padding: 0 0 0 70px;
-    text-align: left !important;
-  }
-
-  .timeline-left .timeline-year::after,
-  .timeline-right .timeline-year::after {
-    left: -55px;
-    right: auto;
-  }
-
-  .timeline-image {
-    height: 200px;
-  }
-}
-</style>
 <?php endif; ?>
 
 <?php if (isset($board_members) && !empty($board_members)): ?>
-<!-- Board Members Section -->
-<section class="py-5" style="background: #f8f9fa;">
+<!-- Board Members -->
+<section class="py-5 bg-soft">
   <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="display-5 fw-bold mb-3" style="color: #2C3E50;">BOARD OF DIRECTORS</h2>
-      <p class="text-secondary">Leadership driving excellence and innovation</p>
-    </div>
+    <h2 class="section-title text-center mb-3 text-primary">PEOPLE</h2>
+    <p class="text-center text-secondary mb-5">
+      A Passion For Excellence, Entrepreneurial Spirit, And High Ethical Standards Define Our Team Of Board Members.
+    </p>
 
-    <div class="row">
-      <?php foreach ($board_members as $member): ?>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="member-card">
-            <?php if (!empty($member['photo'])): ?>
-              <?php
-                $photoUrl = (strpos($member['photo'], 'http') === 0)
-                  ? $member['photo']
-                  : base_url('assets/uploads/board_members/' . $member['photo']);
-              ?>
-              <img src="<?= esc($photoUrl) ?>" alt="<?= esc($member['name']) ?>" class="member-photo">
-            <?php else: ?>
-              <div class="member-photo-placeholder">
-                <i class="fa fa-user"></i>
+    <div class="position-relative">
+      <button class="carousel-nav carousel-nav-prev" id="boardPrev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="carousel-nav carousel-nav-next" id="boardNext">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <div class="team-carousel-wrapper">
+        <div class="team-carousel" id="boardCarousel">
+          <?php foreach ($board_members as $member):
+            // Determine photo URL
+            $photoUrl = '';
+            if (!empty($member['photo'])) {
+              $photoUrl = (strpos($member['photo'], 'http') === 0)
+                ? $member['photo']
+                : base_url('assets/uploads/board_members/' . $member['photo']);
+            }
+          ?>
+            <div class="team-member-item">
+              <div class="team-card text-center">
+                <div class="team-image-wrapper">
+                  <?php if (!empty($photoUrl)): ?>
+                    <img src="<?= esc($photoUrl) ?>" alt="<?= esc($member['name']) ?>" class="team-image">
+                  <?php else: ?>
+                    <div style="width: 100%; height: 100%; background: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                      <i class="fa fa-user" style="font-size: 60px; color: #ccc;"></i>
+                    </div>
+                  <?php endif; ?>
+                </div>
+                <h6 class="fw-bold mt-3 mb-1"><?= esc($member['name']) ?></h6>
+                <p class="small text-muted mb-2"><?= esc($member['position']) ?></p>
+                <?php if (!empty($member['bio']) || !empty($member['education'])): ?>
+                  <p class="small text-secondary">
+                    <?php if (!empty($member['bio'])): ?>
+                      <?= esc($member['bio']) ?>
+                      <?php if (!empty($member['education'])): ?> | <?php endif; ?>
+                    <?php endif; ?>
+                    <?php if (!empty($member['education'])): ?>
+                      <?= esc($member['education']) ?>
+                    <?php endif; ?>
+                  </p>
+                <?php endif; ?>
               </div>
-            <?php endif; ?>
-            <h4 class="member-name"><?= esc($member['name']) ?></h4>
-            <p class="member-position"><?= esc($member['position']) ?></p>
-            <?php if (!empty($member['education'])): ?>
-              <p class="member-education"><i class="fa fa-graduation-cap"></i> <?= esc($member['education']) ?></p>
-            <?php endif; ?>
-          </div>
+            </div>
+          <?php endforeach; ?>
         </div>
-      <?php endforeach; ?>
+      </div>
     </div>
   </div>
 </section>
-
-<style>
-.member-card {
-  background: #ffffff;
-  border-radius: 15px;
-  padding: 25px;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  height: 100%;
-}
-
-.member-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-}
-
-.member-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto 20px;
-  border: 4px solid #f0f0f0;
-}
-
-.member-photo-placeholder {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  margin: 0 auto 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 60px;
-  color: #ffffff;
-}
-
-.member-name {
-  font-size: 20px;
-  font-weight: 600;
-  color: #2C3E50;
-  margin-bottom: 10px;
-}
-
-.member-position {
-  font-size: 14px;
-  color: #667eea;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.member-education {
-  font-size: 13px;
-  color: #7f8c8d;
-  margin: 0;
-}
-</style>
 <?php endif; ?>
 
 <?php if (isset($advisory_members) && !empty($advisory_members)): ?>
-<!-- Advisory Board Section -->
-<section class="py-5">
+<!-- Advisory Board -->
+<section class="py-5 bg-white">
   <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="display-5 fw-bold mb-3" style="color: #2C3E50;">ADVISORY BOARD</h2>
-      <p class="text-secondary">Strategic guidance from industry experts</p>
-    </div>
+    <h2 class="section-title text-center mb-5 text-primary">ADVISORY BOARD</h2>
 
-    <div class="row">
-      <?php foreach ($advisory_members as $member): ?>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <div class="member-card">
-            <?php if (!empty($member['photo'])): ?>
-              <?php
-                $photoUrl = (strpos($member['photo'], 'http') === 0)
-                  ? $member['photo']
-                  : base_url('assets/uploads/board_members/' . $member['photo']);
-              ?>
-              <img src="<?= esc($photoUrl) ?>" alt="<?= esc($member['name']) ?>" class="member-photo">
-            <?php else: ?>
-              <div class="member-photo-placeholder">
-                <i class="fa fa-user"></i>
-              </div>
-            <?php endif; ?>
-            <h4 class="member-name"><?= esc($member['name']) ?></h4>
-            <p class="member-position"><?= esc($member['position']) ?></p>
-            <?php if (!empty($member['education'])): ?>
-              <p class="member-education"><i class="fa fa-graduation-cap"></i> <?= esc($member['education']) ?></p>
+    <div class="row g-4 justify-content-center">
+      <?php foreach ($advisory_members as $member):
+        // Determine photo URL
+        $photoUrl = '';
+        if (!empty($member['photo'])) {
+          $photoUrl = (strpos($member['photo'], 'http') === 0)
+            ? $member['photo']
+            : base_url('assets/uploads/board_members/' . $member['photo']);
+        }
+      ?>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="team-card text-center">
+            <div class="team-image-wrapper">
+              <?php if (!empty($photoUrl)): ?>
+                <img src="<?= esc($photoUrl) ?>" alt="<?= esc($member['name']) ?>" class="team-image">
+              <?php else: ?>
+                <div style="width: 100%; height: 100%; background: #f0f0f0; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                  <i class="fa fa-user" style="font-size: 60px; color: #ccc;"></i>
+                </div>
+              <?php endif; ?>
+            </div>
+            <h6 class="fw-bold mt-3 mb-1"><?= esc($member['name']) ?></h6>
+            <p class="small text-muted mb-2"><?= esc($member['position']) ?></p>
+            <?php if (!empty($member['bio']) || !empty($member['education'])): ?>
+              <p class="small text-secondary">
+                <?php if (!empty($member['bio'])): ?>
+                  <?= esc($member['bio']) ?>
+                  <?php if (!empty($member['education'])): ?> | <?php endif; ?>
+                <?php endif; ?>
+                <?php if (!empty($member['education'])): ?>
+                  <?= esc($member['education']) ?>
+                <?php endif; ?>
+              </p>
             <?php endif; ?>
           </div>
         </div>
@@ -325,3 +198,97 @@
   </div>
 </section>
 <?php endif; ?>
+
+<?php if (isset($companies) && !empty($companies)): ?>
+<!-- Our Companies Section -->
+<section class="py-5 bg-soft">
+  <div class="container">
+    <h2 class="section-title text-center mb-3 text-primary">OUR COMPANIES</h2>
+    <p class="text-center text-secondary mb-5">Powering innovation across diverse industries</p>
+
+    <!-- Scrolling Banner -->
+    <div class="companies-scroll-container">
+      <div class="companies-scroll-track">
+        <?php foreach ($companies as $company):
+          $logoUrl = '';
+          if (!empty($company['logo'])) {
+            $logoUrl = (strpos($company['logo'], 'http') === 0)
+              ? $company['logo']
+              : base_url('assets/uploads/companies/' . $company['logo']);
+          }
+        ?>
+          <div class="company-logo-item">
+            <?php if (!empty($logoUrl)): ?>
+              <img src="<?= esc($logoUrl) ?>" alt="<?= esc($company['name']) ?>">
+            <?php else: ?>
+              <div class="text-logo" style="display: flex; align-items: center; justify-content: center; height: 44px;">
+                <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary);"><?= esc($company['name']) ?></span>
+              </div>
+            <?php endif; ?>
+          </div>
+        <?php endforeach; ?>
+        <!-- Duplicate for seamless scrolling -->
+        <?php foreach ($companies as $company):
+          $logoUrl = '';
+          if (!empty($company['logo'])) {
+            $logoUrl = (strpos($company['logo'], 'http') === 0)
+              ? $company['logo']
+              : base_url('assets/uploads/companies/' . $company['logo']);
+          }
+        ?>
+          <div class="company-logo-item">
+            <?php if (!empty($logoUrl)): ?>
+              <img src="<?= esc($logoUrl) ?>" alt="<?= esc($company['name']) ?>">
+            <?php else: ?>
+              <div class="text-logo" style="display: flex; align-items: center; justify-content: center; height: 44px;">
+                <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary);"><?= esc($company['name']) ?></span>
+              </div>
+            <?php endif; ?>
+          </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+
+<?php if (isset($partners) && !empty($partners)): ?>
+<!-- Partnerships and Brands -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title text-center mb-5 text-primary">PARTNERSHIPS AND BRANDS</h2>
+
+    <div class="row g-4 justify-content-center">
+      <?php foreach ($partners as $partner):
+        $logoUrl = '';
+        if (!empty($partner['logo'])) {
+          $logoUrl = (strpos($partner['logo'], 'http') === 0)
+            ? $partner['logo']
+            : base_url('assets/uploads/partners/' . $partner['logo']);
+        }
+      ?>
+        <div class="col-6 col-md-4 col-lg-3 text-center">
+          <?php if (!empty($logoUrl)): ?>
+            <img src="<?= esc($logoUrl) ?>" alt="<?= esc($partner['name']) ?>" class="img-fluid" style="max-height: 80px; width: auto;">
+          <?php else: ?>
+            <span style="font-size: 1.2rem; font-weight: 600; color: var(--primary);"><?= esc($partner['name']) ?></span>
+          <?php endif; ?>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+
+<!-- Careers Section -->
+<section class="py-5" style="background: linear-gradient(135deg, #E6F4F9 0%, #D1E9F6 100%);">
+  <div class="container text-center">
+    <h2 class="section-title mb-3 text-primary">JOIN OUR TEAM</h2>
+    <p class="text-secondary mb-4" style="max-width: 700px; margin: 0 auto;">
+      Explore exciting career opportunities and join our team—explore a career path for your future with open positions and growth opportunities on our Careers portal.
+    </p>
+    <a href="<?= base_url('careers') ?>" class="btn btn-custom-primary btn-lg">
+      Join Us! &nbsp;<i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    </a>
+  </div>
+</section>
