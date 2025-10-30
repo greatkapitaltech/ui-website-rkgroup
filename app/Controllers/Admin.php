@@ -1714,10 +1714,20 @@ class Admin extends BaseController {
         $crud->columns(['name', 'logo', 'website_url', 'display_order', 'is_active']);
         $crud->fields(['name', 'logo', 'website_url', 'display_order', 'is_active']);
 
-        $crud->displayAs('logo', 'Logo URL/Filename');
+        $crud->displayAs('logo', 'Logo');
         $crud->displayAs('display_order', 'Display Order');
         $crud->displayAs('is_active', 'Active');
         $crud->displayAs('website_url', 'Website URL');
+
+        // Display logo as image in the grid
+        $crud->callbackColumn('logo', function ($value, $row) {
+            if (empty($value)) {
+                return '<span style="color: #999;">No logo</span>';
+            }
+            // Check if it's a full URL or just a filename
+            $imageUrl = (strpos($value, 'http') === 0) ? $value : base_url('assets/images/partners/' . $value);
+            return '<img src="' . esc($imageUrl) . '" style="max-width: 100px; max-height: 50px; object-fit: contain;" alt="' . esc($row->name) . '">';
+        });
 
         $crud->fieldType('is_active', 'dropdown', [1 => 'Active', 0 => 'Inactive']);
 
@@ -1966,5 +1976,83 @@ class Admin extends BaseController {
         echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', $data);
         echo view('admin/layouts/footer');
+    }
+
+    // ===================================
+    // SIDEBAR URL ALIASES (matching sidebar links)
+    // ===================================
+
+    /**
+     * Manage Timeline Events (sidebar: admin/timeline)
+     */
+    public function timeline() {
+        if(!$this->checkSession())
+            return redirect()->to(base_url('admin/login'));
+
+        $crud = $this->_getGroceryCrudEnterprise();
+        $crud->setCsrfTokenName(csrf_token());
+        $crud->setCsrfTokenValue(csrf_hash());
+
+        $crud->setTable('timeline_events');
+        $crud->setSubject('Timeline Event', 'Timeline Events');
+
+        $crud->columns(['year', 'title', 'alignment', 'display_order', 'is_active']);
+        $crud->fields(['year', 'title', 'description', 'image_url', 'alignment', 'display_order', 'is_active']);
+
+        $crud->displayAs('image_url', 'Image URL');
+        $crud->displayAs('display_order', 'Display Order');
+        $crud->displayAs('is_active', 'Active');
+
+        $crud->fieldType('alignment', 'dropdown', [
+            'left' => 'Left',
+            'right' => 'Right'
+        ]);
+
+        $crud->fieldType('is_active', 'dropdown', [1 => 'Active', 0 => 'Inactive']);
+
+        $crud->defaultOrdering('year', 'asc');
+
+        $crud->unsetBootstrap();
+        $crud->unsetJquery();
+
+        $output = $crud->render();
+        if ($output->isJSONResponse) {
+            header('Content-Type: application/json; charset=utf-8');
+            echo $output->output;
+            exit;
+        }
+
+        $data = [
+            'css_files'   => $output->css_files,
+            'js_files'    => $output->js_files,
+            'breadcrumbs' => "Manage Timeline",
+            'output'      => $output->output
+        ];
+
+        echo view('admin/layouts/header', ['data'=>$this->data]);
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
+        echo view('admin/crud_layout', $data);
+        echo view('admin/layouts/footer');
+    }
+
+    /**
+     * News - Alias for sidebar URL (admin/news)
+     */
+    public function news() {
+        return $this->news_items();
+    }
+
+    /**
+     * Contacts - Alias for sidebar URL (admin/contacts)
+     */
+    public function contacts() {
+        return $this->contact_submissions();
+    }
+
+    /**
+     * Settings - Alias for sidebar URL (admin/settings)
+     */
+    public function settings() {
+        return $this->site_settings();
     }
 }

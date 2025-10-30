@@ -2,7 +2,7 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">Version 1.0</div>
-    Copyright &copy; <?=date('Y')?> MediSoldier. All rights reserved.</footer>
+    Copyright &copy; <?=date('Y')?> RK Group. All rights reserved.</footer>
 </div>
 <!-- ./wrapper --> 
 

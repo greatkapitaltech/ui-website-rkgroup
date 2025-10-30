@@ -40,12 +40,19 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <style>
+    /* Apply Poppins font to entire admin panel */
+    body, h1, h2, h3, h4, h5, h6, p, a, span, div, button, input, select, textarea, label, li, td, th {
+        font-family: 'Poppins', sans-serif !important;
+    }
+
     .cbNewBx .gc-filtering-modal {
         display: none;
     }
     .logo img {
         max-height: 50px;
         width: auto;
+        /* Make logo white */
+        filter: brightness(0) invert(1);
     }
     .main-header .logo {
         background-color: #2C3E50 !important;

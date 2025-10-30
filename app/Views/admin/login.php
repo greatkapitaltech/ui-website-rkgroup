@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Dreamlane Decor - Admin</title>
+<title>RK Group - Admin Login</title>
 <!-- Tell the browser to be responsive to screen width -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,6 +21,13 @@
 
 <!-- Sweet Alert -->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<style>
+/* Apply Poppins font to login page */
+body, h1, h2, h3, h4, h5, h6, p, a, span, div, button, input, select, textarea, label {
+    font-family: 'Poppins', sans-serif !important;
+}
+</style>
 
 </head>
 <body class="hold-transition login-page">
