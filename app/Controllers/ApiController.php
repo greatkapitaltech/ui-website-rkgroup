@@ -1171,6 +1171,81 @@ class ApiController extends ResourceController
         ]);
     }
 
+    /**
+     * POST /api/contact/submit
+     *
+     * Handles contact form submissions from the Connect page
+     *
+     * Expected POST data:
+     *   - name: Full name of the person
+     *   - email: Email address
+     *   - phone: Phone number
+     *   - interest: Area of interest (jobs, business, csr, other)
+     *   - subject: Subject of the message
+     *   - message: The actual message
+     *
+     * Returns JSON:
+     * {
+     *   "success": true,
+     *   "message": "Thank you for reaching out! We will get back to you soon."
+     * }
+     */
+    public function submitContactForm()
+    {
+        // Get POST data
+        $name = $this->request->getPost('name');
+        $email = $this->request->getPost('email');
+        $phone = $this->request->getPost('phone');
+        $interest = $this->request->getPost('interest');
+        $subject = $this->request->getPost('subject');
+        $message = $this->request->getPost('message');
 
+        // Validate required fields
+        if (!$name || !$email || !$phone || !$interest || !$subject || !$message) {
+            return $this->response->setStatusCode(400)->setJSON([
+                'success' => false,
+                'message' => 'All fields are required.'
+            ]);
+        }
+
+        // Validate email format
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            return $this->response->setStatusCode(400)->setJSON([
+                'success' => false,
+                'message' => 'Invalid email address.'
+            ]);
+        }
+
+        // Get IP address
+        $ipAddress = $this->request->getIPAddress();
+
+        // Save to database
+        $contactModel = new \App\Models\ContactSubmissionsModel();
+        try {
+            $data = [
+                'name' => $name,
+                'email' => $email,
+                'phone' => $phone,
+                'interest' => $interest,
+                'subject' => $subject,
+                'message' => $message,
+                'ip_address' => $ipAddress,
+                'status' => 'new'
+            ];
+
+            $contactModel->insert($data);
+
+            return $this->response->setJSON([
+                'success' => true,
+                'message' => 'Thank you for reaching out! We will get back to you soon.'
+            ]);
+        } catch (\Exception $e) {
+            log_message('error', 'Contact form submission error: ' . $e->getMessage());
+            return $this->response->setStatusCode(500)->setJSON([
+                'success' => false,
+                'message' => 'Sorry, there was an error processing your request. Please try again.'
+            ]);
+        }
+    }
 
 }

@@ -78,6 +78,7 @@ $routes->get ('api/insurance-documents/(:num)/file',  'ApiController::streamInsu
 
 $routes->add('api/coupon/verify', 'ApiController::verifyCoupon');
 $routes->delete('api/insurance-documents/(:num)', 'ApiController::deleteInsuranceDocument/$1');
+$routes->post('api/contact/submit', 'ApiController::submitContactForm');
 
 $routes->options('api/(:any)', 'ApiController::preflightAny');
 
