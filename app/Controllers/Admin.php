@@ -2112,7 +2112,13 @@ class Admin extends BaseController {
      */
     public function site_images()
     {
+        if(!$this->checkSession())
+            return redirect()->to(base_url('admin/login'));
+
         $crud = $this->_getGroceryCrudEnterprise();
+        $crud->setCsrfTokenName(csrf_token());
+        $crud->setCsrfTokenValue(csrf_hash());
+
         $crud->setTable('site_images');
         $crud->setSubject('Site Image', 'Site Images');
 
@@ -2169,7 +2175,15 @@ class Admin extends BaseController {
             return $stateParameters;
         });
 
+        $crud->unsetBootstrap();
+        $crud->unsetJquery();
+
         $output = $crud->render();
+        if ($output->isJSONResponse) {
+            header('Content-Type: application/json; charset=utf-8');
+            echo $output->output;
+            exit;
+        }
 
         $data = [
             'breadcrumbs' => 'Site Images',
