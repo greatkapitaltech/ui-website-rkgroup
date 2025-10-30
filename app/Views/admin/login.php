@@ -24,7 +24,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #00679E 0%, #2F59A7 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -90,8 +90,8 @@ body {
 }
 
 .form-control:focus {
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #00679E;
+    box-shadow: 0 0 0 3px rgba(0, 103, 158, 0.1);
 }
 
 .btn-login {
@@ -101,7 +101,7 @@ body {
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #00679E 0%, #2F59A7 100%);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -111,7 +111,7 @@ body {
 
 .btn-login:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 103, 158, 0.3);
 }
 
 .btn-login:active {
