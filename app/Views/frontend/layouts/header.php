@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
     <title><?= isset($title) ? $title . ' - RK Group' : 'RK Group' ?></title>
+
+    <!-- Favicon -->
+    <?php
+    $faviconUrl = base_url('favicon.ico'); // Default favicon
+    if (isset($settings['site_favicon']) && !empty($settings['site_favicon'])) {
+        $faviconUrl = base_url('assets/img/' . $settings['site_favicon']);
+    } elseif (isset($images['site_favicon']) && !empty($images['site_favicon']['image_file'])) {
+        $faviconUrl = base_url('assets/img/' . $images['site_favicon']['image_file']);
+    } elseif (isset($images['site_favicon']) && !empty($images['site_favicon']['image_url'])) {
+        $faviconUrl = $images['site_favicon']['image_url'];
+    }
+    ?>
+    <link rel="icon" type="image/x-icon" href="<?= $faviconUrl ?>" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= $faviconUrl ?>" />
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= $faviconUrl ?>" />
+    <link rel="apple-touch-icon" href="<?= $faviconUrl ?>" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
