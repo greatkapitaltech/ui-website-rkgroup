@@ -31,13 +31,14 @@
 
 ---
 
-## 🗂️ CREATE 4 UPLOAD DIRECTORIES
+## 🗂️ CREATE 5 UPLOAD DIRECTORIES
 
 ```bash
 mkdir -p assets/uploads/companies
 mkdir -p assets/uploads/partners
 mkdir -p assets/uploads/board_members
 mkdir -p assets/uploads/timeline
+mkdir -p assets/uploads/news
 chmod 755 assets/uploads/*
 ```
 
@@ -45,7 +46,7 @@ Or via cPanel:
 - Go to File Manager
 - Navigate to `assets/`
 - Create folder `uploads`
-- Inside `uploads`, create: `companies`, `partners`, `board_members`, `timeline`
+- Inside `uploads`, create: `companies`, `partners`, `board_members`, `timeline`, `news`
 - Set permissions to **755** for each
 
 ---
@@ -92,7 +93,9 @@ This creates all tables with sample data.
 - Partners → Upload logos (with thumbnail preview)
 - Board Members → Upload photos (with thumbnail preview)
 - Timeline → Upload images (with thumbnail preview)
+- News & Updates → Upload images (with thumbnail preview)
 - All images stored in assets/uploads/[folder]
+- Images display in list view with callbackReadField
 
 ---
 
@@ -199,7 +202,7 @@ If you have SSH access:
 cd /home4/tempucqs/public_html/rkgroup.biz/new_site/
 
 # Create upload directories
-mkdir -p assets/uploads/{companies,partners,board_members,timeline}
+mkdir -p assets/uploads/{companies,partners,board_members,timeline,news}
 chmod -R 755 assets/uploads
 
 # Clear cache

@@ -1,5 +1,12 @@
 <?php foreach($css_files as $file): ?>
+	<?php
+	// Skip loading icon libraries from GroceryCRUD
+	if (strpos($file, 'fontawesome') === false &&
+	    strpos($file, 'glyphicons') === false &&
+	    strpos($file, 'icons') === false):
+	?>
 	<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
+	<?php endif; ?>
 <?php endforeach; ?>
 
 <!-- Content Wrapper. Contains page content -->

@@ -83,6 +83,12 @@ class GroceryCrudEnterprise extends BaseConfig
                     'exception_handler' => ['throw_exceptions' => false],
                 ],
             ],
+
+            // Theme configuration
+            'theme_config' => [
+                'disable_icons' => true,
+                'load_third_party_icons' => false,
+            ],
         ];
     }
 }

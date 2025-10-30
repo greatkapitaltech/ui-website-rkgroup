@@ -9,6 +9,7 @@ class Frontend extends BaseController
         // Load data from database
         $companiesModel = model('CompaniesModel');
         $partnersModel = model('PartnersModel');
+        $newsModel = model('NewsModel');
         $settingsModel = model('SiteSettingsModel');
 
         // Get site settings
@@ -18,11 +19,19 @@ class Frontend extends BaseController
             $settings[$setting['setting_key']] = $setting['setting_value'];
         }
 
+        // Get featured news items
+        $featuredNews = $newsModel->where('is_featured', 1)
+                                  ->where('is_active', 1)
+                                  ->orderBy('published_at', 'DESC')
+                                  ->limit(2)
+                                  ->findAll();
+
         $data = [
             'title' => 'Home',
             'active_page' => 'home',
             'companies' => $companiesModel->where('is_active', 1)->orderBy('display_order', 'ASC')->findAll(),
             'partners' => $partnersModel->where('is_active', 1)->orderBy('display_order', 'ASC')->findAll(),
+            'featured_news' => $featuredNews,
             'settings' => $settings
         ];
 

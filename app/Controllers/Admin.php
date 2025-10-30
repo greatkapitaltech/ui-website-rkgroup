@@ -1670,13 +1670,16 @@ class Admin extends BaseController {
         // Enable file upload for logo
         $crud->setFieldUpload('logo', FCPATH . 'assets/uploads/companies', base_url('assets/uploads/companies'));
 
-        // Display logo as image in the grid
-        $crud->callbackColumn('logo', function ($value, $row) {
+        // Set logo field as image type
+        $crud->fieldType('logo', 'image');
+
+        // Display logo as image in the grid using callbackReadField
+        $crud->callbackReadField('logo', function ($value, $row) {
             if (empty($value)) {
                 return '<span style="color: #999;">No logo</span>';
             }
             $imageUrl = base_url('assets/uploads/companies/' . $value);
-            return '<img src="' . esc($imageUrl) . '" style="max-width: 100px; max-height: 50px; object-fit: contain;" alt="' . esc($row->name) . '">';
+            return '<img src="' . $imageUrl . '" style="max-width: 100px; max-height: 50px; object-fit: contain;" alt="' . htmlspecialchars($row->name) . '">';
         });
 
         $crud->displayAs('logo', 'Logo');
@@ -1729,14 +1732,17 @@ class Admin extends BaseController {
         // Enable file upload for logo
         $crud->setFieldUpload('logo', FCPATH . 'assets/uploads/partners', base_url('assets/uploads/partners'));
 
-        // Display logo as image in the grid
-        $crud->callbackColumn('logo', function ($value, $row) {
+        // Set logo field as image type
+        $crud->fieldType('logo', 'image');
+
+        // Display logo as image in the grid using callbackReadField
+        $crud->callbackReadField('logo', function ($value, $row) {
             if (empty($value)) {
                 return '<span style="color: #999;">No logo</span>';
             }
             // Check if it's a full URL or just a filename
             $imageUrl = (strpos($value, 'http') === 0) ? $value : base_url('assets/uploads/partners/' . $value);
-            return '<img src="' . esc($imageUrl) . '" style="max-width: 100px; max-height: 50px; object-fit: contain;" alt="' . esc($row->name) . '">';
+            return '<img src="' . $imageUrl . '" style="max-width: 100px; max-height: 50px; object-fit: contain;" alt="' . htmlspecialchars($row->name) . '">';
         });
 
         $crud->displayAs('logo', 'Logo');
@@ -1789,14 +1795,17 @@ class Admin extends BaseController {
         // Enable file upload for photo
         $crud->setFieldUpload('photo', FCPATH . 'assets/uploads/board_members', base_url('assets/uploads/board_members'));
 
-        // Display photo as image in the grid
-        $crud->callbackColumn('photo', function ($value, $row) {
+        // Set photo field as image type
+        $crud->fieldType('photo', 'image');
+
+        // Display photo as image in the grid using callbackReadField
+        $crud->callbackReadField('photo', function ($value, $row) {
             if (empty($value)) {
                 return '<span style="color: #999;">No photo</span>';
             }
             // Check if it's a full URL or just a filename
             $imageUrl = (strpos($value, 'http') === 0) ? $value : base_url('assets/uploads/board_members/' . $value);
-            return '<img src="' . esc($imageUrl) . '" style="max-width: 80px; max-height: 80px; object-fit: cover; border-radius: 50%;" alt="' . esc($row->name) . '">';
+            return '<img src="' . $imageUrl . '" style="max-width: 80px; max-height: 80px; object-fit: cover; border-radius: 50%;" alt="' . htmlspecialchars($row->name) . '">';
         });
 
         $crud->displayAs('photo', 'Photo');
@@ -1960,8 +1969,24 @@ class Admin extends BaseController {
         $crud->setTable('news_items');
         $crud->setSubject('News Item', 'News Items');
 
-        $crud->columns(['title', 'embed_type', 'category', 'is_featured', 'is_active', 'published_at']);
+        $crud->columns(['title', 'image', 'embed_type', 'category', 'is_featured', 'is_active', 'published_at']);
         $crud->fields(['title', 'content', 'embed_url', 'embed_type', 'image', 'external_link', 'category', 'display_order', 'is_featured', 'is_active', 'published_at']);
+
+        // Enable file upload for image
+        $crud->setFieldUpload('image', FCPATH . 'assets/uploads/news', base_url('assets/uploads/news'));
+
+        // Set image field as image type
+        $crud->fieldType('image', 'image');
+
+        // Display image as thumbnail in the grid using callbackReadField
+        $crud->callbackReadField('image', function ($value, $row) {
+            if (empty($value)) {
+                return '<span style="color: #999;">No image</span>';
+            }
+            // Check if it's a full URL or just a filename
+            $imageUrl = (strpos($value, 'http') === 0) ? $value : base_url('assets/uploads/news/' . $value);
+            return '<img src="' . $imageUrl . '" style="max-width: 100px; max-height: 60px; object-fit: cover; border-radius: 5px;" alt="' . htmlspecialchars($row->title) . '">';
+        });
 
         $crud->displayAs('embed_url', 'Embed URL');
         $crud->displayAs('embed_type', 'Embed Type');
@@ -2027,14 +2052,17 @@ class Admin extends BaseController {
         // Enable file upload for timeline images
         $crud->setFieldUpload('image_url', FCPATH . 'assets/uploads/timeline', base_url('assets/uploads/timeline'));
 
-        // Display image as thumbnail in the grid
-        $crud->callbackColumn('image_url', function ($value, $row) {
+        // Set image_url field as image type
+        $crud->fieldType('image_url', 'image');
+
+        // Display image as thumbnail in the grid using callbackReadField
+        $crud->callbackReadField('image_url', function ($value, $row) {
             if (empty($value)) {
                 return '<span style="color: #999;">No image</span>';
             }
             // Check if it's a full URL or just a filename
             $imageUrl = (strpos($value, 'http') === 0) ? $value : base_url('assets/uploads/timeline/' . $value);
-            return '<img src="' . esc($imageUrl) . '" style="max-width: 120px; max-height: 70px; object-fit: cover; border-radius: 5px;" alt="' . esc($row->title) . '">';
+            return '<img src="' . $imageUrl . '" style="max-width: 120px; max-height: 70px; object-fit: cover; border-radius: 5px;" alt="' . htmlspecialchars($row->title) . '">';
         });
 
         $crud->displayAs('image_url', 'Image');

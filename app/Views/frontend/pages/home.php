@@ -6,17 +6,17 @@
         <div class="hero-content">
           <!-- Main Heading -->
           <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">
-            Scaling New Heights
+            <?= isset($settings['hero_title']) ? esc($settings['hero_title']) : 'Scaling New Heights' ?>
           </h1>
 
           <!-- Subtitle -->
           <p class="hero-subtitle mb-4" data-aos="fade-up" data-aos-delay="200">
-            Where Ambition Meets Experience in Every Venture
+            <?= isset($settings['hero_subtitle']) ? esc($settings['hero_subtitle']) : 'Where Ambition Meets Experience in Every Venture' ?>
           </p>
 
           <!-- Description -->
           <p class="hero-description mb-4" data-aos="fade-up" data-aos-delay="300">
-            Leading India's e-commerce revolution with innovative solutions across retail, fintech, and technology
+            <?= isset($settings['hero_description']) ? esc($settings['hero_description']) : 'Leading India\'s e-commerce revolution with innovative solutions across retail, fintech, and technology' ?>
           </p>
 
           <!-- CTA Buttons -->
@@ -29,12 +29,12 @@
           <!-- Stats Row -->
           <div class="hero-stats mt-5" data-aos="fade-up" data-aos-delay="500">
             <div class="stat-item">
-              <div class="stat-number">10+</div>
+              <div class="stat-number"><?= isset($companies) ? count($companies) : '10' ?>+</div>
               <div class="stat-label">Companies</div>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-              <div class="stat-number">400+</div>
+              <div class="stat-number"><?= isset($settings['hero_stat_brands']) ? esc($settings['hero_stat_brands']) : '400' ?>+</div>
               <div class="stat-label">Brands</div>
             </div>
           </div>
@@ -62,140 +62,42 @@
 
           <div class="companies-carousel-wrapper">
             <div class="companies-carousel" id="companiesCarousel">
-              <!-- Card 1: RK World Infocom -->
-              <div class="company-carousel-item">
-                <div class="company-card h-100 p-4">
-              <img
-                src="<?= base_url('assets/img/logo-rkwi.png') ?>"
-                alt="RK World Infocom"
-                class="mb-3"
-                height="44"
-              />
-              <p class="small text-secondary mb-0">
-                Leading FMCG distribution platform, delivering products across 95% of India's pin codes. RKWI connects brands with customers with supply chain expertise and trusted partnerships with leading global brands.
-              </p>
-                </div>
-              </div>
-              <!-- Card 2: Great Kapital Ventura -->
-              <div class="company-carousel-item">
-                <div class="company-card h-100 p-4">
-              <img
-                src="<?= base_url('assets/img/logo-gk.png') ?>"
-                alt="Great Kapital Ventura"
-                class="mb-3"
-                height="44"
-              />
-              <p class="small text-secondary mb-0">
-                A fintech platform dedicated to redefining working capital management. Great Kapital provides innovative supply chain finance solutions that enable corporations to optimize cash flow while ensuring timely payments for suppliers.
-              </p>
-                </div>
-              </div>
-              <!-- Card 3: Valuekart -->
-              <div class="company-carousel-item">
-                <div class="company-card h-100 p-4">
-              <img
-                src="<?= base_url('assets/img/logo-valuekart.png') ?>"
-                alt="Valuekart"
-                class="mb-3"
-                height="44"
-              />
-              <p class="small text-secondary mb-0">
-                A cross-border e-commerce enabler, providing end-to-end market access solutions for international aspiring to target the Indian markets. ValueKart provides market entry strategy, supply chain and logistics management, order fulfillment, platform integration, and category management.
-              </p>
-                </div>
-              </div>
-              <!-- Card 4: RK Fabrics -->
-              <div class="company-carousel-item">
-                <div class="company-card h-100 p-4">
-              <img
-                src="<?= base_url('assets/img/logo-rkfabrics.png') ?>"
-                alt="RK Fabrics"
-                class="mb-3"
-                height="44"
-              />
-              <p class="small text-secondary mb-0">
-                Pioneers of textile trading in India, leveraging an experienced team, strategic partnerships, and state-of-the-art infrastructure. Driving operational efficiency through exclusive partnerships with global textile brands like Luthai, Penfabric, Stylem, and Monti.
-              </p>
-                </div>
-              </div>
-              <!-- Card 5: Robust Kommerce -->
-              <div class="company-carousel-item">
-                <div class="company-card h-100 p-4">
-              <img
-                src="<?= base_url('assets/img/logo-robustkommerce.png') ?>"
-                alt="Robust Kommerce"
-                class="mb-3"
-                height="44"
-              />
-              <p class="small text-secondary mb-0">
-                Myntra's exclusive partner for international brand collaborations across Retail, Shop-in-Shop, and Digital Marketplace commerce. Offering end-to-end solutions from market entry to retail expansion, delivering world-class fashion through premium retail stores and digital platforms.
-              </p>
-                </div>
-              </div>
-              <!-- Card 6: Wishery -->
-              <div class="company-carousel-item">
-                <div class="company-card h-100 p-4">
-              <img
-                src="<?= base_url('assets/img/logo-wishery.png') ?>"
-                alt="Wishery"
-                class="mb-3"
-                height="44"
-              />
-              <p class="small text-secondary mb-0">
-                A leading wholesale and retail trader of mobile phones, electronics, and lifestyle products. With operations spanning 19 states in India, Wishery has a stronghold in B2B and B2C segments, combining reliable sourcing, efficient distribution, and a technology-driven approach.
-              </p>
-                </div>
-              </div>
-              <!-- Card 7: Westbury -->
-              <div class="company-carousel-item">
-                <div class="company-card h-100 p-4">
-              <img
-                src="<?= base_url('assets/img/logo-westbury.png') ?>"
-                alt="Westbury"
-                class="mb-3"
-                height="44"
-              />
-              <p class="small text-secondary mb-0">
-                Westbury Kommerce provides end-to-end e-commerce and omnichannel solutions for retail and fashion brands. Combining deep industry expertise with scalable solutions allowing brands to grow efficiently, reach wider audiences, and deliver seamless shopping experiences.
-              </p>
-                </div>
-              </div>
-              <!-- Card 8: Kalandari Capital -->
-              <div class="company-carousel-item">
-                <div class="company-card h-100 p-4">
-              <img
-                src="<?= base_url('assets/img/logo-kalandari.png') ?>"
-                alt="Kalandari Capital"
-                class="mb-3"
-                height="44"
-              />
-              <p class="small text-secondary mb-0">
-                A new-age financial services platform focused on making lending transparent, quick, and hassle-free. Our mission is to reduce borrowing costs for new-age businesses while ensuring a seamless and efficient experience by leveraging technology for scale.
-              </p>
-                </div>
-              </div>
-              <!-- Card 9: Risingstar -->
-              <div class="company-carousel-item">
-                <div class="company-card h-100 p-4">
-              <div class="text-logo mb-3" style="height: 44px; display: flex; align-items: center; justify-content: center;">
-                <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">Rising<span style="color: #FFB800;">Star</span></span>
-              </div>
-              <p class="small text-secondary mb-0">
-                Rising Star Kommerce partners with suppliers to source a wide range of products across categories for listing and sales on Blinkit, one of India's leading quick commerce platforms, ensuring fast and reliable delivery to consumers.
-              </p>
-                </div>
-              </div>
-              <!-- Card 10: Rapidkey -->
-              <div class="company-carousel-item">
-                <div class="company-card h-100 p-4">
-              <div class="text-logo mb-3" style="height: 44px; display: flex; align-items: center; justify-content: center;">
-                <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">Rapid<span style="color: #E63946;">Key</span></span>
-              </div>
-              <p class="small text-secondary mb-0">
-                An independent TaaS seller for Flipkart, RapidKey is a growth partner for brands, managing the entire e-commerce lifecycle—from procurement and inventory planning to warehousing, delivery, returns, and liquidation. Combining entrepreneurial agility with Flipkart's ecosystem support.
-              </p>
-                </div>
-              </div>
+              <?php if (isset($companies) && !empty($companies)): ?>
+                <?php foreach ($companies as $company):
+                  // Determine logo URL
+                  $logoUrl = '';
+                  if (!empty($company['logo'])) {
+                    $logoUrl = (strpos($company['logo'], 'http') === 0)
+                      ? $company['logo']
+                      : base_url('assets/uploads/companies/' . $company['logo']);
+                  }
+                ?>
+                  <div class="company-carousel-item">
+                    <div class="company-card h-100 p-4">
+                      <?php if (!empty($logoUrl)): ?>
+                        <img
+                          src="<?= esc($logoUrl) ?>"
+                          alt="<?= esc($company['name']) ?>"
+                          class="mb-3"
+                          height="44"
+                        />
+                      <?php else: ?>
+                        <div class="text-logo mb-3" style="height: 44px; display: flex; align-items: center; justify-content: center;">
+                          <span style="font-size: 1.5rem; font-weight: 700; color: var(--primary);"><?= esc($company['name']) ?></span>
+                        </div>
+                      <?php endif; ?>
+                      <p class="small text-secondary mb-0">
+                        <?= esc($company['description']) ?>
+                      </p>
+                      <?php if (!empty($company['website_url'])): ?>
+                        <a href="<?= esc($company['website_url']) ?>" target="_blank" class="btn btn-sm btn-outline-primary mt-3">
+                          Visit Website <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </a>
+                      <?php endif; ?>
+                    </div>
+                  </div>
+                <?php endforeach; ?>
+              <?php endif; ?>
             </div>
           </div>
         </div>
@@ -206,96 +108,31 @@
         <h2 class="section-title text-center text-primary mb-5">Partnerships</h2>
 
         <div class="partnerships-grid">
-          <div class="partner-item">
-            <div class="partner-card">
-              <img
-                class="partner-logo"
-                src="<?= base_url('assets/img/Amazon_2024.webp') ?>"
-                alt="Amazon"
-              />
-            </div>
-          </div>
-          <div class="partner-item">
-            <div class="partner-card">
-              <img
-                class="partner-logo"
-                src="<?= base_url('assets/img/flipkart-logo.webp') ?>"
-                alt="Flipkart"
-              />
-            </div>
-          </div>
-          <div class="partner-item">
-            <div class="partner-card">
-              <img
-                class="partner-logo"
-                src="<?= base_url('assets/img/myntra-logo.png') ?>"
-                alt="Myntra"
-              />
-            </div>
-          </div>
-          <div class="partner-item">
-            <div class="partner-card">
-              <img
-                class="partner-logo"
-                src="https://logo.clearbit.com/blinkit.com"
-                alt="Blinkit"
-              />
-            </div>
-          </div>
-          <div class="partner-item">
-            <div class="partner-card">
-              <img
-                class="partner-logo"
-                src="https://logo.clearbit.com/pharmeasy.in"
-                alt="PharmEasy"
-              />
-            </div>
-          </div>
-          <div class="partner-item">
-            <div class="partner-card">
-              <img
-                class="partner-logo"
-                src="<?= base_url('assets/img/CARS24_logo.png') ?>"
-                alt="Cars24"
-              />
-            </div>
-          </div>
-          <div class="partner-item">
-            <div class="partner-card">
-              <img
-                class="partner-logo"
-                src="https://logo.clearbit.com/abfrl.com"
-                alt="ABFRL"
-              />
-            </div>
-          </div>
-          <div class="partner-item">
-            <div class="partner-card">
-              <img
-                class="partner-logo"
-                src="https://logo.clearbit.com/nike.com"
-                alt="Nike"
-              />
-            </div>
-          </div>
-          <div class="partner-item">
-            <div class="partner-card">
-              <img
-                class="partner-logo"
-                src="https://logo.clearbit.com/scapia.com"
-                alt="Scapia"
-              />
-            </div>
-          </div>
-          <div class="partner-item">
-            <div class="partner-card">
-              <img
-                class="partner-logo"
-                src="https://logo.clearbit.com/phonepe.com"
-                alt="Pincode by PhonePe"
-              />
-            </div>
-          </div>
+          <?php if (isset($partners) && !empty($partners)): ?>
+            <?php foreach ($partners as $partner):
+              // Determine logo URL
+              $logoUrl = '';
+              if (!empty($partner['logo'])) {
+                $logoUrl = (strpos($partner['logo'], 'http') === 0)
+                  ? $partner['logo']
+                  : base_url('assets/uploads/partners/' . $partner['logo']);
+              }
+            ?>
+              <div class="partner-item">
+                <div class="partner-card">
+                  <?php if (!empty($logoUrl)): ?>
+                    <img
+                      class="partner-logo"
+                      src="<?= esc($logoUrl) ?>"
+                      alt="<?= esc($partner['name']) ?>"
+                    />
+                  <?php else: ?>
+                    <span style="font-size: 1.2rem; font-weight: 600; color: var(--primary);"><?= esc($partner['name']) ?></span>
+                  <?php endif; ?>
+                </div>
+              </div>
+            <?php endforeach; ?>
+          <?php endif; ?>
         </div>
       </div>
       </div>
