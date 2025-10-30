@@ -1,0 +1,321 @@
+CRITICAL - 2023-09-23 18:42:24 --> Unknown column 'sub_categories' in 'where clause'
+#0 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Driver/Mysqli/Connection.php(232): mysqli->query('SELECT `s`.* FR...')
+#1 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Adapter.php(190): Zend\Db\Adapter\Driver\Mysqli\Connection->execute('SELECT `s`.* FR...')
+#2 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(257): Zend\Db\Adapter\Adapter->query('SELECT `s`.* FR...', 'execute')
+#3 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/StateAbstract.php(1127): GroceryCrud\Core\Model->getRelationData('sub_categories', 'sub_category_ti...', Array, 'sub_category_ti...', 'category_id')
+#4 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DependedRelationState.php(50): GroceryCrud\Core\State\StateAbstract->getRelationalData('sub_categories', 'sub_category_ti...', Array, 'sub_category_ti...', 'category_id')
+#5 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\DependedRelationState->render()
+#6 /home1/ddecou4l/public_html/app/Controllers/Admin.php(241): GroceryCrud\Core\GroceryCrud->render()
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Admin->products()
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-23 18:42:43 --> Unknown column 'sub_category_id' in 'where clause'
+#0 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Driver/Mysqli/Connection.php(232): mysqli->query('SELECT `s`.* FR...')
+#1 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Adapter.php(190): Zend\Db\Adapter\Driver\Mysqli\Connection->execute('SELECT `s`.* FR...')
+#2 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(257): Zend\Db\Adapter\Adapter->query('SELECT `s`.* FR...', 'execute')
+#3 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/StateAbstract.php(1127): GroceryCrud\Core\Model->getRelationData('sub_categories', 'sub_category_ti...', Array, 'sub_category_ti...', 'category_id')
+#4 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DependedRelationState.php(50): GroceryCrud\Core\State\StateAbstract->getRelationalData('sub_categories', 'sub_category_ti...', Array, 'sub_category_ti...', 'category_id')
+#5 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\DependedRelationState->render()
+#6 /home1/ddecou4l/public_html/app/Controllers/Admin.php(241): GroceryCrud\Core\GroceryCrud->render()
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Admin->products()
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-23 18:44:43 --> Unknown column 'category_title' in 'where clause'
+#0 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Driver/Mysqli/Connection.php(232): mysqli->query('SELECT `s`.* FR...')
+#1 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Adapter.php(190): Zend\Db\Adapter\Driver\Mysqli\Connection->execute('SELECT `s`.* FR...')
+#2 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(257): Zend\Db\Adapter\Adapter->query('SELECT `s`.* FR...', 'execute')
+#3 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/StateAbstract.php(1127): GroceryCrud\Core\Model->getRelationData('sub_categories', 'sub_category_ti...', Array, 'sub_category_ti...', 'category_id')
+#4 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DependedRelationState.php(50): GroceryCrud\Core\State\StateAbstract->getRelationalData('sub_categories', 'sub_category_ti...', Array, 'sub_category_ti...', 'category_id')
+#5 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\DependedRelationState->render()
+#6 /home1/ddecou4l/public_html/app/Controllers/Admin.php(241): GroceryCrud\Core\GroceryCrud->render()
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Admin->products()
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-23 18:44:54 --> Unknown column 'sub_category_id' in 'where clause'
+#0 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Driver/Mysqli/Connection.php(232): mysqli->query('SELECT `s`.* FR...')
+#1 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Adapter.php(190): Zend\Db\Adapter\Driver\Mysqli\Connection->execute('SELECT `s`.* FR...')
+#2 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(257): Zend\Db\Adapter\Adapter->query('SELECT `s`.* FR...', 'execute')
+#3 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/StateAbstract.php(1127): GroceryCrud\Core\Model->getRelationData('sub_categories', 'sub_category_ti...', Array, 'sub_category_ti...', 'category_id')
+#4 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DependedRelationState.php(50): GroceryCrud\Core\State\StateAbstract->getRelationalData('sub_categories', 'sub_category_ti...', Array, 'sub_category_ti...', 'category_id')
+#5 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\DependedRelationState->render()
+#6 /home1/ddecou4l/public_html/app/Controllers/Admin.php(241): GroceryCrud\Core\GroceryCrud->render()
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Admin->products()
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-23 18:46:31 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/products', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-23 18:46:33 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/products', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-23 18:46:36 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/products', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-23 18:47:12 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/products', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-23 18:47:12 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/products', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-23 18:47:14 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/products', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-23 18:47:17 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/products', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-23 18:47:44 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/products', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-09-23 19:37:37 --> Error connecting to the database: Access denied for user '****'@'localhost'. Account is locked.
+CRITICAL - 2023-09-23 19:37:37 --> Unable to connect to the database.
+#0 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home1/ddecou4l/public_html/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home1/ddecou4l/public_html/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-23 19:37:39 --> Error connecting to the database: Access denied for user '****'@'localhost'. Account is locked.
+CRITICAL - 2023-09-23 19:37:39 --> Unable to connect to the database.
+#0 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home1/ddecou4l/public_html/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home1/ddecou4l/public_html/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-23 19:37:40 --> Error connecting to the database: Access denied for user '****'@'localhost'. Account is locked.
+CRITICAL - 2023-09-23 19:37:40 --> Unable to connect to the database.
+#0 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home1/ddecou4l/public_html/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home1/ddecou4l/public_html/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-23 19:37:41 --> Error connecting to the database: Access denied for user '****'@'localhost'. Account is locked.
+CRITICAL - 2023-09-23 19:37:41 --> Unable to connect to the database.
+#0 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home1/ddecou4l/public_html/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home1/ddecou4l/public_html/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-23 19:37:42 --> Error connecting to the database: Access denied for user '****'@'localhost'. Account is locked.
+CRITICAL - 2023-09-23 19:37:42 --> Unable to connect to the database.
+#0 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home1/ddecou4l/public_html/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home1/ddecou4l/public_html/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-23 19:37:50 --> Error connecting to the database: Access denied for user '****'@'localhost'. Account is locked.
+CRITICAL - 2023-09-23 19:37:50 --> Unable to connect to the database.
+#0 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home1/ddecou4l/public_html/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home1/ddecou4l/public_html/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-23 19:37:51 --> Error connecting to the database: Access denied for user '****'@'localhost'. Account is locked.
+CRITICAL - 2023-09-23 19:37:51 --> Unable to connect to the database.
+#0 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home1/ddecou4l/public_html/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home1/ddecou4l/public_html/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-23 19:37:54 --> Error connecting to the database: Access denied for user '****'@'localhost'. Account is locked.
+CRITICAL - 2023-09-23 19:37:54 --> Unable to connect to the database.
+#0 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home1/ddecou4l/public_html/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home1/ddecou4l/public_html/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-23 19:37:58 --> Error connecting to the database: Access denied for user '****'@'localhost'. Account is locked.
+CRITICAL - 2023-09-23 19:37:58 --> Unable to connect to the database.
+#0 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home1/ddecou4l/public_html/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home1/ddecou4l/public_html/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home1/ddecou4l/public_html/app/Controllers/Admin.php(358): CodeIgniter\BaseModel->findAll()
+#5 /home1/ddecou4l/public_html/app/Controllers/Admin.php(102): App\Controllers\Admin->checkSession()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Admin->sub_categories()
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-23 19:38:34 --> Error connecting to the database: Access denied for user '****'@'localhost'. Account is locked.
+CRITICAL - 2023-09-23 19:38:34 --> Unable to connect to the database.
+#0 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home1/ddecou4l/public_html/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home1/ddecou4l/public_html/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-23 19:44:13 --> Error connecting to the database: Access denied for user '****'@'localhost'. Account is locked.
+CRITICAL - 2023-09-23 19:44:13 --> Unable to connect to the database.
+#0 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home1/ddecou4l/public_html/system/Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#3 /home1/ddecou4l/public_html/system/BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-23 20:50:03 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/product', Array, true)
+#2 /home1/ddecou4l/public_html/app/Controllers/Home.php(123): view('home/product', Array)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-23 20:50:04 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/product', Array, true)
+#2 /home1/ddecou4l/public_html/app/Controllers/Home.php(123): view('home/product', Array)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-23 20:50:14 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/product', Array, true)
+#2 /home1/ddecou4l/public_html/app/Controllers/Home.php(123): view('home/product', Array)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-23 20:50:21 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/product', Array, true)
+#2 /home1/ddecou4l/public_html/app/Controllers/Home.php(123): view('home/product', Array)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-23 20:50:29 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/product', Array, true)
+#2 /home1/ddecou4l/public_html/app/Controllers/Home.php(123): view('home/product', Array)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-23 20:50:29 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/product', Array, true)
+#2 /home1/ddecou4l/public_html/app/Controllers/Home.php(123): view('home/product', Array)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-23 20:50:39 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/product', Array, true)
+#2 /home1/ddecou4l/public_html/app/Controllers/Home.php(123): view('home/product', Array)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-23 20:50:41 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/product', Array, true)
+#2 /home1/ddecou4l/public_html/app/Controllers/Home.php(123): view('home/product', Array)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

@@ -1,0 +1,20 @@
+CRITICAL - 2025-08-23 10:41:50 --> Undefined index: rule
+#0 /home/thebedqv/admin.medisoldier.com/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/StateAbstract.php(1646): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 1646, Array)
+#1 /home/thebedqv/admin.medisoldier.com/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/InsertState.php(52): GroceryCrud\Core\State\StateAbstract->getValidationRules()
+#2 /home/thebedqv/admin.medisoldier.com/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\InsertState->render()
+#3 /home/thebedqv/admin.medisoldier.com/app/Controllers/Admin.php(798): GroceryCrud\Core\GroceryCrud->render()
+#4 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Admin->customer_coupons()
+#5 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2025-08-23 11:10:52 --> Undefined index: rule
+#0 /home/thebedqv/admin.medisoldier.com/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/StateAbstract.php(1646): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 1646, Array)
+#1 /home/thebedqv/admin.medisoldier.com/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/InsertState.php(52): GroceryCrud\Core\State\StateAbstract->getValidationRules()
+#2 /home/thebedqv/admin.medisoldier.com/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\InsertState->render()
+#3 /home/thebedqv/admin.medisoldier.com/app/Controllers/Admin.php(798): GroceryCrud\Core\GroceryCrud->render()
+#4 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Admin->customer_coupons()
+#5 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

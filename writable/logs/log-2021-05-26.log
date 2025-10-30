@@ -1,0 +1,6 @@
+CRITICAL - 2021-05-26 12:53:34 --> Call to a member function insert() on null
+#0 /home/thebedqv/reikanindia.com/system/CodeIgniter.php(936): App\Controllers\Home->get_quote_submit()
+#1 /home/thebedqv/reikanindia.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home/thebedqv/reikanindia.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/reikanindia.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}

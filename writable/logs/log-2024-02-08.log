@@ -1,0 +1,449 @@
+CRITICAL - 2024-02-08 15:06:18 --> Class 'App\Models\storeProductModel' not found
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store()
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-02-08 15:06:19 --> Class 'App\Models\storeProductModel' not found
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store()
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-02-08 15:06:20 --> Class 'App\Models\storeProductModel' not found
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store()
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-02-08 15:06:20 --> Class 'App\Models\storeProductModel' not found
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store()
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-02-08 15:06:21 --> Class 'App\Models\storeProductModel' not found
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store()
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-02-08 15:06:21 --> Class 'App\Models\storeProductModel' not found
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store()
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-02-08 15:06:21 --> Class 'App\Models\storeProductModel' not found
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store()
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-02-08 15:06:21 --> Class 'App\Models\storeProductModel' not found
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store()
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-02-08 15:06:37 --> Class 'App\Models\storeProductModel' not found
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store()
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-02-08 15:07:30 --> Undefined variable: activeRoute
+#0 /home1/ddecou4l/public_html/app/Views/home/layouts/index-header.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home1/ddecou4l...', 95, Array)
+#1 /home1/ddecou4l/public_html/system/View/View.php(220): include('/home1/ddecou4l...')
+#2 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/in...', Array, true)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(31): view('home/layouts/in...', Array)
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 15:11:25 --> syntax error, unexpected 'foreach' (T_FOREACH)
+#0 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/store', Array, true)
+#2 /home1/ddecou4l/public_html/app/Controllers/Home.php(229): view('home/store', Array)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store()
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-02-08 15:28:39 --> Class 'App\Models\StoreProductImagesModel' not found
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store_product('1', 'fabric-cleaner')
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-02-08 15:28:53 --> Undefined variable: store_products
+#0 /home1/ddecou4l/public_html/app/Views/home/store.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home1/ddecou4l...', 16, Array)
+#1 /home1/ddecou4l/public_html/system/View/View.php(220): include('/home1/ddecou4l...')
+#2 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/store', Array, true)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(248): view('home/store', Array)
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store_product('1', 'fabric-cleaner')
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 15:31:56 --> Undefined variable: productIdToExclude
+#0 /home1/ddecou4l/public_html/app/Controllers/Home.php(241): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home1/ddecou4l...', 241, Array)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store_product('1', 'fabric-cleaner')
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-02-08 19:25:35 --> Array to string conversion
+#0 /home1/ddecou4l/public_html/app/Views/home/store_product.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/home1/ddecou4l...', 21, Array)
+#1 /home1/ddecou4l/public_html/system/View/View.php(220): include('/home1/ddecou4l...')
+#2 /home1/ddecou4l/public_html/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home1/ddecou4l/public_html/system/Common.php(1217): CodeIgniter\View\View->render('home/store_prod...', Array, true)
+#4 /home1/ddecou4l/public_html/app/Controllers/Home.php(249): view('home/store_prod...', Array)
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->store_product('1', 'fabric-cleaner')
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-08 20:37:29 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:37:40 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:37:45 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:37:51 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:37:56 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:38:02 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:38:07 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:38:13 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:38:19 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:38:26 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:38:30 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:38:46 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:38:52 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:38:57 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:39:03 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:39:09 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:39:14 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:39:20 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:39:25 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:39:31 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:39:36 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:39:42 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:40:10 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:40:15 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:40:15 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:40:17 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:40:17 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:40:18 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:40:18 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:40:21 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:40:21 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:40:28 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:40:29 --> syntax error, unexpected '$routes' (T_VARIABLE)
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2024-02-08 20:43:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS `phone number` FROM `request_call_back` LIMIT 10 OFFSET 0' at line 1
+#0 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Driver/Mysqli/Connection.php(232): mysqli->query('SELECT `request...')
+#1 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Adapter.php(190): Zend\Db\Adapter\Driver\Mysqli\Connection->execute('SELECT `request...')
+#2 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1125): Zend\Db\Adapter\Adapter->query('SELECT `request...', 'execute')
+#3 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1387): GroceryCrud\Core\Model->getResultsFromSelect(Object(Zend\Db\Sql\Select), Object(Zend\Db\Sql\Sql))
+#4 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(358): GroceryCrud\Core\Model->getList()
+#5 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(369): GroceryCrud\Core\State\DatagridState->getData()
+#6 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\DatagridState->render()
+#7 /home1/ddecou4l/public_html/app/Controllers/Admin.php(488): GroceryCrud\Core\GroceryCrud->render()
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Admin->request_call_back()
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-08 20:44:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS `phone number` FROM `request_call_back` LIMIT 10 OFFSET 0' at line 1
+#0 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Driver/Mysqli/Connection.php(232): mysqli->query('SELECT `request...')
+#1 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Adapter.php(190): Zend\Db\Adapter\Driver\Mysqli\Connection->execute('SELECT `request...')
+#2 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1125): Zend\Db\Adapter\Adapter->query('SELECT `request...', 'execute')
+#3 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1387): GroceryCrud\Core\Model->getResultsFromSelect(Object(Zend\Db\Sql\Select), Object(Zend\Db\Sql\Sql))
+#4 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(358): GroceryCrud\Core\Model->getList()
+#5 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(369): GroceryCrud\Core\State\DatagridState->getData()
+#6 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\DatagridState->render()
+#7 /home1/ddecou4l/public_html/app/Controllers/Admin.php(488): GroceryCrud\Core\GroceryCrud->render()
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Admin->request_call_back()
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-08 20:45:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS `phone number` FROM `request_call_back` LIMIT 10 OFFSET 0' at line 1
+#0 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Driver/Mysqli/Connection.php(232): mysqli->query('SELECT `request...')
+#1 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Adapter.php(190): Zend\Db\Adapter\Driver\Mysqli\Connection->execute('SELECT `request...')
+#2 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1125): Zend\Db\Adapter\Adapter->query('SELECT `request...', 'execute')
+#3 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1387): GroceryCrud\Core\Model->getResultsFromSelect(Object(Zend\Db\Sql\Select), Object(Zend\Db\Sql\Sql))
+#4 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(358): GroceryCrud\Core\Model->getList()
+#5 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(369): GroceryCrud\Core\State\DatagridState->getData()
+#6 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\DatagridState->render()
+#7 /home1/ddecou4l/public_html/app/Controllers/Admin.php(488): GroceryCrud\Core\GroceryCrud->render()
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Admin->request_call_back()
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-08 20:46:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS `phone number` FROM `request_call_back` LIMIT 10 OFFSET 0' at line 1
+#0 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Driver/Mysqli/Connection.php(232): mysqli->query('SELECT `request...')
+#1 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Adapter.php(190): Zend\Db\Adapter\Driver\Mysqli\Connection->execute('SELECT `request...')
+#2 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1125): Zend\Db\Adapter\Adapter->query('SELECT `request...', 'execute')
+#3 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1387): GroceryCrud\Core\Model->getResultsFromSelect(Object(Zend\Db\Sql\Select), Object(Zend\Db\Sql\Sql))
+#4 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(358): GroceryCrud\Core\Model->getList()
+#5 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(369): GroceryCrud\Core\State\DatagridState->getData()
+#6 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\DatagridState->render()
+#7 /home1/ddecou4l/public_html/app/Controllers/Admin.php(488): GroceryCrud\Core\GroceryCrud->render()
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Admin->request_call_back()
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-08 20:46:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS `phone number` FROM `request_call_back` LIMIT 10 OFFSET 0' at line 1
+#0 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Driver/Mysqli/Connection.php(232): mysqli->query('SELECT `request...')
+#1 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Adapter.php(190): Zend\Db\Adapter\Driver\Mysqli\Connection->execute('SELECT `request...')
+#2 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1125): Zend\Db\Adapter\Adapter->query('SELECT `request...', 'execute')
+#3 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1387): GroceryCrud\Core\Model->getResultsFromSelect(Object(Zend\Db\Sql\Select), Object(Zend\Db\Sql\Sql))
+#4 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(358): GroceryCrud\Core\Model->getList()
+#5 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(369): GroceryCrud\Core\State\DatagridState->getData()
+#6 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\DatagridState->render()
+#7 /home1/ddecou4l/public_html/app/Controllers/Admin.php(488): GroceryCrud\Core\GroceryCrud->render()
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Admin->request_call_back()
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-08 20:48:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS `phone number` FROM `request_call_back` LIMIT 10 OFFSET 0' at line 1
+#0 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Driver/Mysqli/Connection.php(232): mysqli->query('SELECT `request...')
+#1 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/zendframework/zend-db/src/Adapter/Adapter.php(190): Zend\Db\Adapter\Driver\Mysqli\Connection->execute('SELECT `request...')
+#2 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1125): Zend\Db\Adapter\Adapter->query('SELECT `request...', 'execute')
+#3 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/Model.php(1387): GroceryCrud\Core\Model->getResultsFromSelect(Object(Zend\Db\Sql\Select), Object(Zend\Db\Sql\Sql))
+#4 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(358): GroceryCrud\Core\Model->getList()
+#5 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/DatagridState.php(369): GroceryCrud\Core\State\DatagridState->getData()
+#6 /home1/ddecou4l/public_html/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\DatagridState->render()
+#7 /home1/ddecou4l/public_html/app/Controllers/Admin.php(488): GroceryCrud\Core\GroceryCrud->render()
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Admin->request_call_back()
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-08 20:49:37 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('request-call-ba...', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-02-08 20:49:49 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('request-call-ba...', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-02-08 20:51:21 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('request-call-ba...', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-02-08 20:51:35 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('request-call-ba...', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-02-08 20:51:38 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('request-call-ba...', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-02-08 20:57:02 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('request-call-ba...', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-02-08 20:59:02 --> Class 'App\Controllers\RequestCallBackModel' not found
+#0 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->request_call_back()
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-02-08 21:00:16 --> The action you requested is not allowed.
+#0 /home1/ddecou4l/public_html/system/Security/Security.php(231): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+#1 /home1/ddecou4l/public_html/system/Filters/CSRF.php(57): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+#2 /home1/ddecou4l/public_html/system/Filters/Filters.php(181): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('request-call-ba...', 'before')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2024-02-08 21:00:23 --> mysqli_sql_exception: Unknown column 'phone_number' in 'field list' in /home1/ddecou4l/public_html/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home1/ddecou4l/public_html/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `re...')
+#1 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 /home1/ddecou4l/public_html/system/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home1/ddecou4l/public_html/system/BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 /home1/ddecou4l/public_html/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home1/ddecou4l/public_html/app/Controllers/Home.php(222): CodeIgniter\Model->insert(Array)
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->request_call_back()
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-08 21:00:23 --> Unknown column 'phone_number' in 'field list'
+#0 /home1/ddecou4l/public_html/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `re...')
+#1 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 /home1/ddecou4l/public_html/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 /home1/ddecou4l/public_html/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 /home1/ddecou4l/public_html/system/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home1/ddecou4l/public_html/system/BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 /home1/ddecou4l/public_html/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home1/ddecou4l/public_html/app/Controllers/Home.php(222): CodeIgniter\Model->insert(Array)
+#8 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->request_call_back()
+#9 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}

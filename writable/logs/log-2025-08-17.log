@@ -1,0 +1,8 @@
+CRITICAL - 2025-08-17 14:39:16 --> Invalid argument supplied for foreach()
+#0 /home/thebedqv/admin.medisoldier.com/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(1785): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/home/thebedqv/...', 1785, Array)
+#1 /home/thebedqv/admin.medisoldier.com/app/Controllers/Admin.php(580): GroceryCrud\Core\GroceryCrud->setRules('customer_number', 'Customer Number', 'min_length[7]|m...')
+#2 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Admin->customer_coupons()
+#3 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}

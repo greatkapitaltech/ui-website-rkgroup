@@ -1,0 +1,464 @@
+ERROR - 2025-06-09 15:20:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 15:20:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 15:20:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 15:20:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 15:27:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 15:27:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 15:27:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%zero%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 15:27:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%zero%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 15:27:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%zero%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 15:27:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%zero%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 15:27:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%zero%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 15:27:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%zero%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 15:28:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 15:28:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 15:29:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 15:29:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 15:29:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbac%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 15:29:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbac%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 15:29:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%bact%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 15:29:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%bact%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 15:31:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%zefu%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 15:31:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%zefu%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 21:03:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %t%bact%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 21:03:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %t%bact%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 21:03:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %t%bact%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 21:03:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %t%bact%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 21:04:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %t%bact%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 21:04:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %t%bact%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 21:04:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %t%bact%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 21:04:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %t%bact%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(683): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2025-06-09 21:07:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(688): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-06-09 21:07:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%tbact%
+ LIMIT 1' at line 7
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(688): CodeIgniter\BaseModel->first()
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getSubstitutes()
+#8 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}

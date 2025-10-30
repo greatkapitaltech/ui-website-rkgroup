@@ -1,0 +1,199 @@
+CRITICAL - 2021-05-24 01:41:54 --> Undefined variable: db
+#0 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 23, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#2 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-24 01:48:45 --> syntax error, unexpected '<'
+#0 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#2 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(33): view('home/index', Array)
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-24 01:49:03 --> syntax error, unexpected '<'
+#0 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#2 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(33): view('home/index', Array)
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-24 01:49:12 --> syntax error, unexpected '?>'
+#0 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#2 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(33): view('home/index', Array)
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-24 01:49:25 --> syntax error, unexpected '?>'
+#0 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#2 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(33): view('home/index', Array)
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-24 01:49:31 --> Cannot use object of type stdClass as array
+#0 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include()
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(33): view('home/index', Array)
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-24 12:25:19 --> syntax error, unexpected ')', expecting ']'
+#0 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/home/thebedqv/...')
+#1 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-24 12:26:25 --> Only variables should be passed by reference
+#0 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Only variables ...', '/home/thebedqv/...', 49, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->product_details('automatic-hand-...')
+#2 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-24 12:27:10 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/home/thebedqv/...')
+#1 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-24 12:27:28 --> syntax error, unexpected '$builder' (T_VARIABLE)
+#0 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/home/thebedqv/...')
+#1 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-24 12:28:55 --> Only variables should be passed by reference
+#0 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Only variables ...', '/home/thebedqv/...', 50, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->product_details('automatic-hand-...')
+#2 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-24 12:29:54 --> Only variables should be passed by reference
+#0 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Only variables ...', '/home/thebedqv/...', 44, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->product_details('automatic-hand-...')
+#2 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-24 12:31:29 --> Undefined index: product_name
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/home/details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/details', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(60): view('home/details', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->product_details('automatic-hand-...')
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-24 12:31:57 --> Undefined index: product_name
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/home/details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/details', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(60): view('home/details', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->product_details('automatic-hand-...')
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-24 12:32:20 --> Undefined index: product_name
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/home/details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/details', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(60): view('home/details', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->product_details('automatic-hand-...')
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-24 12:34:25 --> Undefined index: product_name
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/home/details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/details', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(60): view('home/details', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->product_details('automatic-hand-...')
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-24 12:35:46 --> Undefined index: product_name
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/home/details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/details', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(60): view('home/details', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->product_details('automatic-hand-...')
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-24 12:39:48 --> Undefined index: product_name
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/home/details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/details', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(60): view('home/details', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->product_details('automatic-hand-...')
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-24 14:01:10 --> Undefined variable: product
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/home/index.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 11, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(33): view('home/index', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-24 14:29:39 --> Undefined variable: activeCategory
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/home/index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 9, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(33): view('home/index', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-24 15:33:29 --> Undefined offset: 0
+#0 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/thebedqv/...', 89, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->product_details('work-with-us')
+#2 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

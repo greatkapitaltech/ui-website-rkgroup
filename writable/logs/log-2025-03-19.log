@@ -1,0 +1,20 @@
+CRITICAL - 2025-03-19 15:13:37 --> Class 'App\Controllers\OrderModel' not found
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getOrders()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-03-19 15:14:26 --> Class 'App\Controllers\OrderDetailsModel' not found
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getOrders()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-03-19 17:36:41 --> Undefined property: App\Controllers\ApiController::$orderSequenceModel
+#0 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(249): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/thebedqv/...', 249, Array)
+#1 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(227): App\Controllers\ApiController->generateOrderId()
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->uploadPrescription()
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}

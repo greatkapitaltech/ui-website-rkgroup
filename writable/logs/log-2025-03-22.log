@@ -1,0 +1,199 @@
+CRITICAL - 2025-03-22 07:49:31 --> Undefined index: address
+#0 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(273): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 273, Array)
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getOrderDetails()
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-03-22 08:08:08 --> Call to undefined method App\Controllers\ApiController::failValidationErrors()
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->updateOrderAddress()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-03-22 08:08:31 --> Call to undefined method App\Controllers\ApiController::failValidationErrors()
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->updateOrderAddress()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-03-22 08:10:09 --> Call to undefined method App\Controllers\ApiController::failValidationErrors()
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->updateOrderAddress()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-03-22 08:13:17 --> Call to undefined method App\Controllers\ApiController::failValidationErrors()
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->updateOrderAddress()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2025-03-22 08:17:11 --> Update Address GET Data: Array
+(
+    [order_id] => 22
+    [recipient] => Myself
+    [address] => Test
+    [lat_long] => 12.8728527,77.6153556
+)
+
+CRITICAL - 2025-03-22 08:22:53 --> Undefined index: address
+#0 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(273): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 273, Array)
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getOrderDetails()
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-03-22 08:23:05 --> Undefined index: address
+#0 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(273): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 273, Array)
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getOrderDetails()
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-03-22 08:23:15 --> Undefined index: address
+#0 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(273): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 273, Array)
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getOrderDetails()
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-03-22 08:23:33 --> Undefined index: address
+#0 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(273): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 273, Array)
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getOrderDetails()
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-03-22 08:34:49 --> Call to a member function find() on null
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getProfile()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-03-22 08:34:49 --> Call to a member function find() on null
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getProfile()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-03-22 08:35:02 --> Call to a member function find() on null
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->getProfile()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2025-03-22 08:59:39 --> Update Address GET Data: Array
+(
+    [order_id] => 24
+    [recipient] => Myself
+    [address_text] => Test
+    [lat_long] => 12.872864701744225,77.61536335259834
+)
+
+ERROR - 2025-03-22 09:22:14 --> Update Address GET Data: Array
+(
+    [order_id] => 43
+    [recipient] => Myself
+    [address_text] => Test
+    [shared_location] => 12.872864701744225,77.61536335259834
+)
+
+ERROR - 2025-03-22 09:45:09 --> Update Address GET Data: Array
+(
+    [order_id] => 16
+    [recipient] => Myself
+    [address_text] => Test 
+    [shared_location] => 12.872864701744225,77.61536335259834
+)
+
+ERROR - 2025-03-22 09:48:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`thebedqv_medisoldier`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE) in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `or...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/thebedqv/medisoldier.sodiarc.in/app/Models/OrderModel.php(41): CodeIgniter\Model->insert(Array)
+#8 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(337): App\Models\OrderModel->createOrder('10', 'MS-2025-03-019', 'uploads/prescri...')
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->uploadPrescription()
+#10 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#11 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-03-22 09:48:03 --> Cannot add or update a child row: a foreign key constraint fails (`thebedqv_medisoldier`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `or...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/thebedqv/medisoldier.sodiarc.in/app/Models/OrderModel.php(41): CodeIgniter\Model->insert(Array)
+#8 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(337): App\Models\OrderModel->createOrder('10', 'MS-2025-03-019', 'uploads/prescri...')
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->uploadPrescription()
+#10 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#11 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2025-03-22 09:53:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`thebedqv_medisoldier`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE) in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `or...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/thebedqv/medisoldier.sodiarc.in/app/Models/OrderModel.php(41): CodeIgniter\Model->insert(Array)
+#8 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(337): App\Models\OrderModel->createOrder('10', 'MS-2025-03-020', 'uploads/prescri...')
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->uploadPrescription()
+#10 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#11 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-03-22 09:53:51 --> Cannot add or update a child row: a foreign key constraint fails (`thebedqv_medisoldier`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `or...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/thebedqv/medisoldier.sodiarc.in/app/Models/OrderModel.php(41): CodeIgniter\Model->insert(Array)
+#8 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(337): App\Models\OrderModel->createOrder('10', 'MS-2025-03-020', 'uploads/prescri...')
+#9 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->uploadPrescription()
+#10 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#11 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2025-03-22 10:03:46 --> Update Address GET Data: Array
+(
+    [order_id] => 46
+    [recipient] => Myself
+    [address_text] => Salisbury park b3..
+    [shared_location] => 18.4946259,73.8761479
+)
+
+CRITICAL - 2025-03-22 10:17:27 --> unlink(/home/thebedqv/medisoldier.sodiarc.in/writable/debugbar/debugbar_1742618505.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/home/th...', '/home/thebedqv/...', 78, Array)
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Debug/Toolbar/Collectors/History.php(78): unlink('/home/thebedqv/...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Debug/Toolbar.php(441): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1742618846, 20)
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Debug/Toolbar.php(413): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Config/Events.php(52): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/Events/Events.php(166): call_user_func(Object(Closure))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(314): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-03-22 17:34:24 --> Razorpay Link Creation Failed: {"error":{"code":"BAD_REQUEST_ERROR","description":"amount: cannot be blank.","metadata":[],"reason":null,"source":null,"step":null}}
+ERROR - 2025-03-22 17:36:18 --> Update Address GET Data: Array
+(
+    [order_id] => 48
+    [recipient] => Myself
+    [address_text] => Cmd bjj
+    [shared_location] => 18.5708946,73.7742372
+)
+

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Connect - RK Group</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/ce414fa6c9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Top strip -->
+    <div class="top-strip small text-white py-2">
+      <div
+        class="container d-flex justify-content-between align-items-center py-1"
+      >
+        <div class="d-flex gap-3">
+          <a
+            class="link-light text-decoration-none"
+            href="mailto:contact@rkgroup.biz"
+          >
+            <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>
+            contact@rkgroup.biz
+          </a>
+          <span>
+            <i class="fa-solid fa-phone me-2" aria-hidden="true"></i>
+            +91 80-4264-0241
+          </span>
+        </div>
+        <div class="opacity-75">
+          <i class="fa-regular fa-clock me-2" aria-hidden="true"></i>
+          8:00 AM until 6:00 PM
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="assets/img/RKGroup logo.svg" height="50px" alt="RK Group" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center nav-separated"
+          >
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="careers.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold actv" href="connect.html">Connect</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Connect Hero -->
+    <section class="py-5 bg-soft">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold text-primary mb-3">Connect With Us</h1>
+        <p class="h5 text-secondary mb-0 fw-normal">
+          We'd love to hear from you. Reach out to us for any inquiries.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Contact Form -->
+          <div class="col-lg-7">
+            <div class="contact-form-wrapper">
+              <h2 class="section-title text-primary mb-4">Get In Touch</h2>
+              <form id="contactForm">
+                <div class="row g-3">
+                  <!-- Name -->
+                  <div class="col-md-6">
+                    <label for="name" class="form-label fw-semibold">Name <span class="text-danger">*</span></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="Your full name"
+                    />
+                  </div>
+
+                  <!-- Email -->
+                  <div class="col-md-6">
+                    <label for="email" class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label fw-semibold">Phone Number <span class="text-danger">*</span></label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      required
+                      placeholder="+91 XXXXX XXXXX"
+                    />
+                  </div>
+
+                  <!-- Interest -->
+                  <div class="col-md-6">
+                    <label for="interest" class="form-label fw-semibold">Interest <span class="text-danger">*</span></label>
+                    <select class="form-select" id="interest" name="interest" required>
+                      <option value="" selected disabled>Select your interest</option>
+                      <option value="jobs">Jobs</option>
+                      <option value="business">Business</option>
+                      <option value="csr">CSR/Philanthropy</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <!-- Subject -->
+                  <div class="col-12">
+                    <label for="subject" class="form-label fw-semibold">Subject <span class="text-danger">*</span></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      name="subject"
+                      required
+                      placeholder="Brief subject of your message"
+                    />
+                  </div>
+
+                  <!-- Message -->
+                  <div class="col-12">
+                    <label for="message" class="form-label fw-semibold">Message <span class="text-danger">*</span></label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="6"
+                      required
+                      placeholder="Tell us more about your inquiry..."
+                    ></textarea>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-custom-primary btn-lg">
+                      Send Message &nbsp;<i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="col-lg-5">
+            <div class="contact-info-wrapper">
+              <h2 class="section-title text-primary mb-4">Contact Information</h2>
+
+              <!-- Address -->
+              <div class="contact-info-item mb-4">
+                <div class="d-flex align-items-start">
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold mb-2">Address</h5>
+                    <p class="text-secondary mb-0">
+                      RK Group, No. 1/1, 3rd floor,<br>
+                      Vinayaka towers, Bangalore
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-info-item mb-4">
+                <div class="d-flex align-items-start">
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold mb-2">Email</h5>
+                    <a href="mailto:contact@rkgroup.biz" class="text-secondary text-decoration-none">
+                      contact@rkgroup.biz
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-info-item mb-4">
+                <div class="d-flex align-items-start">
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold mb-2">Phone</h5>
+                    <a href="tel:+918042640000" class="text-secondary text-decoration-none">
+                      +91 80 4264 0000
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Business Hours -->
+              <div class="contact-info-item mb-4">
+                <div class="d-flex align-items-start">
+                  <div class="contact-icon">
+                    <i class="fa-regular fa-clock"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-bold mb-2">Business Hours</h5>
+                    <p class="text-secondary mb-0">
+                      Monday - Saturday: 8:00 AM - 6:00 PM<br>
+                      Sunday: Closed
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Media -->
+              <div class="contact-info-item">
+                <h5 class="fw-bold mb-3">Follow Us</h5>
+                <div class="d-flex gap-3">
+                  <a class="ic-badge" href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a class="ic-badge" href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a class="ic-badge" href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section (Optional) -->
+    <section class="py-5 bg-soft-new">
+      <div class="container">
+        <h2 class="section-title text-center text-primary mb-4">Find Us</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4716709726643!2d77.5758343!3d12.9755136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d97cea66535%3A0xf3800177961d026a!2sRK%20Group!5e0!3m2!1sen!2sin!4v1730110000000!5m2!1sen!2sin"
+            width="100%"
+            height="400"
+            style="border:0; border-radius: 12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-3">
+      <div class="container">
+        <!-- Main Footer Content -->
+        <div class="row gy-4 pb-4">
+          <!-- Brand Column -->
+          <div class="col-12 col-lg-4">
+            <div class="mb-4">
+              <img
+                src="assets/img/RKGroup logo.svg"
+                alt="RK Group"
+                class="footer-logo"
+              />
+            </div>
+            <p class="footer-text mb-4">
+              India's leading e-commerce conglomerate, driving innovation across retail, fintech, and technology sectors with a commitment to excellence and growth.
+            </p>
+
+            <!-- Social Media -->
+            <div class="mb-4">
+              <h6 class="footer-head mb-3">Follow Us</h6>
+              <div class="d-flex gap-3">
+                <a class="ic-badge" href="#" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="ic-badge" href="#" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a class="ic-badge" href="#" aria-label="YouTube">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a class="ic-badge" href="#" aria-label="Twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <h6 class="footer-head">Quick Links</h6>
+            <ul class="list-unstyled footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="connect.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-12 col-md-8 col-lg-5">
+            <h6 class="footer-head">Get in Touch</h6>
+            <ul class="list-unstyled footer-contact mb-0">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>RK Group, No. 1/1, 3rd floor,<br>Vinayaka towers, Bangalore</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a class="footer-link" href="mailto:contact@rkgroup.biz">contact@rkgroup.biz</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a class="footer-link" href="tel:+918042640000">+91 80 4264 0000</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-clock"></i>
+                <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom pt-4 mt-4">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="footer-muted mb-0">
+                © 2025 RK Group. All rights reserved.
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <ul class="list-inline footer-bottom-links mb-0">
+                <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                <li class="list-inline-item">•</li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item">•</li>
+                <li class="list-inline-item"><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Coming Soon Modal -->
+    <div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="comingSoonModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content coming-soon-modal-content">
+          <button type="button" class="btn-close coming-soon-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+          <div class="modal-body text-center px-4 py-5">
+            <!-- Animated Background Elements -->
+            <div class="coming-soon-bg-circles">
+              <div class="circle circle-1"></div>
+              <div class="circle circle-2"></div>
+              <div class="circle circle-3"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="coming-soon-content">
+              <div class="coming-soon-icon-wrapper mb-4">
+                <div class="icon-circle">
+                  <i class="fa-solid fa-rocket fa-3x"></i>
+                </div>
+              </div>
+
+              <h2 class="coming-soon-title mb-3">Stay Tuned!</h2>
+              <div class="coming-soon-badge mb-3">
+                <span>Coming Soon</span>
+              </div>
+
+              <p class="coming-soon-description mb-4">
+                We're working on something amazing. This section will be available soon with exciting new features!
+              </p>
+
+              <div class="coming-soon-animation mb-4">
+                <div class="dot-pulse">
+                  <div class="dot-pulse__dot"></div>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-custom-primary btn-lg px-5" data-bs-dismiss="modal">
+                Got it! <i class="fa-solid fa-check ms-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/connect.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Ensure Coming Soon Modal works on this page
+      document.addEventListener('DOMContentLoaded', function() {
+        const comingSoonLinks = document.querySelectorAll('[data-coming-soon]');
+        const modalElement = document.getElementById('comingSoonModal');
+
+        if (modalElement) {
+          comingSoonLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              const modal = new bootstrap.Modal(modalElement);
+              modal.show();
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+CRITICAL - 2025-08-21 18:19:39 --> Undefined index: type
+#0 /home/thebedqv/admin.medisoldier.com/app/Views/admin/layouts/sidebar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 19, Array)
+#1 /home/thebedqv/admin.medisoldier.com/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/admin.medisoldier.com/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/admin.medisoldier.com/system/Common.php(1217): CodeIgniter\View\View->render('admin/layouts/s...', Array, true)
+#4 /home/thebedqv/admin.medisoldier.com/app/Controllers/Admin.php(58): view('admin/layouts/s...')
+#5 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Admin->dashboard()
+#6 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-08-21 18:41:49 --> Undefined index: fieldName
+#0 /home/thebedqv/admin.medisoldier.com/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/StateAbstract.php(1646): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/thebedqv/...', 1646, Array)
+#1 /home/thebedqv/admin.medisoldier.com/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/InsertState.php(52): GroceryCrud\Core\State\StateAbstract->getValidationRules()
+#2 /home/thebedqv/admin.medisoldier.com/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\InsertState->render()
+#3 /home/thebedqv/admin.medisoldier.com/app/Controllers/Admin.php(754): GroceryCrud\Core\GroceryCrud->render()
+#4 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Admin->customer_coupons()
+#5 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2025-08-21 19:04:58 --> Invalid file: admin/coupons_bulk_upload_form.php
+#0 /home/thebedqv/admin.medisoldier.com/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/coupons_b...')
+#1 /home/thebedqv/admin.medisoldier.com/system/Common.php(1217): CodeIgniter\View\View->render('admin/coupons_b...', Array, true)
+#2 /home/thebedqv/admin.medisoldier.com/app/Controllers/Admin.php(1196): view('admin/coupons_b...', Array)
+#3 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Admin->couponBulkUploadForm()
+#4 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

@@ -1,0 +1,228 @@
+CRITICAL - 2021-05-23 01:17:49 --> Either, the action name is not recognized. Either the API method is wrong.
+#0 /home/thebedqv/reikanindia.com/beta/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2573): GroceryCrud\Core\State->getStateName()
+#1 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(58): GroceryCrud\Core\GroceryCrud->render()
+#2 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-23 01:30:17 --> syntax error, unexpected '*'
+#0 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/home/thebedqv/...')
+#1 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-23 01:30:26 --> syntax error, unexpected '*'
+#0 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/home/thebedqv/...')
+#1 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-23 01:52:23 --> Undefined property: App\Controllers\Admin::$data
+#0 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/thebedqv/...', 77, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#2 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-23 03:09:17 --> The framework needs the following extension(s) installed and loaded: {0}.
+#0 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(224): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(172): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /home/thebedqv/reikanindia.com/beta/system/bootstrap.php(159): CodeIgniter\CodeIgniter->initialize()
+#3 /home/thebedqv/reikanindia.com/beta/index.php(35): require('/home/thebedqv/...')
+#4 {main}
+CRITICAL - 2021-05-23 03:10:36 --> The framework needs the following extension(s) installed and loaded: {0}.
+#0 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(224): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(172): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 /home/thebedqv/reikanindia.com/beta/system/bootstrap.php(159): CodeIgniter\CodeIgniter->initialize()
+#3 /home/thebedqv/reikanindia.com/beta/index.php(35): require('/home/thebedqv/...')
+#4 {main}
+CRITICAL - 2021-05-23 03:21:45 --> Could not check compatibility between App\Controllers\BaseController::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and CodeIgniter\Controller::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\LoggerInterface is not available
+#0 /home/thebedqv/reikanindia.com/beta/app/Controllers/BaseController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Could not check...', '/home/thebedqv/...', 39, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(294): include_once('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/home/thebedqv/...')
+#3 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#5 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(5): spl_autoload_call('App\\Controllers...')
+#6 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(294): include_once('/home/thebedqv/...')
+#7 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/home/thebedqv/...')
+#8 /home/thebedqv/reikanindia.com/beta/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#9 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#10 [internal function]: spl_autoload_call('App\\Controllers...')
+#11 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#12 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#13 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2021-05-23 03:36:37 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(84): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 03:36:52 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(84): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 03:36:57 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(84): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 03:37:00 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(84): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 03:37:08 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(84): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 03:37:19 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(84): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 03:44:45 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(84): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 03:44:45 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(84): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 03:44:45 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(84): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 03:45:05 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(84): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 03:45:26 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(83): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 03:45:29 --> Undefined variable: css_files
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/admin/crud_layout.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 2, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('admin/crud_layo...', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Admin.php(83): view('admin/crud_layo...', Array)
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->brands()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 18:58:45 --> Call to undefined function App\Controllers\showAlert()
+#0 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Admin->login()
+#1 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-23 19:52:35 --> syntax error, unexpected ')', expecting ';' or ','
+#0 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/he...', Array, true)
+#2 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(13): view('home/layouts/he...')
+#3 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->work_with_us()
+#4 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-23 20:05:03 --> Undefined variable: categories
+#0 /home/thebedqv/reikanindia.com/beta/app/Views/home/index.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 8, Array)
+#1 /home/thebedqv/reikanindia.com/beta/system/View/View.php(220): include('/home/thebedqv/...')
+#2 /home/thebedqv/reikanindia.com/beta/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/thebedqv/reikanindia.com/beta/system/Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#4 /home/thebedqv/reikanindia.com/beta/app/Controllers/Home.php(15): view('home/index')
+#5 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-23 20:07:25 --> Call to a member function findAll() on null
+#0 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#1 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home/thebedqv/reikanindia.com/beta/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/reikanindia.com/beta/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}

@@ -1,0 +1,8 @@
+ERROR - 2025-08-28 18:25:38 --> Template send failed: Call to undefined method App\Controllers\Admin::normalizeMsisdn91()
+ERROR - 2025-08-28 18:42:19 --> Gupshup OPTIN failed: HTTP 404 resp={"message":{"message":"The Resource that you've tried is not their in the server. Please verify the request"},"status":"error"}
+ERROR - 2025-08-28 18:43:15 --> Gupshup OPTIN failed: HTTP 404 resp={"message":{"message":"The Resource that you've tried is not their in the server. Please verify the request"},"status":"error"}
+ERROR - 2025-08-28 18:44:16 --> Gupshup OPTIN failed: HTTP 404 resp={"message":{"message":"The Resource that you've tried is not their in the server. Please verify the request"},"status":"error"}
+ERROR - 2025-08-28 18:45:34 --> Gupshup OPTIN failed: HTTP 404 resp={"message":{"message":"The Resource that you've tried is not their in the server. Please verify the request"},"status":"error"}
+ERROR - 2025-08-28 19:12:44 --> Template send failed: Call to undefined method App\Controllers\Admin::normalizeMsisdn91()
+ERROR - 2025-08-28 19:14:00 --> Template send failed: Undefined property: App\Controllers\Admin::$gupshupTemplateKey
+ERROR - 2025-08-28 19:15:59 --> Template send failed: Undefined property: App\Controllers\Admin::$gupshupTemplateKey

@@ -1,0 +1,28 @@
+CRITICAL - 2025-08-11 10:21:42 --> Undefined variable: fullPhone
+#0 /home/thebedqv/admin.medisoldier.com/app/Controllers/Auth.php(155): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 155, Array)
+#1 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Auth->createUser()
+#2 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-08-11 10:21:47 --> Undefined variable: fullPhone
+#0 /home/thebedqv/admin.medisoldier.com/app/Controllers/Auth.php(155): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 155, Array)
+#1 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Auth->createUser()
+#2 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-08-11 10:21:52 --> Undefined variable: fullPhone
+#0 /home/thebedqv/admin.medisoldier.com/app/Controllers/Auth.php(155): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 155, Array)
+#1 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Auth->createUser()
+#2 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-08-11 10:22:05 --> Undefined variable: fullPhone
+#0 /home/thebedqv/admin.medisoldier.com/app/Controllers/Auth.php(155): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 155, Array)
+#1 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Auth->createUser()
+#2 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

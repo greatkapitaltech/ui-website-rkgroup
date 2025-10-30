@@ -1,0 +1,29 @@
+CRITICAL - 2023-09-01 05:00:43 --> Invalid file: home/layouts/index-header.php
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/layouts/in...')
+#1 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/in...', Array, true)
+#2 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(16): view('home/layouts/in...')
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-01 05:01:01 --> Invalid file: home/layouts/index-footer.php
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/layouts/in...')
+#1 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/in...', Array, true)
+#2 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(18): view('home/layouts/in...')
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-01 05:24:32 --> Undefined property: CodeIgniter\View\View::$request
+#0 /home1/ddecou4l/public_html/main/app/Views/home/layouts/header.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home1/ddecou4l...', 41, Array)
+#1 /home1/ddecou4l/public_html/main/system/View/View.php(220): include('/home1/ddecou4l...')
+#2 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/he...', Array, true)
+#4 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(28): view('home/layouts/he...')
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->services()
+#6 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

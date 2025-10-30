@@ -1,0 +1,52 @@
+CRITICAL - 2025-03-08 16:59:30 --> Class 'Config\Auth' not found
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(803): require()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-03-08 16:59:55 --> Class 'Config\Auth' not found
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(803): require()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-03-08 17:26:52 --> cors filter must have a matching alias defined.
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Filters/Filters.php(527): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('cors')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Filters/Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('admin/login')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/login', 'before')
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-03-08 17:26:53 --> cors filter must have a matching alias defined.
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Filters/Filters.php(527): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('cors')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Filters/Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('admin/login')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/login', 'before')
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-03-08 17:27:07 --> cors filter must have a matching alias defined.
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Filters/Filters.php(527): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('cors')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Filters/Filters.php(264): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Filters/Filters.php(168): CodeIgniter\Filters\Filters->initialize('admin/login')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(403): CodeIgniter\Filters\Filters->run('admin/login', 'before')
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-03-08 17:30:38 --> get_class() expects parameter 1 to be object, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'get_class() exp...', '/home/thebedqv/...', 75, Array)
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/RESTful/BaseResource.php(75): get_class('App\\Models\\User...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/RESTful/BaseResource.php(43): CodeIgniter\RESTful\BaseResource->setModel(NULL)
+#3 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/Auth.php(19): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(909): App\Controllers\Auth->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2025-03-08 17:35:27 --> Call to undefined function App\Controllers\int()
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\Auth->verifyOTP()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}

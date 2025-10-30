@@ -1,0 +1,40 @@
+CRITICAL - 2025-01-10 12:13:06 --> Call to undefined method GroceryCrud\Core\GroceryCrud::orderBy()
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\Admin->orders()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-01-10 12:15:50 --> Class 'App\Controllers\GroceryCrud' not found
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\Admin->orders()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-01-10 13:55:39 --> Undefined variable: totalTime
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Debug/Toolbar/Views/toolbar.tpl.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 41, Array)
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Debug/Toolbar.php(456): include('/home/thebedqv/...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Debug/Toolbar.php(413): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 /home/thebedqv/medisoldier.sodiarc.in/app/Config/Events.php(52): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/Events/Events.php(166): call_user_func(Object(Closure))
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(314): CodeIgniter\Events\Events::trigger('pre_system')
+#7 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2025-01-10 15:37:30 --> Undefined variable: validStatuses
+#0 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/Admin.php(206): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/thebedqv/...', 206, Array)
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\Admin->orders()
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-10 15:50:41 --> Call to undefined method App\Controllers\Admin::sendWhatsAppMessage()
+#0 /home/thebedqv/medisoldier.sodiarc.in/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/StateAbstract.php(952): App\Controllers\Admin->App\Controllers\{closure}(Object(stdClass))
+#1 /home/thebedqv/medisoldier.sodiarc.in/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/StateAbstract.php(364): GroceryCrud\Core\State\StateAbstract->afterStateOperation(Object(Closure), Object(stdClass))
+#2 /home/thebedqv/medisoldier.sodiarc.in/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/State/UpdateState.php(98): GroceryCrud\Core\State\StateAbstract->stateOperationWithCallbacks(Object(stdClass), 'Update', Object(Closure))
+#3 /home/thebedqv/medisoldier.sodiarc.in/app/Libraries/GroceryCrudEnterprise/grocerycrud/enterprise/src/GroceryCrud/Core/GroceryCrud.php(2585): GroceryCrud\Core\State\UpdateState->render()
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/Admin.php(263): GroceryCrud\Core\GroceryCrud->render()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\Admin->orders()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

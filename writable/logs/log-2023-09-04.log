@@ -1,0 +1,416 @@
+CRITICAL - 2023-09-04 13:30:23 --> syntax error, unexpected '='
+#0 /home1/ddecou4l/public_html/main/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/home1/ddecou4l...')
+#1 /home1/ddecou4l/public_html/main/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-04 13:30:48 --> syntax error, unexpected '='
+#0 /home1/ddecou4l/public_html/main/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/home1/ddecou4l...')
+#1 /home1/ddecou4l/public_html/main/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-04 13:30:48 --> Class 'App\Models\CategoryModel' not found
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(908): App\Controllers\Home->__construct()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 13:32:04 --> Undefined variable: categoryModel
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home1/ddecou4l...', 17, Array)
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-04 13:36:14 --> syntax error, unexpected '$categories' (T_VARIABLE), expecting '('
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/in...', Array, true)
+#2 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(19): view('home/layouts/in...', Array)
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-04 13:36:31 --> syntax error, unexpected 'as' (T_AS), expecting ';'
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/in...', Array, true)
+#2 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(19): view('home/layouts/in...', Array)
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-04 13:36:42 --> syntax error, unexpected 'as' (T_AS), expecting ';'
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/in...', Array, true)
+#2 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(19): view('home/layouts/in...', Array)
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-04 13:36:50 --> syntax error, unexpected 'as' (T_AS), expecting ';'
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/in...', Array, true)
+#2 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(19): view('home/layouts/in...', Array)
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-04 13:37:06 --> syntax error, unexpected 'as' (T_AS), expecting ';'
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/in...', Array, true)
+#2 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(19): view('home/layouts/in...', Array)
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-04 13:37:17 --> syntax error, unexpected 'endfor' (T_ENDFOR)
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/in...', Array, true)
+#2 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(19): view('home/layouts/in...', Array)
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-04 13:37:19 --> syntax error, unexpected 'endfor' (T_ENDFOR)
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/in...', Array, true)
+#2 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(19): view('home/layouts/in...', Array)
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-04 13:50:08 --> Undefined variable: productModel
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home1/ddecou4l...', 47, Array)
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-04 13:50:49 --> Class 'App\Controllers\Pagination' not found
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 13:51:38 --> Class 'App\Controllers\Pagination' not found
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 13:51:42 --> Class 'App\Controllers\Pagination' not found
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 13:52:40 --> Class 'CodeIgniter\Pagination\Views\SimplePager' not found
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 13:58:58 --> Class 'CodeIgniter\Pagination\Pager' not found
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 13:59:53 --> Class 'CodeIgniter\Pager\PagerFactory' not found
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 14:01:12 --> Class 'CodeIgniter\Pager\PagerFactory' not found
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 14:03:49 --> Argument 1 passed to CodeIgniter\Config\Services::pager() must be an instance of Config\Pager or null, array given, called in /home1/ddecou4l/public_html/main/system/Config/BaseService.php on line 171
+#0 /home1/ddecou4l/public_html/main/system/Config/BaseService.php(171): CodeIgniter\Config\Services::pager(Array)
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(56): CodeIgniter\Config\BaseService::__callStatic('pager', Array)
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:04:53 --> Call to undefined method CodeIgniter\Pager\Pager::configure()
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 14:05:26 --> Call to undefined method CodeIgniter\Pager\Pager::getInstance()
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 14:05:56 --> Undefined variable: pagination
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home1/ddecou4l...', 70, Array)
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-04 14:05:59 --> Undefined variable: pagination
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home1/ddecou4l...', 70, Array)
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-04 14:08:11 --> Call to undefined method CodeIgniter\Pager\Pager::createLinks()
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-04 14:08:42 --> Argument 1 passed to CodeIgniter\Pager\Pager::makeLinks() must be of the type int, string given, called in /home1/ddecou4l/public_html/main/app/Controllers/Home.php on line 116
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(116): CodeIgniter\Pager\Pager->makeLinks('products?catego...')
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:10:01 --> Argument 1 passed to CodeIgniter\Pager\Pager::makeLinks() must be of the type int, string given, called in /home1/ddecou4l/public_html/main/app/Controllers/Home.php on line 116
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(116): CodeIgniter\Pager\Pager->makeLinks('products?catego...')
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:10:03 --> Argument 1 passed to CodeIgniter\Pager\Pager::makeLinks() must be of the type int, string given, called in /home1/ddecou4l/public_html/main/app/Controllers/Home.php on line 116
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(116): CodeIgniter\Pager\Pager->makeLinks('products?catego...')
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:10:55 --> Argument 1 passed to CodeIgniter\Pager\Pager::makeLinks() must be of the type int, string given, called in /home1/ddecou4l/public_html/main/app/Controllers/Home.php on line 118
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(118): CodeIgniter\Pager\Pager->makeLinks('products?catego...', 1)
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:10:56 --> Argument 1 passed to CodeIgniter\Pager\Pager::makeLinks() must be of the type int, string given, called in /home1/ddecou4l/public_html/main/app/Controllers/Home.php on line 118
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(118): CodeIgniter\Pager\Pager->makeLinks('products?catego...', 1)
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:10:57 --> Argument 1 passed to CodeIgniter\Pager\Pager::makeLinks() must be of the type int, string given, called in /home1/ddecou4l/public_html/main/app/Controllers/Home.php on line 118
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(118): CodeIgniter\Pager\Pager->makeLinks('products?catego...', 1)
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:11:04 --> Argument 1 passed to CodeIgniter\Pager\Pager::makeLinks() must be of the type int, string given, called in /home1/ddecou4l/public_html/main/app/Controllers/Home.php on line 118
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(118): CodeIgniter\Pager\Pager->makeLinks('products?catego...', 1)
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:11:44 --> Argument 2 passed to CodeIgniter\Pager\Pager::makeLinks() must be of the type int or null, string given, called in /home1/ddecou4l/public_html/main/app/Controllers/Home.php on line 118
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(118): CodeIgniter\Pager\Pager->makeLinks(1, 'products?catego...')
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:12:40 --> Return value of CodeIgniter\Pager\Pager::getTotal() must be of the type int, null returned
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(116): CodeIgniter\Pager\Pager->getTotal()
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:12:41 --> Return value of CodeIgniter\Pager\Pager::getTotal() must be of the type int, null returned
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(116): CodeIgniter\Pager\Pager->getTotal()
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:12:42 --> Return value of CodeIgniter\Pager\Pager::getTotal() must be of the type int, null returned
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(116): CodeIgniter\Pager\Pager->getTotal()
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:12:42 --> Return value of CodeIgniter\Pager\Pager::getTotal() must be of the type int, null returned
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(116): CodeIgniter\Pager\Pager->getTotal()
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:15:10 --> Call to undefined method CodeIgniter\Pager\Pager::setTotal()
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 14:16:35 --> Call to undefined method CodeIgniter\Pager\Pager::setTotal()
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 14:16:44 --> Return value of CodeIgniter\Pager\Pager::getTotal() must be of the type int, null returned
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(116): CodeIgniter\Pager\Pager->getTotal()
+#1 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(70): App\Controllers\Home->buildPaginationLinks(Object(CodeIgniter\Pager\Pager), '1')
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-04 14:17:43 --> Undefined variable: product
+#0 /home1/ddecou4l/public_html/main/app/Views/home/product.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home1/ddecou4l...', 28, Array)
+#1 /home1/ddecou4l/public_html/main/system/View/View.php(220): include('/home1/ddecou4l...')
+#2 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/product', Array, true)
+#4 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(75): view('home/product', Array)
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#6 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-04 14:19:46 --> Array to string conversion
+#0 /home1/ddecou4l/public_html/main/app/Views/home/product.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/home1/ddecou4l...', 49, Array)
+#1 /home1/ddecou4l/public_html/main/system/View/View.php(220): include('/home1/ddecou4l...')
+#2 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/product', Array, true)
+#4 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(75): view('home/product', Array)
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#6 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-04 14:20:19 --> Call to a member function links() on string
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(220): include()
+#1 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/product', Array, true)
+#3 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(75): view('home/product', Array)
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-04 15:13:03 --> Undefined variable: ategory
+#0 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home1/ddecou4l...', 66, Array)
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-04 15:21:11 --> Use of undefined constant products - assumed 'products' (this will throw an Error in a future version of PHP)
+#0 /home1/ddecou4l/public_html/main/app/Views/home/index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/home1/ddecou4l...', 30, Array)
+#1 /home1/ddecou4l/public_html/main/system/View/View.php(220): include('/home1/ddecou4l...')
+#2 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#4 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(24): view('home/index')
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-04 15:21:14 --> Use of undefined constant products - assumed 'products' (this will throw an Error in a future version of PHP)
+#0 /home1/ddecou4l/public_html/main/app/Views/home/index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', '/home1/ddecou4l...', 30, Array)
+#1 /home1/ddecou4l/public_html/main/system/View/View.php(220): include('/home1/ddecou4l...')
+#2 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#4 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(24): view('home/index')
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#6 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-04 15:26:02 --> syntax error, unexpected 'container' (T_STRING)
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/layouts/fo...', Array, true)
+#2 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(102): view('home/layouts/fo...')
+#3 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->contact_us()
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-04 15:33:37 --> Cannot use object of type App\Models\WebContentModel as array
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->about()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 15:43:39 --> Call to undefined method CodeIgniter\Session\Session::hasFlashdata()
+#0 /home1/ddecou4l/public_html/main/system/View/View.php(220): include()
+#1 /home1/ddecou4l/public_html/main/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /home1/ddecou4l/public_html/main/system/Common.php(1217): CodeIgniter\View\View->render('home/contact', Array, true)
+#3 /home1/ddecou4l/public_html/main/app/Controllers/Home.php(111): view('home/contact')
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->contact_us()
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-04 15:56:54 --> Class 'App\Controllers\Services' not found
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->products()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 16:12:54 --> Class 'App\Controllers\App\Models\SliderModel' not found
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 16:13:06 --> Class 'App\Controllers\App\Models\SliderModel' not found
+#0 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(936): App\Controllers\Home->index()
+#1 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-04 16:22:03 --> syntax error, unexpected '$header_data' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 /home1/ddecou4l/public_html/main/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/home1/ddecou4l...')
+#1 /home1/ddecou4l/public_html/main/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 /home1/ddecou4l/public_html/main/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/main/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

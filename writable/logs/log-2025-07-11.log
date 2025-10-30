@@ -1,0 +1,30 @@
+CRITICAL - 2025-07-11 17:21:22 --> Call to undefined function App\Controllers\str()
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\Auth->sendOTP()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-07-11 17:21:46 --> Call to undefined method App\Controllers\Auth::sendTemplateMessage()
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\Auth->sendOTP()
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-07-11 17:53:54 --> Array to string conversion
+#0 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/Auth.php(230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/home/thebedqv/...', 230, Array)
+#1 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/Auth.php(78): App\Controllers\Auth->sendTemplateMessage('91918276048671', 'c60721f8-97d1-4...', '310340')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\Auth->sendOTP()
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-07-11 17:57:34 --> syntax error, unexpected '"', expecting ']'
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Autoloader/Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('/home/thebedqv/...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Autoloader/Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}

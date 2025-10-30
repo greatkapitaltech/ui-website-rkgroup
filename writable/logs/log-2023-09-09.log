@@ -1,0 +1,1083 @@
+CRITICAL - 2023-09-09 02:02:43 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:02:43 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:02:52 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:02:52 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:03:08 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:03:08 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:05:27 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:05:27 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:08:15 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:08:15 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:08:49 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:08:49 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:01 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:01 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:02 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:02 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:03 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:03 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:04 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:04 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:04 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:04 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:05 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:05 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:12 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:12 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:13 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:13 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:13 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:13 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:17 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:17 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:18 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:18 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:19 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:19 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:19 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:19 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:20 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:20 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:21 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:21 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:23 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:23 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:24 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:24 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:24 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:24 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:26 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:26 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:27 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:27 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:29 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:29 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:29 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:29 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:30 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:30 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:31 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:31 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:09:32 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:09:32 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:10:34 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:10:34 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:13:31 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:13:31 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:13:58 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:13:58 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:14:14 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:14:14 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:14:22 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:14:22 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:14:34 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:14:34 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:14:45 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:14:45 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:14:57 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:14:57 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:15:11 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:15:11 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:15:25 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:15:25 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:15:36 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:15:36 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:15:50 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:15:50 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:16:04 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:16:04 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:16:18 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:16:18 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:16:32 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:16:32 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:16:44 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:16:44 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:22:00 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:22:00 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:23:29 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:23:29 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:23:30 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:23:30 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:27:36 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:27:36 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:27:41 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:27:41 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:27:45 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:27:45 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:27:56 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:27:56 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:29:54 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:29:54 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:29:56 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:29:56 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-09 02:31:47 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(1359): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', '/home1/ddecou4l...', 1359)
+#1 /home1/ddecou4l/public_html/system/Router/RouteCollection.php(608): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 /home1/ddecou4l/public_html/system/Config/Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 /home1/ddecou4l/public_html/app/Config/Routes.php(12): require('/home1/ddecou4l...')
+#4 /home1/ddecou4l/public_html/system/CodeIgniter.php(803): require('/home1/ddecou4l...')
+#5 /home1/ddecou4l/public_html/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-09-09 02:31:47 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at /home1/ddecou4l/public_html/system/HTTP/RequestTrait.php:338) in /home1/ddecou4l/public_html/system/Debug/Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', '/home1/ddecou4l...', 137)
+#1 /home1/ddecou4l/public_html/system/Debug/Exceptions.php(137): header('HTTP/2.0 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

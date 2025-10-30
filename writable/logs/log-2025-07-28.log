@@ -1,0 +1,14 @@
+CRITICAL - 2025-07-28 22:01:23 --> Return value of App\Models\UserOtpModel::deleteOTP() must be of the type bool, object returned
+#0 /home/thebedqv/admin.medisoldier.com/app/Controllers/Auth.php(112): App\Models\UserOtpModel->deleteOTP('918276048671')
+#1 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Auth->verifyOTP()
+#2 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-07-28 22:04:40 --> Return value of App\Models\UserOtpModel::deleteOTP() must be of the type bool, object returned
+#0 /home/thebedqv/admin.medisoldier.com/app/Controllers/Auth.php(112): App\Models\UserOtpModel->deleteOTP('918276048671')
+#1 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(936): App\Controllers\Auth->verifyOTP()
+#2 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/thebedqv/admin.medisoldier.com/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/thebedqv/admin.medisoldier.com/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}

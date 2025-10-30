@@ -1,0 +1,18 @@
+CRITICAL - 2024-06-24 13:58:05 --> Invalid file: contact_form_view.php
+#0 /home/thebedqv/d-decor.in/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contact_form_vi...')
+#1 /home/thebedqv/d-decor.in/system/Common.php(1217): CodeIgniter\View\View->render('contact_form_vi...', Array, true)
+#2 /home/thebedqv/d-decor.in/app/Controllers/Home.php(181): view('contact_form_vi...', Array)
+#3 /home/thebedqv/d-decor.in/system/CodeIgniter.php(936): App\Controllers\Home->contact_enquiry_submit()
+#4 /home/thebedqv/d-decor.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/thebedqv/d-decor.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/thebedqv/d-decor.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-06-24 17:57:27 --> Invalid file: contact_form_view.php
+#0 /home/thebedqv/d-decor.in/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contact_form_vi...')
+#1 /home/thebedqv/d-decor.in/system/Common.php(1217): CodeIgniter\View\View->render('contact_form_vi...', Array, true)
+#2 /home/thebedqv/d-decor.in/app/Controllers/Home.php(181): view('contact_form_vi...', Array)
+#3 /home/thebedqv/d-decor.in/system/CodeIgniter.php(936): App\Controllers\Home->contact_enquiry_submit()
+#4 /home/thebedqv/d-decor.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /home/thebedqv/d-decor.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/thebedqv/d-decor.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

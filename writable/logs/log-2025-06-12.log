@@ -1,0 +1,142 @@
+ERROR - 2025-06-12 20:25:44 --> mysqli_sql_exception: Unknown column 'DISTINCT' in 'SELECT' in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT `DISTINC...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(743): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-06-12 20:25:44 --> Unknown column 'DISTINCT' in 'SELECT'
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT `DISTINC...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(743): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-06-12 20:25:48 --> mysqli_sql_exception: Unknown column 'DISTINCT' in 'SELECT' in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT `DISTINC...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(743): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-06-12 20:25:48 --> Unknown column 'DISTINCT' in 'SELECT'
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT `DISTINC...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(743): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-06-12 20:26:04 --> mysqli_sql_exception: Unknown column 'DISTINCT' in 'SELECT' in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT `DISTINC...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(743): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-06-12 20:26:04 --> Unknown column 'DISTINCT' in 'SELECT'
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT `DISTINC...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(743): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-06-12 20:26:14 --> mysqli_sql_exception: Unknown column 'DISTINCT' in 'SELECT' in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT `DISTINC...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(743): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-06-12 20:26:14 --> Unknown column 'DISTINCT' in 'SELECT'
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT `DISTINC...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(743): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-06-12 20:27:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %tb%
+ LIMIT 10' at line 3 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT DISTINCT...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(749): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-06-12 20:27:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %tb%
+ LIMIT 10' at line 3
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT DISTINCT...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(749): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-06-12 20:27:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %tbact%
+ LIMIT 10' at line 3 in /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT DISTINCT...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(749): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-06-12 20:27:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= %tbact%
+ LIMIT 10' at line 3
+#0 /home/thebedqv/medisoldier.sodiarc.in/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT DISTINCT...')
+#1 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 /home/thebedqv/medisoldier.sodiarc.in/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 /home/thebedqv/medisoldier.sodiarc.in/app/Controllers/ApiController.php(749): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(936): App\Controllers\ApiController->autocomplete()
+#6 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+#7 /home/thebedqv/medisoldier.sodiarc.in/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/thebedqv/medisoldier.sodiarc.in/index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

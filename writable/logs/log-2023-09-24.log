@@ -1,0 +1,49 @@
+CRITICAL - 2023-09-24 01:58:39 --> Undefined array key 0
+#0 /home1/ddecou4l/public_html/app/Controllers/Home.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/home1/ddecou4l...', 215)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->pages('js', 'main.js')
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-24 01:58:51 --> Undefined array key 0
+#0 /home1/ddecou4l/public_html/app/Controllers/Home.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/home1/ddecou4l...', 215)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->pages('js', 'main.js')
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-24 01:58:58 --> Undefined array key 0
+#0 /home1/ddecou4l/public_html/app/Controllers/Home.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/home1/ddecou4l...', 215)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->pages('js', 'main.js')
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-24 04:27:53 --> Undefined array key 0
+#0 /home1/ddecou4l/public_html/app/Controllers/Home.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/home1/ddecou4l...', 215)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->pages('js', 'main.js')
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-24 04:27:58 --> Undefined array key 0
+#0 /home1/ddecou4l/public_html/app/Controllers/Home.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/home1/ddecou4l...', 215)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->pages('js', 'main.js')
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-24 04:27:59 --> Undefined array key 0
+#0 /home1/ddecou4l/public_html/app/Controllers/Home.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/home1/ddecou4l...', 215)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->pages('js', 'main.js')
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-24 04:28:04 --> Undefined array key 0
+#0 /home1/ddecou4l/public_html/app/Controllers/Home.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/home1/ddecou4l...', 215)
+#1 /home1/ddecou4l/public_html/system/CodeIgniter.php(936): App\Controllers\Home->pages('js', 'main.js')
+#2 /home1/ddecou4l/public_html/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home1/ddecou4l/public_html/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home1/ddecou4l/public_html/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
