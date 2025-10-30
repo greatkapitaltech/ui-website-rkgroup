@@ -1668,7 +1668,7 @@ class Admin extends BaseController {
         $crud->fields(['name', 'logo', 'description', 'website_url', 'display_order', 'is_active']);
 
         // Enable file upload for logo
-        $crud->setFieldUpload('logo', 'assets/uploads/companies', base_url('assets/uploads/companies'));
+        $crud->setFieldUpload('logo', FCPATH . 'assets/uploads/companies', base_url('assets/uploads/companies'));
 
         // Display logo as image in the grid
         $crud->callbackColumn('logo', function ($value, $row) {
@@ -1727,7 +1727,7 @@ class Admin extends BaseController {
         $crud->fields(['name', 'logo', 'website_url', 'display_order', 'is_active']);
 
         // Enable file upload for logo
-        $crud->setFieldUpload('logo', 'assets/uploads/partners', base_url('assets/uploads/partners'));
+        $crud->setFieldUpload('logo', FCPATH . 'assets/uploads/partners', base_url('assets/uploads/partners'));
 
         // Display logo as image in the grid
         $crud->callbackColumn('logo', function ($value, $row) {
@@ -1787,7 +1787,7 @@ class Admin extends BaseController {
         $crud->fields(['name', 'position', 'photo', 'bio', 'education', 'member_type', 'display_order', 'is_active']);
 
         // Enable file upload for photo
-        $crud->setFieldUpload('photo', 'assets/uploads/board_members', base_url('assets/uploads/board_members'));
+        $crud->setFieldUpload('photo', FCPATH . 'assets/uploads/board_members', base_url('assets/uploads/board_members'));
 
         // Display photo as image in the grid
         $crud->callbackColumn('photo', function ($value, $row) {
@@ -2025,7 +2025,7 @@ class Admin extends BaseController {
         $crud->fields(['year', 'title', 'description', 'image_url', 'alignment', 'display_order', 'is_active']);
 
         // Enable file upload for timeline images
-        $crud->setFieldUpload('image_url', 'assets/uploads/timeline', base_url('assets/uploads/timeline'));
+        $crud->setFieldUpload('image_url', FCPATH . 'assets/uploads/timeline', base_url('assets/uploads/timeline'));
 
         // Display image as thumbnail in the grid
         $crud->callbackColumn('image_url', function ($value, $row) {
