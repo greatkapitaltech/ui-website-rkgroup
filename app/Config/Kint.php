@@ -3,7 +3,7 @@
 namespace Config;
 
 use CodeIgniter\Config\BaseConfig;
-use Kint\Renderer\Renderer;
+// use Kint\Renderer\Renderer; // Commented out - Kint may not be installed
 
 /**
  * --------------------------------------------------------------------------
@@ -40,7 +40,7 @@ class Kint extends BaseConfig
 
 	public $richFolder = false;
 
-	public $richSort = Renderer::SORT_FULL;
+	public $richSort = 1; // Renderer::SORT_FULL (1) - Kint library may not be installed
 
 	public $richObjectPlugins = null;
 
