@@ -20,9 +20,38 @@ i, .fa, [class*="fa-"], [class*="icon-"], [class*="glyphicon-"] {
 .content-wrapper i,
 .sidebar-menu i {
 	font-family: 'FontAwesome' !important;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1;
+	font-style: normal !important;
+	font-weight: normal !important;
+	line-height: 1 !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	display: inline-block !important;
+}
+
+/* Specific fix for Font Awesome 4.7 icons that might not render */
+.fa-user-circle:before {
+	content: "\f2bd" !important;
+	font-family: 'FontAwesome' !important;
+}
+
+.fa-handshake-o:before {
+	content: "\f2b5" !important;
+	font-family: 'FontAwesome' !important;
+}
+
+/* Ensure sidebar icons are visible */
+.sidebar-menu li > a > i {
+	font-family: 'FontAwesome' !important;
+	display: inline-block !important;
+	width: auto !important;
+	text-align: center !important;
+	margin-right: 10px !important;
+}
+
+/* Ensure user panel icon is visible */
+.user-panel .fa {
+	font-family: 'FontAwesome' !important;
+	display: inline-block !important;
 }
 </style>
 
