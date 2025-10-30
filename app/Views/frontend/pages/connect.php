@@ -1,8 +1,9 @@
+<!-- Connect Hero -->
 <section class="py-5 bg-soft">
   <div class="container text-center">
-    <h1 class="display-4 fw-bold text-primary mb-3">Connect With Us</h1>
+    <h1 class="display-4 fw-bold text-primary mb-3"><?= isset($settings['connect_hero_title']) ? esc($settings['connect_hero_title']) : 'Connect With Us' ?></h1>
     <p class="h5 text-secondary mb-0 fw-normal">
-      We'd love to hear from you. Reach out to us for any inquiries.
+      <?= isset($settings['connect_hero_subtitle']) ? esc($settings['connect_hero_subtitle']) : 'We\'d love to hear from you. Reach out to us for any inquiries.' ?>
     </p>
   </div>
 </section>
@@ -12,7 +13,7 @@
     <div class="row g-5">
       <div class="col-lg-7">
         <div class="contact-form-wrapper">
-          <h2 class="section-title text-primary mb-4">Get In Touch</h2>
+          <h2 class="section-title text-primary mb-4"><?= isset($settings['connect_form_title']) ? esc($settings['connect_form_title']) : 'Get In Touch' ?></h2>
           <form id="contactForm">
             <div class="row g-3">
               <div class="col-md-6">
@@ -56,13 +57,19 @@
       </div>
       <div class="col-lg-5">
         <div class="contact-info-wrapper">
-          <h2 class="section-title text-primary mb-4">Contact Information</h2>
+          <h2 class="section-title text-primary mb-4"><?= isset($settings['connect_info_title']) ? esc($settings['connect_info_title']) : 'Contact Information' ?></h2>
           <div class="contact-info-item mb-4">
             <div class="d-flex align-items-start">
               <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
               <div>
                 <h5 class="fw-bold mb-2">Address</h5>
-                <p class="text-secondary mb-0">RK Group, No. 1/1, 3rd floor,<br>Vinayaka towers, Bangalore</p>
+                <p class="text-secondary mb-0">
+                  <?php if (isset($settings['connect_address'])): ?>
+                    <?= $settings['connect_address'] ?>
+                  <?php else: ?>
+                    RK Group, No. 1/1, 3rd floor,<br>Vinayaka towers, Bangalore
+                  <?php endif; ?>
+                </p>
               </div>
             </div>
           </div>
@@ -71,7 +78,9 @@
               <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
               <div>
                 <h5 class="fw-bold mb-2">Email</h5>
-                <a href="mailto:contact@rkgroup.biz" class="text-secondary text-decoration-none">contact@rkgroup.biz</a>
+                <a href="mailto:<?= isset($settings['connect_email']) ? esc($settings['connect_email']) : 'contact@rkgroup.biz' ?>" class="text-secondary text-decoration-none">
+                  <?= isset($settings['connect_email']) ? esc($settings['connect_email']) : 'contact@rkgroup.biz' ?>
+                </a>
               </div>
             </div>
           </div>
@@ -81,12 +90,13 @@
   </div>
 </section>
 
+<!-- Map Section -->
 <section class="py-5 bg-soft-new">
   <div class="container">
-    <h2 class="section-title text-center text-primary mb-4">Find Us</h2>
+    <h2 class="section-title text-center text-primary mb-4"><?= isset($settings['connect_map_title']) ? esc($settings['connect_map_title']) : 'Find Us' ?></h2>
     <div class="map-container">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4716709726643!2d77.5758343!3d12.9755136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d97cea66535%3A0xf3800177961d026a!2sRK%20Group!5e0!3m2!1sen!2sin!4v1730110000000!5m2!1sen!2sin"
+        src="<?= isset($settings['connect_map_embed_url']) ? esc($settings['connect_map_embed_url']) : 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4716709726643!2d77.5758343!3d12.9755136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d97cea66535%3A0xf3800177961d026a!2sRK%20Group!5e0!3m2!1sen!2sin!4v1730110000000!5m2!1sen!2sin' ?>"
         width="100%"
         height="400"
         style="border:0; border-radius: 12px;"

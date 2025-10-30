@@ -64,6 +64,43 @@ INSERT INTO `site_settings` (`setting_key`, `setting_value`, `setting_type`, `se
 ('about_careers_description', 'Explore exciting career opportunities and join our team—explore a career path for your future with open positions and growth opportunities on our Careers portal.', 'textarea', 'about_careers', 'Careers CTA description', 1),
 ('about_careers_button', 'Join Us!', 'text', 'about_careers', 'Careers CTA button text', 1),
 
+-- Careers Page Settings
+('careers_hero_title', 'JOIN OUR TEAM', 'text', 'careers_hero', 'Careers hero section title', 1),
+('careers_hero_subtitle', 'Explore Exciting Career Opportunities At RK Group', 'text', 'careers_hero', 'Careers hero section subtitle', 1),
+
+('careers_intro_title', 'BUILD YOUR FUTURE WITH US', 'text', 'careers_intro', 'Careers intro section title', 1),
+('careers_intro_tagline', '- Where Talent Meets Opportunity -', 'text', 'careers_intro', 'Careers intro tagline', 1),
+('careers_intro_description', 'At RK Group, we believe in nurturing talent and fostering growth.', 'textarea', 'careers_intro', 'Careers intro description', 1),
+
+('careers_openings_title', 'CURRENT OPENINGS', 'text', 'careers_openings', 'Careers openings section title', 1),
+('careers_openings_iframe_url', 'https://hr.gkdev.in/public/jobs', 'text', 'careers_openings', 'Careers iframe URL for job listings', 1),
+
+-- Connect Page Settings
+('connect_hero_title', 'Connect With Us', 'text', 'connect_hero', 'Connect page hero title', 1),
+('connect_hero_subtitle', 'We\'d love to hear from you. Reach out to us for any inquiries.', 'text', 'connect_hero', 'Connect page hero subtitle', 1),
+
+('connect_form_title', 'Get In Touch', 'text', 'connect_form', 'Contact form title', 1),
+
+('connect_info_title', 'Contact Information', 'text', 'connect_info', 'Contact info section title', 1),
+('connect_address', 'RK Group, No. 1/1, 3rd floor,<br>Vinayaka towers, Bangalore', 'textarea', 'connect_info', 'Office address', 1),
+('connect_email', 'contact@rkgroup.biz', 'text', 'connect_info', 'Contact email', 1),
+
+('connect_map_title', 'Find Us', 'text', 'connect_map', 'Map section title', 1),
+('connect_map_embed_url', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4716709726643!2d77.5758343!3d12.9755136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d97cea66535%3A0xf3800177961d026a!2sRK%20Group!5e0!3m2!1sen!2sin!4v1730110000000!5m2!1sen!2sin', 'textarea', 'connect_map', 'Google Maps embed URL', 1),
+
+-- Homepage News Section - Instagram Settings
+('news_instagram_tab1_name', 'The Jain Foundation', 'text', 'homepage_news', 'Instagram tab 1 name', 1),
+('news_instagram_tab1_url', 'https://www.instagram.com/jainfoundation.in/', 'text', 'homepage_news', 'Instagram tab 1 profile URL', 1),
+('news_instagram_tab1_button', 'Follow The Jain Foundation', 'text', 'homepage_news', 'Instagram tab 1 button text', 1),
+
+('news_instagram_tab2_name', 'Ujwala Farm', 'text', 'homepage_news', 'Instagram tab 2 name', 1),
+('news_instagram_tab2_url', 'https://www.instagram.com/ujwala_farm_retreat/', 'text', 'homepage_news', 'Instagram tab 2 profile URL', 1),
+('news_instagram_tab2_button', 'Follow Ujwala Farm Retreat', 'text', 'homepage_news', 'Instagram tab 2 button text', 1),
+
+('news_instagram_tab3_name', 'PRSM School', 'text', 'homepage_news', 'Instagram tab 3 name', 1),
+('news_instagram_tab3_url', 'https://www.instagram.com/prem_ratan_shah_memorial/', 'text', 'homepage_news', 'Instagram tab 3 profile URL', 1),
+('news_instagram_tab3_button', 'Follow PRSM School', 'text', 'homepage_news', 'Instagram tab 3 button text', 1),
+
 -- General Site Settings
 ('site_name', 'RK Group', 'text', 'general', 'Website name', 1),
 ('site_tagline', 'Excellence Is Our Passion', 'text', 'general', 'Website tagline', 1),

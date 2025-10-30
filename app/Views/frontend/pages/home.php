@@ -212,12 +212,12 @@
             <div class="news-card p-4">
               <h5 class="mb-3 fw-bold d-flex align-items-center gap-2">
                 <i class="fa-brands fa-linkedin text-primary"></i>
-                Latest from RK Group
+                <?= isset($settings['news_linkedin_title']) ? esc($settings['news_linkedin_title']) : 'Latest from RK Group' ?>
               </h5>
 
               <!-- LinkedIn Embedded Post -->
               <div class="linkedin-embed-container mb-3">
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7388494921533616128"
+                <iframe src="<?= isset($settings['news_linkedin_embed']) ? esc($settings['news_linkedin_embed']) : 'https://www.linkedin.com/embed/feed/update/urn:li:share:7388494921533616128' ?>"
                         height="600"
                         width="100%"
                         frameborder="0"
@@ -229,7 +229,7 @@
 
               <div class="text-center">
                 <a
-                  href="https://www.linkedin.com/company/rk-groupp/"
+                  href="<?= isset($settings['news_linkedin_url']) ? esc($settings['news_linkedin_url']) : 'https://www.linkedin.com/company/rk-groupp/' ?>"
                   target="_blank"
                   class="btn btn-custom-primary"
                 >
@@ -244,7 +244,7 @@
               <!-- Tabs -->
               <h5 class="mb-3 fw-bold d-flex align-items-center gap-2">
                 <i class="fa-brands fa-instagram text-primary"></i>
-                CSR Initiatives
+                <?= isset($settings['news_instagram_title']) ? esc($settings['news_instagram_title']) : 'CSR Initiatives' ?>
               </h5>
               <ul class="nav news-tabs gap-3 mb-3">
                 <li class="nav-item">
@@ -254,7 +254,7 @@
                     data-bs-target="#tab-tjf"
                     type="button"
                   >
-                    The Jain Foundation
+                    <?= isset($settings['news_instagram_tab1_name']) ? esc($settings['news_instagram_tab1_name']) : 'The Jain Foundation' ?>
                   </button>
                 </li>
                 <li class="nav-item">
@@ -264,7 +264,7 @@
                     data-bs-target="#tab-ujwala"
                     type="button"
                   >
-                    Ujwala Farm
+                    <?= isset($settings['news_instagram_tab2_name']) ? esc($settings['news_instagram_tab2_name']) : 'Ujwala Farm' ?>
                   </button>
                 </li>
                 <li class="nav-item">
@@ -274,7 +274,7 @@
                     data-bs-target="#tab-school"
                     type="button"
                   >
-                    PRSM School
+                    <?= isset($settings['news_instagram_tab3_name']) ? esc($settings['news_instagram_tab3_name']) : 'PRSM School' ?>
                   </button>
                 </li>
               </ul>
@@ -284,16 +284,16 @@
                 <!-- TJF Tab -->
                 <div class="tab-pane fade show active" id="tab-tjf">
                   <div class="instagram-embed-container">
-                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/jainfoundation.in/" data-instgrm-version="14"></blockquote>
+                    <blockquote class="instagram-media" data-instgrm-permalink="<?= isset($settings['news_instagram_tab1_url']) ? esc($settings['news_instagram_tab1_url']) : 'https://www.instagram.com/jainfoundation.in/' ?>" data-instgrm-version="14"></blockquote>
                   </div>
                   <div class="mt-3 text-center">
                     <a
-                      href="https://www.instagram.com/jainfoundation.in/"
+                      href="<?= isset($settings['news_instagram_tab1_url']) ? esc($settings['news_instagram_tab1_url']) : 'https://www.instagram.com/jainfoundation.in/' ?>"
                       target="_blank"
                       class="btn btn-custom-primary"
                     >
                       <i class="fa-brands fa-instagram me-2"></i>
-                      Follow The Jain Foundation
+                      <?= isset($settings['news_instagram_tab1_button']) ? esc($settings['news_instagram_tab1_button']) : 'Follow The Jain Foundation' ?>
                     </a>
                   </div>
                 </div>
@@ -301,16 +301,16 @@
                 <!-- Ujwala Farm Tab -->
                 <div class="tab-pane fade" id="tab-ujwala">
                   <div class="instagram-embed-container">
-                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/ujwala_farm_retreat/" data-instgrm-version="14"></blockquote>
+                    <blockquote class="instagram-media" data-instgrm-permalink="<?= isset($settings['news_instagram_tab2_url']) ? esc($settings['news_instagram_tab2_url']) : 'https://www.instagram.com/ujwala_farm_retreat/' ?>" data-instgrm-version="14"></blockquote>
                   </div>
                   <div class="mt-3 text-center">
                     <a
-                      href="https://www.instagram.com/ujwala_farm_retreat/"
+                      href="<?= isset($settings['news_instagram_tab2_url']) ? esc($settings['news_instagram_tab2_url']) : 'https://www.instagram.com/ujwala_farm_retreat/' ?>"
                       target="_blank"
                       class="btn btn-custom-primary"
                     >
                       <i class="fa-brands fa-instagram me-2"></i>
-                      Follow Ujwala Farm Retreat
+                      <?= isset($settings['news_instagram_tab2_button']) ? esc($settings['news_instagram_tab2_button']) : 'Follow Ujwala Farm Retreat' ?>
                     </a>
                   </div>
                 </div>
@@ -318,16 +318,16 @@
                 <!-- PRSM School Tab -->
                 <div class="tab-pane fade" id="tab-school">
                   <div class="instagram-embed-container">
-                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/prem_ratan_shah_memorial/" data-instgrm-version="14"></blockquote>
+                    <blockquote class="instagram-media" data-instgrm-permalink="<?= isset($settings['news_instagram_tab3_url']) ? esc($settings['news_instagram_tab3_url']) : 'https://www.instagram.com/prem_ratan_shah_memorial/' ?>" data-instgrm-version="14"></blockquote>
                   </div>
                   <div class="mt-3 text-center">
                     <a
-                      href="https://www.instagram.com/prem_ratan_shah_memorial/"
+                      href="<?= isset($settings['news_instagram_tab3_url']) ? esc($settings['news_instagram_tab3_url']) : 'https://www.instagram.com/prem_ratan_shah_memorial/' ?>"
                       target="_blank"
                       class="btn btn-custom-primary"
                     >
                       <i class="fa-brands fa-instagram me-2"></i>
-                      Follow PRSM School
+                      <?= isset($settings['news_instagram_tab3_button']) ? esc($settings['news_instagram_tab3_button']) : 'Follow PRSM School' ?>
                     </a>
                   </div>
                 </div>
