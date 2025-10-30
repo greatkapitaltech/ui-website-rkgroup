@@ -82,13 +82,6 @@
                 <a href="<?= base_url('admin/contacts') ?>">
                     <i class="fa fa-envelope"></i>
                     <span>Contact Submissions</span>
-                    <?php
-                    // Optional: Show count badge
-                    // $unreadCount = model('ContactSubmissionsModel')->where('status', 'new')->countAllResults();
-                    // if ($unreadCount > 0):
-                    ?>
-                    <!-- <small class="label pull-right bg-green"><?= $unreadCount ?></small> -->
-                    <?php // endif; ?>
                 </a>
             </li>
 
