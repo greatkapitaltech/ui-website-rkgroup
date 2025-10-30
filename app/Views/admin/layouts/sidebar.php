@@ -1,289 +1,124 @@
 <!-- Left side column. contains the logo and sidebar -->
 <aside class="main-sidebar">
-    <!-- sidebar -->
-    <div class="sidebar">
-        <!-- sidebar menu -->
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel" style="padding: 15px; text-align: center; border-bottom: 1px solid #444;">
+            <div class="pull-left image">
+                <i class="fa fa-user-circle" style="font-size: 45px; color: #fff;"></i>
+            </div>
+            <div class="pull-left info">
+                <p style="color: #fff; margin-bottom: 5px;">
+                    <?= isset($data[0]['name']) ? esc($data[0]['name']) : 'Admin' ?>
+                </p>
+                <span style="font-size: 11px; color: #aaa;">
+                    <?= isset($data[0]['type']) ? ucfirst(strtolower($data[0]['type'])) : 'Administrator' ?>
+                </span>
+            </div>
+        </div>
+
+        <!-- sidebar menu: -->
         <ul class="sidebar-menu" data-widget="tree">
-            <!-- DASHBOARD -->
+            <?php
+            $uri = service('uri');
+            $segment2 = $uri->getSegment(2);
+            ?>
+
+            <!-- MAIN NAVIGATION -->
             <li class="header">MAIN NAVIGATION</li>
-            <?php $uri = new \CodeIgniter\HTTP\URI(current_url()); ?>
-            
-            <li class="<?= ($uri->getSegment(count($uri->getSegments())) == 'dashboard') ? 'active' : '' ?>">
+
+            <li class="<?= ($segment2 == 'dashboard' || $segment2 == '') ? 'active' : '' ?>">
                 <a href="<?= base_url('admin/dashboard') ?>">
-                    <i class="fa fa-tachometer"></i>
+                    <i class="fa fa-dashboard"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
-            
-            <?php
-            if($data[0]['type'] === "ADMIN") {
-            ?>
 
-            <!-- USERS -->
-            <li class="treeview <?= ($uri->getSegment(count($uri->getSegments())) == 'users') ? 'active menu-open' : '' ?>">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-users"></i>
-                    <span>Users</span>
-                    <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                </a>
-                <ul class="treeview-menu">
-                    <li>
-                        <a href="<?= base_url('admin/users') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Manage Users
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <!-- PINCODES -->
-            <li class="treeview <?= ($uri->getSegment(count($uri->getSegments())) == 'pincodes') ? 'active menu-open' : '' ?>">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-map-marker"></i>
-                    <span>Pincodes</span>
-                    <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                </a>
-                <ul class="treeview-menu">
-                    <li>
-                        <a href="<?= base_url('admin/pincodes') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Manage Pincodes
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            
-            
-
-            <!-- ORDERS & RELATED TABLES -->
-            <li class="treeview
-                <?php
-                    $activeMenus = [
-                        'orders','order-details','delivery-addresses',
-                        'payments','insurance-documents','order-status-history','list-pending'
-                    ];
-                    echo in_array($uri->getSegment(count($uri->getSegments())), $activeMenus)
-                         ? 'active menu-open'
-                         : '';
-                ?>">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-shopping-basket"></i>
-                    <span>Orders</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li>
-                        <a href="<?= base_url('admin/orders') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Manage Orders
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('admin/order-details') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Order Details
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('admin/delivery-addresses') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Delivery Addresses
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('admin/payments') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Payments
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('admin/insurance-documents') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Insurance Documents
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('admin/order-status-history') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Order Status History
-                        </a>
-                    </li>
-                    <!-- New menu item for pending-review orders -->
-                    <li>
-                        <a href="<?= base_url('admin/orders?status=pending') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Orders Awaiting Review
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <!-- OPTIONALLY: ADMIN SETTINGS, USER SESSIONS, ETC. -->
-            <li class="header">SYSTEM</li>
-            <!--<li class="treeview <?= ($uri->getSegment(count($uri->getSegments())) == 'admin-settings') ? 'active menu-open' : '' ?>">-->
-            <!--    <a href="javascript:void(0)">-->
-            <!--        <i class="fa fa-user-secret"></i>-->
-            <!--        <span>Admin Settings</span>-->
-            <!--        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>-->
-            <!--    </a>-->
-            <!--    <ul class="treeview-menu">-->
-            <!--        <li>-->
-            <!--            <a href="<?= base_url('admin/admin-users') ?>">-->
-            <!--                <i class="fa fa-angle-right"></i>-->
-            <!--                Manage Admin Users-->
-            <!--            </a>-->
-            <!--        </li>-->
-            <!--    </ul>-->
-            <!--</li>-->
-
-            <li class="treeview <?= ($uri->getSegment(count($uri->getSegments())) == 'user-sessions') ? 'active menu-open' : '' ?>">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-clock-o"></i>
-                    <span>Sessions</span>
-                    <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                </a>
-                <ul class="treeview-menu">
-                    <li>
-                        <a href="<?= base_url('admin/user-sessions') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Manage User Sessions
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            
-            <!-- DISTRIBUTORS -->
-            <li class="treeview <?= ($uri->getSegment(count($uri->getSegments())) == 'distributors') ? 'active menu-open' : '' ?>">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-users"></i>
-                    <span>Distributors</span>
-                    <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                </a>
-                <ul class="treeview-menu">
-                    <li>
-                        <a href="<?= base_url('admin/distributors') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Manage Distributors
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <!-- WEBSITE CONTENT -->
+            <!-- WEBSITE MANAGEMENT -->
             <li class="header">WEBSITE MANAGEMENT</li>
 
-            <li class="treeview <?= in_array($uri->getSegment(count($uri->getSegments())), ['companies', 'partners', 'board-members']) ? 'active menu-open' : '' ?>">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-globe"></i>
-                    <span>Website Content</span>
-                    <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+            <!-- Companies -->
+            <li class="<?= ($segment2 == 'companies') ? 'active' : '' ?>">
+                <a href="<?= base_url('admin/companies') ?>">
+                    <i class="fa fa-building"></i>
+                    <span>Companies</span>
                 </a>
-                <ul class="treeview-menu">
-                    <li>
-                        <a href="<?= base_url('admin/companies') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Companies
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('admin/partners') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Partners
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('admin/board-members') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Board Members
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('admin/news-items') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            News Items
-                        </a>
-                    </li>
-                </ul>
             </li>
 
-            <li class="treeview <?= ($uri->getSegment(count($uri->getSegments())) == 'contact-submissions') ? 'active menu-open' : '' ?>">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-envelope-o"></i>
-                    <span>Contact Form</span>
-                    <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+            <!-- Partners -->
+            <li class="<?= ($segment2 == 'partners') ? 'active' : '' ?>">
+                <a href="<?= base_url('admin/partners') ?>">
+                    <i class="fa fa-handshake-o"></i>
+                    <span>Partners</span>
                 </a>
-                <ul class="treeview-menu">
-                    <li>
-                        <a href="<?= base_url('admin/contact-submissions') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            View Submissions
-                        </a>
-                    </li>
-                </ul>
             </li>
 
-            <li class="treeview <?= ($uri->getSegment(count($uri->getSegments())) == 'site-settings') ? 'active menu-open' : '' ?>">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-cog"></i>
+            <!-- Board Members -->
+            <li class="<?= ($segment2 == 'board-members') ? 'active' : '' ?>">
+                <a href="<?= base_url('admin/board-members') ?>">
+                    <i class="fa fa-users"></i>
+                    <span>Board Members</span>
+                </a>
+            </li>
+
+            <!-- Timeline -->
+            <li class="<?= ($segment2 == 'timeline') ? 'active' : '' ?>">
+                <a href="<?= base_url('admin/timeline') ?>">
+                    <i class="fa fa-history"></i>
+                    <span>Timeline</span>
+                </a>
+            </li>
+
+            <!-- News Items -->
+            <li class="<?= ($segment2 == 'news') ? 'active' : '' ?>">
+                <a href="<?= base_url('admin/news') ?>">
+                    <i class="fa fa-newspaper-o"></i>
+                    <span>News & Updates</span>
+                </a>
+            </li>
+
+            <!-- Contact Submissions -->
+            <li class="<?= ($segment2 == 'contacts') ? 'active' : '' ?>">
+                <a href="<?= base_url('admin/contacts') ?>">
+                    <i class="fa fa-envelope"></i>
+                    <span>Contact Submissions</span>
+                    <?php
+                    // Optional: Show count badge
+                    // $unreadCount = model('ContactSubmissionsModel')->where('status', 'new')->countAllResults();
+                    // if ($unreadCount > 0):
+                    ?>
+                    <!-- <small class="label pull-right bg-green"><?= $unreadCount ?></small> -->
+                    <?php // endif; ?>
+                </a>
+            </li>
+
+            <!-- SETTINGS -->
+            <li class="header">SETTINGS</li>
+
+            <!-- Site Settings -->
+            <li class="<?= ($segment2 == 'settings') ? 'active' : '' ?>">
+                <a href="<?= base_url('admin/settings') ?>">
+                    <i class="fa fa-cogs"></i>
                     <span>Site Settings</span>
-                    <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
                 </a>
-                <ul class="treeview-menu">
-                    <li>
-                        <a href="<?= base_url('admin/site-settings') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Manage Settings
-                        </a>
-                    </li>
-                </ul>
             </li>
 
+            <!-- Profile -->
+            <li class="<?= ($segment2 == 'profile') ? 'active' : '' ?>">
+                <a href="<?= base_url('admin/profile') ?>">
+                    <i class="fa fa-user"></i>
+                    <span>My Profile</span>
+                </a>
+            </li>
 
-            <?php
-            } else if($data[0]['type'] === "DISTRIBUTOR"){
-            ?>
-            <!-- COUPONS -->
-            <li class="treeview <?= ($uri->getSegment(count($uri->getSegments())) == 'customer-coupons') ? 'active menu-open' : '' ?>">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-ticket"></i>
-                    <span>Coupons</span>
-                    <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+            <!-- Logout -->
+            <li>
+                <a href="<?= base_url('admin/logout') ?>" onclick="return confirm('Are you sure you want to logout?')">
+                    <i class="fa fa-sign-out"></i>
+                    <span>Logout</span>
                 </a>
-                <ul class="treeview-menu">
-                    <li>
-                        <a href="<?= base_url('admin/customer-coupons') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Manage Coupons
-                        </a>
-                    </li>
-                </ul>
             </li>
-            <!-- COUPON BULK UPLOAD -->
-            <li class="treeview <?= ($uri->getSegment(count($uri->getSegments())) == 'coupons-bulk-upload') ? 'active menu-open' : '' ?>">
-                <a href="javascript:void(0)">
-                    <i class="fa fa-upload"></i>
-                    <span>Coupon Bulk Upload</span>
-                    <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
-                </a>
-                <ul class="treeview-menu">
-                    <li>
-                        <a href="<?= base_url('admin/coupons/bulk-upload') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Upload Coupons
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= base_url('admin/coupons/bulk-template') ?>">
-                            <i class="fa fa-angle-right"></i>
-                            Download Template
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <?php } ?>
         </ul>
-    </div>
+    </section>
     <!-- /.sidebar -->
 </aside>
