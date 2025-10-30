@@ -56,7 +56,7 @@ class Admin extends BaseController {
             return redirect()->to(base_url('admin/login'));
         
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/dashboard');
         echo view('admin/layouts/footer');
         $this->showAlert();
@@ -67,7 +67,7 @@ class Admin extends BaseController {
             return redirect()->to(base_url('admin/login'));
         
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/profile');
         echo view('admin/layouts/footer');
         $this->showAlert();
@@ -119,7 +119,7 @@ class Admin extends BaseController {
         ];  
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', (array)$data);
         echo view('admin/layouts/footer');
     }
@@ -162,7 +162,7 @@ class Admin extends BaseController {
         ];  
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', (array)$data);
         echo view('admin/layouts/footer');
     }
@@ -292,7 +292,7 @@ class Admin extends BaseController {
         ];  
     
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', (array)$data);
         echo view('admin/layouts/footer');
     }
@@ -335,7 +335,7 @@ class Admin extends BaseController {
         ];
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', (array)$data);
         echo view('admin/layouts/footer');
     }
@@ -376,7 +376,7 @@ class Admin extends BaseController {
         ];
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', (array)$data);
         echo view('admin/layouts/footer');
     }
@@ -419,7 +419,7 @@ class Admin extends BaseController {
         ];
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', (array)$data);
         echo view('admin/layouts/footer');
     }
@@ -480,7 +480,7 @@ class Admin extends BaseController {
         ];
     
         echo view('admin/layouts/header', ['data' => $this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', (array)$data);
         echo view('admin/layouts/footer');
     }
@@ -531,7 +531,7 @@ class Admin extends BaseController {
         ];
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', (array)$data);
         echo view('admin/layouts/footer');
     }
@@ -648,7 +648,7 @@ class Admin extends BaseController {
         ];
     
         echo view('admin/layouts/header', ['data' => $this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', $data);
         echo view('admin/layouts/footer');
     }
@@ -843,7 +843,7 @@ class Admin extends BaseController {
         ];
     
         echo view('admin/layouts/header', ['data' => $this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', $data);
         echo view('admin/layouts/footer');
     }
@@ -886,7 +886,7 @@ class Admin extends BaseController {
         ];
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', (array)$data);
         echo view('admin/layouts/footer');
     }
@@ -899,7 +899,7 @@ class Admin extends BaseController {
         // Suppose 'review' means it's waiting for admin to fill in details
         $orders = $this->orderModel->where('status', 'pending')->findAll();
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/list_pending_orders', ['orders' => $orders]);
         echo view('admin/layouts/footer');
         $this->showAlert();
@@ -929,7 +929,7 @@ class Admin extends BaseController {
     
         // 5. Render a view
         echo view('admin/layouts/header', ['data' => $this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/edit_order_details', [
             'order'             => $orderRow,
             'lineItems'         => $lineItems,
@@ -1220,7 +1220,7 @@ class Admin extends BaseController {
         ];
     
         echo view('admin/layouts/header', ['data' => $this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/coupons_bulk_upload_form', $data);
         echo view('admin/layouts/footer');
     }
@@ -1449,7 +1449,7 @@ class Admin extends BaseController {
         ];
     
         echo view('admin/layouts/header', ['data' => $this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/coupons_bulk_upload_result', $data);
         echo view('admin/layouts/footer');
     }
@@ -1692,7 +1692,7 @@ class Admin extends BaseController {
         ];
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', $data);
         echo view('admin/layouts/footer');
     }
@@ -1739,7 +1739,7 @@ class Admin extends BaseController {
         ];
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', $data);
         echo view('admin/layouts/footer');
     }
@@ -1787,7 +1787,7 @@ class Admin extends BaseController {
         ];
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', $data);
         echo view('admin/layouts/footer');
     }
@@ -1848,7 +1848,7 @@ class Admin extends BaseController {
         ];
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', $data);
         echo view('admin/layouts/footer');
     }
@@ -1906,7 +1906,7 @@ class Admin extends BaseController {
         ];
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', $data);
         echo view('admin/layouts/footer');
     }
@@ -1963,7 +1963,7 @@ class Admin extends BaseController {
         ];
 
         echo view('admin/layouts/header', ['data'=>$this->data]);
-        echo view('admin/layouts/sidebar');
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
         echo view('admin/crud_layout', $data);
         echo view('admin/layouts/footer');
     }
