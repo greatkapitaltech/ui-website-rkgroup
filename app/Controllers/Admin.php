@@ -1667,7 +1667,19 @@ class Admin extends BaseController {
         $crud->columns(['name', 'logo', 'description', 'display_order', 'is_active']);
         $crud->fields(['name', 'logo', 'description', 'website_url', 'display_order', 'is_active']);
 
-        $crud->displayAs('logo', 'Logo Filename');
+        // Enable file upload for logo
+        $crud->setFieldUpload('logo', 'assets/uploads/companies', base_url('assets/uploads/companies'));
+
+        // Display logo as image in the grid
+        $crud->callbackColumn('logo', function ($value, $row) {
+            if (empty($value)) {
+                return '<span style="color: #999;">No logo</span>';
+            }
+            $imageUrl = base_url('assets/uploads/companies/' . $value);
+            return '<img src="' . esc($imageUrl) . '" style="max-width: 100px; max-height: 50px; object-fit: contain;" alt="' . esc($row->name) . '">';
+        });
+
+        $crud->displayAs('logo', 'Logo');
         $crud->displayAs('display_order', 'Display Order');
         $crud->displayAs('is_active', 'Active');
         $crud->displayAs('website_url', 'Website URL');
@@ -1714,10 +1726,8 @@ class Admin extends BaseController {
         $crud->columns(['name', 'logo', 'website_url', 'display_order', 'is_active']);
         $crud->fields(['name', 'logo', 'website_url', 'display_order', 'is_active']);
 
-        $crud->displayAs('logo', 'Logo');
-        $crud->displayAs('display_order', 'Display Order');
-        $crud->displayAs('is_active', 'Active');
-        $crud->displayAs('website_url', 'Website URL');
+        // Enable file upload for logo
+        $crud->setFieldUpload('logo', 'assets/uploads/partners', base_url('assets/uploads/partners'));
 
         // Display logo as image in the grid
         $crud->callbackColumn('logo', function ($value, $row) {
@@ -1725,9 +1735,14 @@ class Admin extends BaseController {
                 return '<span style="color: #999;">No logo</span>';
             }
             // Check if it's a full URL or just a filename
-            $imageUrl = (strpos($value, 'http') === 0) ? $value : base_url('assets/images/partners/' . $value);
+            $imageUrl = (strpos($value, 'http') === 0) ? $value : base_url('assets/uploads/partners/' . $value);
             return '<img src="' . esc($imageUrl) . '" style="max-width: 100px; max-height: 50px; object-fit: contain;" alt="' . esc($row->name) . '">';
         });
+
+        $crud->displayAs('logo', 'Logo');
+        $crud->displayAs('display_order', 'Display Order');
+        $crud->displayAs('is_active', 'Active');
+        $crud->displayAs('website_url', 'Website URL');
 
         $crud->fieldType('is_active', 'dropdown', [1 => 'Active', 0 => 'Inactive']);
 
@@ -1768,10 +1783,23 @@ class Admin extends BaseController {
         $crud->setTable('board_members');
         $crud->setSubject('Board Member', 'Board Members');
 
-        $crud->columns(['name', 'position', 'member_type', 'education', 'display_order', 'is_active']);
+        $crud->columns(['name', 'position', 'photo', 'member_type', 'education', 'display_order', 'is_active']);
         $crud->fields(['name', 'position', 'photo', 'bio', 'education', 'member_type', 'display_order', 'is_active']);
 
-        $crud->displayAs('photo', 'Photo URL/Filename');
+        // Enable file upload for photo
+        $crud->setFieldUpload('photo', 'assets/uploads/board_members', base_url('assets/uploads/board_members'));
+
+        // Display photo as image in the grid
+        $crud->callbackColumn('photo', function ($value, $row) {
+            if (empty($value)) {
+                return '<span style="color: #999;">No photo</span>';
+            }
+            // Check if it's a full URL or just a filename
+            $imageUrl = (strpos($value, 'http') === 0) ? $value : base_url('assets/uploads/board_members/' . $value);
+            return '<img src="' . esc($imageUrl) . '" style="max-width: 80px; max-height: 80px; object-fit: cover; border-radius: 50%;" alt="' . esc($row->name) . '">';
+        });
+
+        $crud->displayAs('photo', 'Photo');
         $crud->displayAs('display_order', 'Display Order');
         $crud->displayAs('is_active', 'Active');
         $crud->displayAs('member_type', 'Member Type');

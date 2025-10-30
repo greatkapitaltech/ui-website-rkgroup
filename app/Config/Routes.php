@@ -160,17 +160,27 @@ $routes->group('admin', function($routes) {
     $routes->add('board-members', 'Admin::board_members');
     $routes->add('board-members/(:any)', 'Admin::board_members/$1');
 
-    // Contact Submissions
+    // Timeline Events
+    $routes->add('timeline', 'Admin::timeline');
+    $routes->add('timeline/(:any)', 'Admin::timeline/$1');
+
+    // News & Updates (sidebar uses 'news' but method is news_items)
+    $routes->add('news', 'Admin::news');
+    $routes->add('news/(:any)', 'Admin::news/$1');
+    $routes->add('news-items', 'Admin::news_items');
+    $routes->add('news-items/(:any)', 'Admin::news_items/$1');
+
+    // Contact Submissions (sidebar uses 'contacts')
+    $routes->add('contacts', 'Admin::contacts');
+    $routes->add('contacts/(:any)', 'Admin::contacts/$1');
     $routes->add('contact-submissions', 'Admin::contact_submissions');
     $routes->add('contact-submissions/(:any)', 'Admin::contact_submissions/$1');
 
-    // Site Settings
+    // Site Settings (sidebar uses 'settings')
+    $routes->add('settings', 'Admin::settings');
+    $routes->add('settings/(:any)', 'Admin::settings/$1');
     $routes->add('site-settings', 'Admin::site_settings');
     $routes->add('site-settings/(:any)', 'Admin::site_settings/$1');
-
-    // News Items
-    $routes->add('news-items', 'Admin::news_items');
-    $routes->add('news-items/(:any)', 'Admin::news_items/$1');
 });
 /*
  * --------------------------------------------------------------------

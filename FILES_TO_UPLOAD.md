@@ -17,6 +17,18 @@
 
 Upload to: `/home4/tempucqs/public_html/rkgroup.biz/new_site/`
 
+### ⚠️ CRITICAL: Routes.php (THIS WAS THE PROBLEM!)
+**Local Path:** `app/Config/Routes.php`
+**Production Path:** `app/Config/Routes.php`
+
+**Changes:**
+- Line 164-165: Added `admin/timeline` route
+- Line 168-171: Added `admin/news` route
+- Line 174-177: Added `admin/contacts` route
+- Line 180-183: Added `admin/settings` route
+
+**Why this was needed:** The sidebar links to `admin/timeline`, `admin/news`, `admin/contacts`, and `admin/settings`, but those routes didn't exist in Routes.php!
+
 ### File 1: Admin.php
 **Local Path:** `app/Controllers/Admin.php`
 **Production Path:** `app/Controllers/Admin.php`
@@ -63,6 +75,17 @@ Upload to: `/home4/tempucqs/public_html/rkgroup.biz/new_site/`
 
 ---
 
+## 📝 SUMMARY: 6 FILES TOTAL
+
+1. ✅ `app/Config/Routes.php` ← **CRITICAL FIX**
+2. ✅ `app/Controllers/Admin.php`
+3. ✅ `app/Controllers/Frontend.php`
+4. ✅ `app/Views/admin/layouts/header.php`
+5. ✅ `app/Views/admin/layouts/footer.php`
+6. ✅ `app/Views/admin/login.php`
+
+---
+
 ## 📊 ALSO REQUIRED: Run SQL
 
 **File:** `database_schema.sql`
@@ -104,6 +127,7 @@ Upload to: `/home4/tempucqs/public_html/rkgroup.biz/new_site/`
 
 ### 1. Upload Files via FTP/cPanel File Manager:
 ```
+⚠️  app/Config/Routes.php              ← UPLOAD THIS FIRST (fixes 404 errors)
 ✅ app/Controllers/Admin.php
 ✅ app/Controllers/Frontend.php
 ✅ app/Views/admin/layouts/header.php
@@ -199,7 +223,7 @@ rm -rf writable/debugbar/*
 
 After upload, verify each item:
 
-- [ ] Uploaded all 5 files successfully
+- [ ] Uploaded all 6 files successfully (especially Routes.php!)
 - [ ] Ran database_schema.sql in phpMyAdmin
 - [ ] Admin login works
 - [ ] Admin logo appears white
