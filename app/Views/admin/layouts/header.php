@@ -48,17 +48,33 @@
     .cbNewBx .gc-filtering-modal {
         display: none;
     }
+
+    /* Logo styling */
     .logo img {
         max-height: 50px;
         width: auto;
         /* Make logo white */
         filter: brightness(0) invert(1);
     }
+
+    /* Header colors */
     .main-header .logo {
         background-color: #2C3E50 !important;
     }
     .main-header .navbar {
         background-color: #2C3E50 !important;
+    }
+
+    /* Fix sidebar toggle button visibility */
+    .sidebar-toggle {
+        display: inline-block !important;
+        color: #fff !important;
+        padding: 15px !important;
+        cursor: pointer !important;
+    }
+    .sidebar-toggle:before {
+        content: "\f0c9" !important;
+        font-family: 'FontAwesome' !important;
     }
     </style>
 

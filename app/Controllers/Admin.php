@@ -1906,23 +1906,20 @@ class Admin extends BaseController {
         $crud->setSubject('Setting', 'Site Settings');
 
         $crud->columns(['setting_key', 'setting_value', 'setting_group', 'description', 'is_active']);
-        $crud->fields(['setting_key', 'setting_value', 'setting_type', 'setting_group', 'description', 'is_active']);
+        $crud->fields(['setting_value', 'description', 'is_active']);
+
+        // Disable add and delete - settings should only be edited
+        $crud->unsetAdd();
+        $crud->unsetDelete();
+
+        // Make setting_key read-only in edit form
+        $crud->readOnlyFields(['setting_key', 'setting_type', 'setting_group']);
 
         $crud->displayAs('setting_key', 'Setting Key');
         $crud->displayAs('setting_value', 'Value');
         $crud->displayAs('setting_type', 'Type');
         $crud->displayAs('setting_group', 'Group');
         $crud->displayAs('is_active', 'Active');
-
-        $crud->fieldType('setting_type', 'dropdown', [
-            'text' => 'Text',
-            'textarea' => 'Textarea',
-            'number' => 'Number',
-            'url' => 'URL',
-            'email' => 'Email',
-            'image' => 'Image',
-            'json' => 'JSON'
-        ]);
 
         $crud->fieldType('is_active', 'dropdown', [1 => 'Active', 0 => 'Inactive']);
 
@@ -2024,10 +2021,23 @@ class Admin extends BaseController {
         $crud->setTable('timeline_events');
         $crud->setSubject('Timeline Event', 'Timeline Events');
 
-        $crud->columns(['year', 'title', 'alignment', 'display_order', 'is_active']);
+        $crud->columns(['year', 'title', 'image_url', 'alignment', 'display_order', 'is_active']);
         $crud->fields(['year', 'title', 'description', 'image_url', 'alignment', 'display_order', 'is_active']);
 
-        $crud->displayAs('image_url', 'Image URL');
+        // Enable file upload for timeline images
+        $crud->setFieldUpload('image_url', 'assets/uploads/timeline', base_url('assets/uploads/timeline'));
+
+        // Display image as thumbnail in the grid
+        $crud->callbackColumn('image_url', function ($value, $row) {
+            if (empty($value)) {
+                return '<span style="color: #999;">No image</span>';
+            }
+            // Check if it's a full URL or just a filename
+            $imageUrl = (strpos($value, 'http') === 0) ? $value : base_url('assets/uploads/timeline/' . $value);
+            return '<img src="' . esc($imageUrl) . '" style="max-width: 120px; max-height: 70px; object-fit: cover; border-radius: 5px;" alt="' . esc($row->title) . '">';
+        });
+
+        $crud->displayAs('image_url', 'Image');
         $crud->displayAs('display_order', 'Display Order');
         $crud->displayAs('is_active', 'Active');
 
