@@ -1,8 +1,19 @@
 <?php foreach($css_files as $file): ?>
 	<?php
-	// Skip loading icon libraries from GroceryCRUD - use AdminLTE's Font Awesome instead
+	// Aggressively skip loading ANY icon libraries from GroceryCRUD - use AdminLTE's Font Awesome instead
 	$skipFile = false;
-	$skipPatterns = ['fontawesome', 'glyphicons', 'icons', 'material-icons', 'icomoon', 'iconic'];
+	$skipPatterns = [
+		'fontawesome', 'font-awesome', 'fa-',
+		'glyphicons', 'glyphicon',
+		'icons', 'icon-',
+		'material-icons', 'material-design',
+		'icomoon', 'iconic', 'ionicons',
+		'bootstrap-icons', 'feather',
+		'lineawesome', 'line-awesome',
+		'themify-icons', 'themify',
+		'typicons', 'octicons',
+		'webfont', 'fonts'
+	];
 	foreach ($skipPatterns as $pattern) {
 		if (stripos($file, $pattern) !== false) {
 			$skipFile = true;
@@ -83,18 +94,93 @@
 .gcrud-icon.gcrud-info-icon:before { content: "\f05a" !important; } /* fa-info-circle */
 .gcrud-icon.gcrud-warning-icon:before { content: "\f06a" !important; } /* fa-exclamation-circle */
 
-/* Hide any remaining icon fonts that might conflict */
-[class*="glyphicon-"]:before,
+/* Aggressively hide any non-Font Awesome icon fonts */
+[class*="glyphicon"]:before,
+[class*="glyphicon"]:after,
 [class*="material-icons"]:before,
-[class*="ionic-"]:before {
+[class*="material-icons"]:after,
+[class*="ionic"]:before,
+[class*="ionic"]:after,
+[class*="ion-"]:before,
+[class*="ion-"]:after,
+[class*="ti-"]:before,
+[class*="ti-"]:after,
+[class*="linearicons"]:before,
+[class*="linearicons"]:after {
 	display: none !important;
+	content: none !important;
 }
 
 /* Ensure GroceryCRUD uses Font Awesome for all icons */
 .gcrud-icon:not(.fa):before {
 	font-family: 'FontAwesome' !important;
 }
+
+/* Block conflicting @font-face declarations */
+@font-face {
+	font-family: 'Glyphicons Halflings' !important;
+	src: none !important;
+}
+
+/* Ensure Font Awesome icons use correct font */
+i[class*="fa-"],
+i.fa,
+.fa:before,
+.gcrud-icon,
+[class*="fa-"]:before {
+	font-family: 'FontAwesome' !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	line-height: 1 !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+}
 </style>
+
+<script>
+// Remove any icon stylesheets that might have been loaded by GroceryCRUD
+document.addEventListener('DOMContentLoaded', function() {
+	// Get all link tags
+	var links = document.querySelectorAll('link[rel="stylesheet"]');
+	var iconPatterns = [
+		'fontawesome', 'font-awesome',
+		'glyphicons', 'glyphicon',
+		'material-icons', 'material-design',
+		'icomoon', 'iconic', 'ionicons',
+		'bootstrap-icons', 'feather',
+		'lineawesome', 'themify', 'typicons'
+	];
+
+	links.forEach(function(link) {
+		var href = link.href.toLowerCase();
+		// Check if this is an icon library (but NOT AdminLTE's Font Awesome from CDN)
+		if (href.indexOf('cdnjs.cloudflare.com') === -1 &&
+		    href.indexOf('maxcdn.bootstrapcdn.com') === -1) {
+			iconPatterns.forEach(function(pattern) {
+				if (href.indexOf(pattern) !== -1) {
+					console.log('Removing conflicting icon library:', href);
+					link.disabled = true;
+					link.parentNode.removeChild(link);
+				}
+			});
+		}
+	});
+
+	// Force all icon elements to use Font Awesome
+	setTimeout(function() {
+		var icons = document.querySelectorAll('[class*="icon-"], [class*="glyphicon-"]');
+		icons.forEach(function(icon) {
+			// Replace with Font Awesome equivalent
+			var classList = icon.className;
+			if (!classList.includes('fa-')) {
+				icon.className = 'fa fa-circle'; // Default icon
+			}
+		});
+	}, 100);
+});
+</script>
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">

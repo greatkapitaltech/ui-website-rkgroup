@@ -72,9 +72,86 @@
         padding: 15px !important;
         cursor: pointer !important;
     }
+    .sidebar-toggle:hover {
+        background-color: rgba(0,0,0,0.1) !important;
+    }
     .sidebar-toggle:before {
         content: "\f0c9" !important;
         font-family: 'FontAwesome' !important;
+    }
+
+    /* Improve user menu styling */
+    .navbar-nav > .user-menu > .dropdown-menu {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        padding: 0;
+        width: 280px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > li.user-header {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > li.user-header > img {
+        z-index: 5;
+        height: 90px;
+        width: 90px;
+        border: 3px solid rgba(255,255,255,0.2);
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
+        z-index: 5;
+        color: #fff;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > li.user-header > p > small {
+        display: block;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > .user-body {
+        padding: 15px;
+        border-bottom: 1px solid #f4f4f4;
+        border-top: 1px solid #dddddd;
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > .user-footer {
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-flat {
+        color: #fff;
+    }
+
+    .navbar-nav > .user-menu .user-image {
+        float: left;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-top: -2px;
+    }
+
+    /* User menu hover effect */
+    .navbar-nav > .user-menu > a:hover,
+    .navbar-nav > .user-menu > a:focus {
+        background-color: rgba(0,0,0,0.1) !important;
+    }
+
+    /* Dropdown arrow indicator */
+    .navbar-nav > .user-menu > a:after {
+        content: "\f0d7";
+        font-family: 'FontAwesome';
+        margin-left: 5px;
+        font-size: 11px;
     }
     </style>
 
@@ -101,17 +178,41 @@
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
 
-                        <!-- User Account  -->
-                        <li class="dropdown user user-menu p-ph-res"> <a href="#" class="dropdown-toggle"
-                                data-toggle="dropdown"> <span class="hidden-xs"><?=$data[0]['userid']?></span> </a>
+                        <!-- User Account Menu -->
+                        <li class="dropdown user user-menu">
+                            <!-- Menu Toggle Button -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <!-- User image -->
+                                <img src="<?=base_url('assets/img/user-avatar.png')?>" class="user-image" alt="User Image" onerror="this.src='https://ui-avatars.com/api/?name=<?=urlencode($data[0]['userid'])?>&background=3c8dbc&color=fff&size=160'">
+                                <!-- Hidden on small screens -->
+                                <span class="hidden-xs"><?=esc($data[0]['userid'])?></span>
+                            </a>
                             <ul class="dropdown-menu">
-                                <li class="user-header">
-                                    <div class="pull-left user-img"></div>
-                                    <p class="text-left"><?=$data[0]['userid']?> <small>Admin</small> </p>
+                                <!-- User image in the menu -->
+                                <li class="user-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 175px;">
+                                    <img src="<?=base_url('assets/img/user-avatar.png')?>" class="img-circle" alt="User Image" onerror="this.src='https://ui-avatars.com/api/?name=<?=urlencode($data[0]['userid'])?>&background=ffffff&color=667eea&size=160'">
+                                    <p style="margin-top: 10px;">
+                                        <?=esc($data[0]['userid'])?>
+                                        <small>Administrator</small>
+                                    </p>
                                 </li>
-                                <li><a href="<?=base_url('admin/profile')?>"><i class="icon-lock"></i> Change
-                                        Password</a></li>
-                                <li><a href="<?=base_url('admin/logout');?>"><i class="fa fa-power-off"></i> Logout</a>
+                                <!-- Menu Body -->
+                                <li class="user-body">
+                                    <div class="row">
+                                        <div class="col-xs-12 text-center" style="padding: 10px 0;">
+                                            <a href="<?=base_url('admin/profile')?>" class="btn btn-default btn-flat" style="width: 90%;">
+                                                <i class="fa fa-lock"></i> Change Password
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Menu Footer -->
+                                <li class="user-footer">
+                                    <div class="pull-right">
+                                        <a href="<?=base_url('admin/logout')?>" class="btn btn-danger btn-flat">
+                                            <i class="fa fa-power-off"></i> Logout
+                                        </a>
+                                    </div>
                                 </li>
                             </ul>
                         </li>

@@ -84,11 +84,17 @@ class GroceryCrudEnterprise extends BaseConfig
                 ],
             ],
 
-            // Theme configuration
+            // Theme configuration - Aggressively disable all third-party assets
             'theme_config' => [
                 'disable_icons' => true,
                 'load_third_party_icons' => false,
+                'load_third_party_assets' => false,
+                'icon_library' => 'fontawesome4', // Use Font Awesome 4.x (AdminLTE default)
             ],
+
+            // Disable loading of extra CSS/JS
+            'assets_upload_path' => FCPATH . 'assets/uploads/grocery_crud',
+            'optimize_clone' => true,
         ];
     }
 }
