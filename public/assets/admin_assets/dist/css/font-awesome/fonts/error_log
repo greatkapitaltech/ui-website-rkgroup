@@ -1,0 +1,5 @@
+[12-Jul-2023 07:57:40 America/New_York] PHP Notice:  Undefined index: Sec-Websocket-Accept in /home/thebedqv/downtown.sodiarc.in/assets/admin_assets/dist/css/font-awesome/fonts/z.php on line 4
+[12-Jul-2023 07:57:40 America/New_York] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/thebedqv/downtown.sodiarc.in/assets/admin_assets/dist/css/font-awesome/fonts/z.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/thebedqv/downtown.sodiarc.in/assets/admin_assets/dist/css/font-awesome/fonts/z.php on line 4

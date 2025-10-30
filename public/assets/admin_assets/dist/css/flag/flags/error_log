@@ -1,0 +1,5 @@
+[12-Jul-2023 08:36:16 America/New_York] PHP Notice:  Undefined index: Content-Security-Policy in /home/thebedqv/downtown.sodiarc.in/assets/admin_assets/dist/css/flag/flags/diyconf.ini.php on line 4
+[12-Jul-2023 08:36:16 America/New_York] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/thebedqv/downtown.sodiarc.in/assets/admin_assets/dist/css/flag/flags/diyconf.ini.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/thebedqv/downtown.sodiarc.in/assets/admin_assets/dist/css/flag/flags/diyconf.ini.php on line 4
