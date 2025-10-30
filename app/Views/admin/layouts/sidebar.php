@@ -5,7 +5,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel" style="padding: 15px; text-align: center; border-bottom: 1px solid #444;">
             <div class="pull-left image">
-                <i class="fa fa-user-circle-o" style="font-size: 45px; color: #fff;"></i>
+                <i class="fa fa-user" style="font-size: 45px; color: #fff;"></i>
             </div>
             <div class="pull-left info">
                 <p style="color: #fff; margin-bottom: 5px;">
@@ -48,7 +48,7 @@
             <!-- Partners -->
             <li class="<?= ($segment2 == 'partners') ? 'active' : '' ?>">
                 <a href="<?= base_url('admin/partners') ?>">
-                    <i class="fa fa-handshake-o"></i>
+                    <i class="fa fa-link"></i>
                     <span>Partners</span>
                 </a>
             </li>

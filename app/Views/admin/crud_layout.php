@@ -28,17 +28,6 @@ i, .fa, [class*="fa-"], [class*="icon-"], [class*="glyphicon-"] {
 	display: inline-block !important;
 }
 
-/* Specific fix for Font Awesome 4.7 icons that might not render */
-.fa-user-circle:before {
-	content: "\f2bd" !important;
-	font-family: 'FontAwesome' !important;
-}
-
-.fa-handshake-o:before {
-	content: "\f2b5" !important;
-	font-family: 'FontAwesome' !important;
-}
-
 /* Ensure sidebar icons are visible */
 .sidebar-menu li > a > i {
 	font-family: 'FontAwesome' !important;
