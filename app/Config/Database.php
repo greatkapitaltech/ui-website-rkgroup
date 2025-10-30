@@ -32,14 +32,14 @@ class Database extends Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => getenv('database.default.hostname') ?: 'localhost',
-		'username' => getenv('database.default.username') ?: '',
-		'password' => getenv('database.default.password') ?: '',
-		'database' => getenv('database.default.database') ?: '',
-		'DBDriver' => getenv('database.default.DBDriver') ?: 'MySQLi',
-		'DBPrefix' => getenv('database.default.DBPrefix') ?: '',
+		'hostname' => 'localhost',
+		'username' => '',
+		'password' => '',
+		'database' => '',
+		'DBDriver' => 'MySQLi',
+		'DBPrefix' => '',
 		'pConnect' => false,
-		'DBDebug'  => (ENVIRONMENT !== 'production'),
+		'DBDebug'  => true,
 		'charset'  => 'utf8',
 		'DBCollat' => 'utf8_general_ci',
 		'swapPre'  => '',
@@ -89,6 +89,15 @@ class Database extends Config
 		{
 			$this->defaultGroup = 'tests';
 		}
+
+		// Load database credentials from .env file
+		$this->default['hostname'] = getenv('database.default.hostname') ?: $this->default['hostname'];
+		$this->default['username'] = getenv('database.default.username') ?: $this->default['username'];
+		$this->default['password'] = getenv('database.default.password') ?: $this->default['password'];
+		$this->default['database'] = getenv('database.default.database') ?: $this->default['database'];
+		$this->default['DBDriver'] = getenv('database.default.DBDriver') ?: $this->default['DBDriver'];
+		$this->default['DBPrefix'] = getenv('database.default.DBPrefix') ?: $this->default['DBPrefix'];
+		$this->default['DBDebug']  = (ENVIRONMENT !== 'production');
 	}
 
 	//--------------------------------------------------------------------
