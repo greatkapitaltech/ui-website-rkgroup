@@ -91,12 +91,13 @@ class Database extends Config
 		}
 
 		// Load database credentials from .env file
-		$this->default['hostname'] = getenv('database.default.hostname') ?: $this->default['hostname'];
-		$this->default['username'] = getenv('database.default.username') ?: $this->default['username'];
-		$this->default['password'] = getenv('database.default.password') ?: $this->default['password'];
-		$this->default['database'] = getenv('database.default.database') ?: $this->default['database'];
-		$this->default['DBDriver'] = getenv('database.default.DBDriver') ?: $this->default['DBDriver'];
-		$this->default['DBPrefix'] = getenv('database.default.DBPrefix') ?: $this->default['DBPrefix'];
+		// Use env() helper which handles special characters better than getenv()
+		$this->default['hostname'] = env('database.default.hostname', $this->default['hostname']);
+		$this->default['username'] = env('database.default.username', $this->default['username']);
+		$this->default['password'] = env('database.default.password', $this->default['password']);
+		$this->default['database'] = env('database.default.database', $this->default['database']);
+		$this->default['DBDriver'] = env('database.default.DBDriver', $this->default['DBDriver']);
+		$this->default['DBPrefix'] = env('database.default.DBPrefix', $this->default['DBPrefix']);
 		$this->default['DBDebug']  = (ENVIRONMENT !== 'production');
 	}
 
