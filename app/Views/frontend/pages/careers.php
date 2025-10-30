@@ -1,6 +1,13 @@
 <!-- Careers Hero Section -->
 <section class="vision-hero position-relative">
-  <div class="vision-hero-bg"></div>
+  <div class="vision-hero-bg" style="background-image: url('<?php
+    if (isset($images['careers_hero_background'])) {
+      $img = $images['careers_hero_background'];
+      echo !empty($img['image_file']) ? base_url('assets/img/' . $img['image_file']) : (!empty($img['image_url']) ? esc($img['image_url']) : 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=1080&fit=crop&q=80');
+    } else {
+      echo 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=1080&fit=crop&q=80';
+    }
+  ?>');"></div>
   <div class="vision-overlay"></div>
   <div class="container position-relative z-1 h-100 d-flex align-items-center">
     <div class="text-white">

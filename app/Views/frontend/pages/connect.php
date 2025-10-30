@@ -1,6 +1,13 @@
 <!-- Connect Hero Section -->
 <section class="vision-hero position-relative">
-  <div class="vision-hero-bg"></div>
+  <div class="vision-hero-bg" style="background-image: url('<?php
+    if (isset($images['connect_hero_background'])) {
+      $img = $images['connect_hero_background'];
+      echo !empty($img['image_file']) ? base_url('assets/img/' . $img['image_file']) : (!empty($img['image_url']) ? esc($img['image_url']) : 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920&h=1080&fit=crop&q=80');
+    } else {
+      echo 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920&h=1080&fit=crop&q=80';
+    }
+  ?>');"></div>
   <div class="vision-overlay"></div>
   <div class="container position-relative z-1 h-100 d-flex align-items-center">
     <div class="text-white">

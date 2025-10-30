@@ -101,11 +101,20 @@ class Frontend extends BaseController
             $settings[$setting['setting_key']] = $setting['setting_value'];
         }
 
+        // Get site images
+        $imagesModel = model('SiteImagesModel');
+        $imagesData = $imagesModel->where('is_active', 1)->findAll();
+        $images = [];
+        foreach ($imagesData as $image) {
+            $images[$image['image_key']] = $image;
+        }
+
         $data = [
             'title' => 'Careers',
             'active_page' => 'careers',
             'additional_css' => ['assets/css/careers.css'],
-            'settings' => $settings
+            'settings' => $settings,
+            'images' => $images
         ];
 
         return view('frontend/layouts/header', $data)
@@ -123,11 +132,20 @@ class Frontend extends BaseController
             $settings[$setting['setting_key']] = $setting['setting_value'];
         }
 
+        // Get site images
+        $imagesModel = model('SiteImagesModel');
+        $imagesData = $imagesModel->where('is_active', 1)->findAll();
+        $images = [];
+        foreach ($imagesData as $image) {
+            $images[$image['image_key']] = $image;
+        }
+
         $data = [
             'title' => 'Connect',
             'active_page' => 'connect',
             'additional_css' => ['assets/css/connect.css'],
-            'settings' => $settings
+            'settings' => $settings,
+            'images' => $images
         ];
 
         return view('frontend/layouts/header', $data)

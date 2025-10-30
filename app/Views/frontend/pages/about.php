@@ -1,6 +1,13 @@
 <!-- Our Vision Hero -->
 <section class="vision-hero position-relative">
-  <div class="vision-hero-bg"></div>
+  <div class="vision-hero-bg" style="background-image: url('<?php
+    if (isset($images['about_hero_background'])) {
+      $img = $images['about_hero_background'];
+      echo !empty($img['image_file']) ? base_url('assets/img/' . $img['image_file']) : (!empty($img['image_url']) ? esc($img['image_url']) : 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop');
+    } else {
+      echo 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop';
+    }
+  ?>');"></div>
   <div class="vision-overlay"></div>
   <div class="container position-relative z-1 h-100 d-flex align-items-center">
     <div class="text-white">
