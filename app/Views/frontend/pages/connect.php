@@ -23,7 +23,8 @@
       <div class="col-lg-7">
         <div class="contact-form-wrapper">
           <h2 class="section-title text-primary mb-4"><?= isset($settings['connect_form_title']) ? esc($settings['connect_form_title']) : 'Get In Touch' ?></h2>
-          <form id="contactForm">
+          <form id="contactForm" data-base-url="<?= base_url() ?>">
+            <?= csrf_field() ?>
             <div class="row g-3">
               <div class="col-md-6">
                 <label for="name" class="form-label fw-semibold">Name <span class="text-danger">*</span></label>

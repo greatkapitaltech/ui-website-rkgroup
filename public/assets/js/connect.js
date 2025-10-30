@@ -40,22 +40,36 @@ document.addEventListener('DOMContentLoaded', function() {
       submitButton.disabled = true;
       submitButton.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending...';
 
-      // Get form data
-      const formData = new FormData();
-      formData.append('name', document.getElementById('name').value);
-      formData.append('email', document.getElementById('email').value);
-      formData.append('phone', document.getElementById('phone').value);
-      formData.append('interest', document.getElementById('interest').value);
-      formData.append('subject', document.getElementById('subject').value);
-      formData.append('message', document.getElementById('message').value);
+      // Get form data (this will automatically include CSRF token)
+      const formData = new FormData(contactForm);
+
+      // Get base URL from form data attribute
+      const baseUrl = contactForm.getAttribute('data-base-url') || '';
+      const submitUrl = baseUrl + 'api/contact/submit';
 
       // Submit form to backend
-      fetch('/api/contact/submit', {
+      fetch(submitUrl, {
         method: 'POST',
         body: formData
       })
-      .then(response => response.json())
+      .then(response => {
+        console.log('Response status:', response.status);
+        console.log('Response headers:', response.headers);
+
+        // Check if response is JSON
+        const contentType = response.headers.get('content-type');
+        if (contentType && contentType.includes('application/json')) {
+          return response.json();
+        } else {
+          // If not JSON, get text to see what we received
+          return response.text().then(text => {
+            console.error('Received non-JSON response:', text);
+            throw new Error('Server returned invalid response');
+          });
+        }
+      })
       .then(data => {
+        console.log('Response data:', data);
         if (data.success) {
           showNotification(data.message, 'success');
           contactForm.reset();
@@ -65,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             input.classList.remove('is-valid', 'is-invalid');
           });
         } else {
-          showNotification(data.message, 'danger');
+          showNotification(data.message || 'An error occurred', 'danger');
         }
       })
       .catch(error => {
