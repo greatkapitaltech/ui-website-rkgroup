@@ -278,6 +278,32 @@
     </div>
   </div>
 </section>
+<?php else: ?>
+<!-- Partnerships and Brands - Show Brand Collage -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title text-center mb-5 text-primary"><?= isset($settings['about_partnerships_title']) ? esc($settings['about_partnerships_title']) : 'PARTNERSHIPS AND BRANDS' ?></h2>
+
+    <div class="text-center">
+      <?php
+      $brandCollageImage = 'assets/img/brand-collage.png'; // Default
+      $brandCollageAlt = 'Partnerships and Brands Collage';
+      if (isset($images['about_partnerships_collage'])) {
+          $img = $images['about_partnerships_collage'];
+          if (!empty($img['image_file'])) {
+              $brandCollageImage = 'assets/img/' . $img['image_file'];
+          } elseif (!empty($img['image_url'])) {
+              $brandCollageImage = $img['image_url'];
+          }
+          if (!empty($img['alt_text'])) {
+              $brandCollageAlt = $img['alt_text'];
+          }
+      }
+      ?>
+      <img src="<?= base_url($brandCollageImage) ?>" alt="<?= esc($brandCollageAlt) ?>" class="img-fluid" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+    </div>
+  </div>
+</section>
 <?php endif; ?>
 
 <!-- Careers Section -->

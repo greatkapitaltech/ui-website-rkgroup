@@ -94,21 +94,29 @@
 .gcrud-icon.gcrud-info-icon:before { content: "\f05a" !important; } /* fa-info-circle */
 .gcrud-icon.gcrud-warning-icon:before { content: "\f06a" !important; } /* fa-exclamation-circle */
 
-/* Aggressively hide any non-Font Awesome icon fonts */
-[class*="glyphicon"]:before,
-[class*="glyphicon"]:after,
+/* Aggressively hide any non-Font Awesome icon fonts - but NOT Font Awesome itself! */
+[class^="glyphicon"]:before,
+[class^="glyphicon"]:after,
 [class*="material-icons"]:before,
 [class*="material-icons"]:after,
-[class*="ionic"]:before,
-[class*="ionic"]:after,
-[class*="ion-"]:before,
-[class*="ion-"]:after,
-[class*="ti-"]:before,
-[class*="ti-"]:after,
-[class*="linearicons"]:before,
-[class*="linearicons"]:after {
+[class^="ionic"]:before,
+[class^="ionic"]:after,
+[class^="ion-"]:before,
+[class^="ion-"]:after,
+[class^="ti-"]:before,
+[class^="ti-"]:after,
+[class^="linearicon"]:before,
+[class^="linearicon"]:after {
 	display: none !important;
 	content: none !important;
+}
+
+/* Do NOT hide Font Awesome icons */
+[class*="fa-"]:before,
+[class*="fa-"]:after,
+.fa:before,
+.fa:after {
+	display: inline-block !important;
 }
 
 /* Ensure GroceryCRUD uses Font Awesome for all icons */
@@ -168,13 +176,14 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	});
 
-	// Force all icon elements to use Font Awesome
+	// Force only non-Font Awesome icon elements to use Font Awesome
 	setTimeout(function() {
-		var icons = document.querySelectorAll('[class*="icon-"], [class*="glyphicon-"]');
+		var icons = document.querySelectorAll('[class^="glyphicon-"], [class^="icon-"]:not([class*="fa"])');
 		icons.forEach(function(icon) {
-			// Replace with Font Awesome equivalent
+			// Only replace if it's NOT already a Font Awesome icon
 			var classList = icon.className;
-			if (!classList.includes('fa-')) {
+			if (!classList.includes('fa-') && !classList.includes(' fa ')) {
+				console.log('Replacing icon:', classList);
 				icon.className = 'fa fa-circle'; // Default icon
 			}
 		});

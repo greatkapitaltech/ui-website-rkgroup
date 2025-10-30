@@ -181,6 +181,12 @@ $routes->group('admin', function($routes) {
     $routes->add('settings/(:any)', 'Admin::settings/$1');
     $routes->add('site-settings', 'Admin::site_settings');
     $routes->add('site-settings/(:any)', 'Admin::site_settings/$1');
+
+    // Site Images (sidebar uses 'images')
+    $routes->add('images', 'Admin::images');
+    $routes->add('images/(:any)', 'Admin::images/$1');
+    $routes->add('site-images', 'Admin::site_images');
+    $routes->add('site-images/(:any)', 'Admin::site_images/$1');
 });
 /*
  * --------------------------------------------------------------------

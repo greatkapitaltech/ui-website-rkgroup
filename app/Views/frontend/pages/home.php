@@ -192,7 +192,22 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <img src="<?= base_url(isset($settings['csr_image']) ? $settings['csr_image'] : 'assets/img/csr.png') ?>" width="100%" alt="RK Trust Initiatives" />
+            <?php
+            $csrImage = 'assets/img/csr.png'; // Default
+            $csrAlt = 'RK Trust Initiatives';
+            if (isset($images['homepage_csr_image'])) {
+                $img = $images['homepage_csr_image'];
+                if (!empty($img['image_file'])) {
+                    $csrImage = 'assets/img/' . $img['image_file'];
+                } elseif (!empty($img['image_url'])) {
+                    $csrImage = $img['image_url'];
+                }
+                if (!empty($img['alt_text'])) {
+                    $csrAlt = $img['alt_text'];
+                }
+            }
+            ?>
+            <img src="<?= base_url($csrImage) ?>" width="100%" alt="<?= esc($csrAlt) ?>" />
           </div>
         </div>
       </div>

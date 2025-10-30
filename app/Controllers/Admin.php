@@ -2106,4 +2106,88 @@ class Admin extends BaseController {
     public function settings() {
         return $this->site_settings();
     }
+
+    /**
+     * Site Images - Manage all website images
+     */
+    public function site_images()
+    {
+        $crud = $this->_getGroceryCrudEnterprise();
+        $crud->setTable('site_images');
+        $crud->setSubject('Site Image', 'Site Images');
+
+        // Set fields
+        $crud->columns(['image_key', 'image_file', 'alt_text', 'image_category', 'is_active']);
+        $crud->fields(['image_key', 'image_file', 'image_url', 'alt_text', 'image_category', 'description', 'is_active']);
+
+        // Set field types
+        $crud->fieldType('is_active', 'dropdown', [
+            1 => 'Active',
+            0 => 'Inactive'
+        ]);
+
+        $crud->fieldType('image_category', 'dropdown', [
+            'homepage' => 'Homepage',
+            'about' => 'About Page',
+            'careers' => 'Careers Page',
+            'connect' => 'Connect Page',
+            'general' => 'General'
+        ]);
+
+        // Enable file upload for image_file
+        $crud->setFieldUpload('image_file', FCPATH . 'assets/img', base_url('assets/img'));
+
+        // Display image as thumbnail in the grid using callbackReadField
+        $crud->callbackReadField('image_file', function ($value, $row) {
+            if (empty($value)) {
+                return '<span style="color: #999;">No image</span>';
+            }
+            $imageUrl = base_url('assets/img/' . $value);
+            return '<img src="' . $imageUrl . '" style="max-width: 100px; max-height: 50px; object-fit: contain;" alt="' . htmlspecialchars($row->alt_text ?? 'Image') . '">';
+        });
+
+        // Required fields
+        $crud->requiredFields(['image_key', 'image_category', 'alt_text']);
+
+        // Unique field
+        $crud->uniqueFields(['image_key']);
+
+        // Display labels
+        $crud->displayAs([
+            'image_key' => 'Image Key (Unique Identifier)',
+            'image_file' => 'Image File',
+            'image_url' => 'External Image URL (optional)',
+            'alt_text' => 'Alt Text',
+            'image_category' => 'Category',
+            'description' => 'Description',
+            'is_active' => 'Status'
+        ]);
+
+        // Set callback for breadcrumbs
+        $crud->callbackBeforeInsert(function ($stateParameters) {
+            $stateParameters->data['created_at'] = date('Y-m-d H:i:s');
+            return $stateParameters;
+        });
+
+        $output = $crud->render();
+
+        $data = [
+            'breadcrumbs' => 'Site Images',
+            'output'      => $output->output,
+            'css_files'   => $output->css_files,
+            'js_files'    => $output->js_files
+        ];
+
+        echo view('admin/layouts/header', ['data'=>$this->data]);
+        echo view('admin/layouts/sidebar', ['data'=>$this->data]);
+        echo view('admin/crud_layout', $data);
+        echo view('admin/layouts/footer');
+    }
+
+    /**
+     * Images - Alias for sidebar URL (admin/images)
+     */
+    public function images() {
+        return $this->site_images();
+    }
 }

@@ -96,6 +96,14 @@
                 </a>
             </li>
 
+            <!-- Site Images -->
+            <li class="<?= ($segment2 == 'images') ? 'active' : '' ?>">
+                <a href="<?= base_url('admin/images') ?>">
+                    <i class="fa fa-picture-o"></i>
+                    <span>Site Images</span>
+                </a>
+            </li>
+
             <!-- Profile -->
             <li class="<?= ($segment2 == 'profile') ? 'active' : '' ?>">
                 <a href="<?= base_url('admin/profile') ?>">

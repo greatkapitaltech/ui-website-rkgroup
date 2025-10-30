@@ -11,12 +11,20 @@ class Frontend extends BaseController
         $partnersModel = model('PartnersModel');
         $newsModel = model('NewsItemsModel');
         $settingsModel = model('SiteSettingsModel');
+        $imagesModel = model('SiteImagesModel');
 
         // Get site settings
         $settingsData = $settingsModel->where('is_active', 1)->findAll();
         $settings = [];
         foreach ($settingsData as $setting) {
             $settings[$setting['setting_key']] = $setting['setting_value'];
+        }
+
+        // Get site images
+        $imagesData = $imagesModel->where('is_active', 1)->findAll();
+        $images = [];
+        foreach ($imagesData as $image) {
+            $images[$image['image_key']] = $image;
         }
 
         // Get featured news items
@@ -32,7 +40,8 @@ class Frontend extends BaseController
             'companies' => $companiesModel->where('is_active', 1)->orderBy('display_order', 'ASC')->findAll(),
             'partners' => $partnersModel->where('is_active', 1)->orderBy('display_order', 'ASC')->findAll(),
             'featured_news' => $featuredNews,
-            'settings' => $settings
+            'settings' => $settings,
+            'images' => $images
         ];
 
         return view('frontend/layouts/header', $data)
@@ -48,12 +57,20 @@ class Frontend extends BaseController
         $companiesModel = model('CompaniesModel');
         $partnersModel = model('PartnersModel');
         $settingsModel = model('SiteSettingsModel');
+        $imagesModel = model('SiteImagesModel');
 
         // Get site settings
         $settingsData = $settingsModel->where('is_active', 1)->findAll();
         $settings = [];
         foreach ($settingsData as $setting) {
             $settings[$setting['setting_key']] = $setting['setting_value'];
+        }
+
+        // Get site images
+        $imagesData = $imagesModel->where('is_active', 1)->findAll();
+        $images = [];
+        foreach ($imagesData as $image) {
+            $images[$image['image_key']] = $image;
         }
 
         $data = [
@@ -65,7 +82,8 @@ class Frontend extends BaseController
             'advisory_members' => $boardMembersModel->where('member_type', 'advisory')->where('is_active', 1)->orderBy('display_order', 'ASC')->findAll(),
             'companies' => $companiesModel->where('is_active', 1)->orderBy('display_order', 'ASC')->findAll(),
             'partners' => $partnersModel->where('is_active', 1)->orderBy('display_order', 'ASC')->findAll(),
-            'settings' => $settings
+            'settings' => $settings,
+            'images' => $images
         ];
 
         return view('frontend/layouts/header', $data)
