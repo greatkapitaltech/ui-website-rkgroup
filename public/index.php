@@ -3,6 +3,8 @@
 // Suppress PHP 8.1+ deprecation warnings temporarily
 // TODO: Update to CodeIgniter 4.4+ for proper PHP 8.1+ support
 error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
 
 // Valid PHP Version?
 $minPHPVersion = '7.3';
