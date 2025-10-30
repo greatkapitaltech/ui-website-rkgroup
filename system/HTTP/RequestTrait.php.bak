@@ -335,7 +335,7 @@ trait RequestTrait
 			return $value;
 		}
 
-		return filter_var($value, $filter, $flags ?? 0);
+		return filter_var($value, $filter, $flags);
 	}
 
 	//--------------------------------------------------------------------
