@@ -9,7 +9,7 @@ class Frontend extends BaseController
         // Load data from database
         $companiesModel = model('CompaniesModel');
         $partnersModel = model('PartnersModel');
-        $newsModel = model('NewsModel');
+        $newsModel = model('NewsItemsModel');
         $settingsModel = model('SiteSettingsModel');
 
         // Get site settings
