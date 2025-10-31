@@ -1670,8 +1670,8 @@ class Admin extends BaseController {
         // Enable file upload for logo
         $crud->setFieldUpload('logo', FCPATH . 'assets/uploads/companies', base_url('assets/uploads/companies'));
 
-        // Display logo as image in the grid using callbackReadField
-        $crud->callbackReadField('logo', function ($value, $row) {
+        // Display logo as thumbnail in the table listing
+        $crud->callbackColumn('logo', function ($value, $row) {
             if (empty($value)) {
                 return '<span style="color: #999;">No logo</span>';
             }
@@ -1729,8 +1729,8 @@ class Admin extends BaseController {
         // Enable file upload for logo
         $crud->setFieldUpload('logo', FCPATH . 'assets/uploads/partners', base_url('assets/uploads/partners'));
 
-        // Display logo as image in the grid using callbackReadField
-        $crud->callbackReadField('logo', function ($value, $row) {
+        // Display logo as thumbnail in the table listing
+        $crud->callbackColumn('logo', function ($value, $row) {
             if (empty($value)) {
                 return '<span style="color: #999;">No logo</span>';
             }
@@ -1789,8 +1789,8 @@ class Admin extends BaseController {
         // Enable file upload for photo
         $crud->setFieldUpload('photo', FCPATH . 'assets/uploads/board_members', base_url('assets/uploads/board_members'));
 
-        // Display photo as image in the grid using callbackReadField
-        $crud->callbackReadField('photo', function ($value, $row) {
+        // Display photo as thumbnail in the table listing
+        $crud->callbackColumn('photo', function ($value, $row) {
             if (empty($value)) {
                 return '<span style="color: #999;">No photo</span>';
             }
@@ -1966,8 +1966,8 @@ class Admin extends BaseController {
         // Enable file upload for image
         $crud->setFieldUpload('image', FCPATH . 'assets/uploads/news', base_url('assets/uploads/news'));
 
-        // Display image as thumbnail in the grid using callbackReadField
-        $crud->callbackReadField('image', function ($value, $row) {
+        // Display image as thumbnail in the table listing
+        $crud->callbackColumn('image', function ($value, $row) {
             if (empty($value)) {
                 return '<span style="color: #999;">No image</span>';
             }
@@ -2040,8 +2040,8 @@ class Admin extends BaseController {
         // Enable file upload for timeline images
         $crud->setFieldUpload('image_url', FCPATH . 'assets/uploads/timeline', base_url('assets/uploads/timeline'));
 
-        // Display image as thumbnail in the grid using callbackReadField
-        $crud->callbackReadField('image_url', function ($value, $row) {
+        // Display image as thumbnail in the table listing
+        $crud->callbackColumn('image_url', function ($value, $row) {
             if (empty($value)) {
                 return '<span style="color: #999;">No image</span>';
             }
@@ -2143,8 +2143,8 @@ class Admin extends BaseController {
         // Enable file upload for image_file
         $crud->setFieldUpload('image_file', FCPATH . 'assets/img', base_url('assets/img'));
 
-        // Display image as thumbnail in the grid using callbackReadField
-        $crud->callbackReadField('image_file', function ($value, $row) {
+        // Display image as thumbnail in the table listing
+        $crud->callbackColumn('image_file', function ($value, $row) {
             if (empty($value)) {
                 return '<span style="color: #999;">No image</span>';
             }
